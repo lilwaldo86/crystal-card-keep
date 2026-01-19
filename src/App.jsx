@@ -1,8 +1,14 @@
+import React from "react";
 import "./App.css";
 
 export default function App() {
+  // Background layers (make sure these exist in /public/img)
   const bgBack = "/img/crystal-card-keep-bc-back.png";
   const bgFront = "/img/crystal-card-keep-bc-front.png";
+
+  // Featured card image (you can point this at whichever looks best)
+  // If you have a dedicated “full card” asset, swap it here.
+  const featuredCard = "/img/crystal-card-keep-bc-front.png";
 
   return (
     <div className="appRoot">
@@ -54,14 +60,9 @@ export default function App() {
             <div className="heroInner">
               <div className="heroLeft">
                 <h1 className="heroTitle">The Crystal Card Keep</h1>
-                <p className="heroSubline">Buy • Sell • Trade</p>
+                <p className="heroSubline">BUY • SELL • TRADE</p>
 
-                <p className="heroTagline">
-                  Clean listings, fast shipping, and live auctions that don’t
-                  feel like a circus.
-                  <br />
-                  Search singles and sealed across Pokémon, One Piece, and more.
-                </p>
+                {/* ✅ Removed the highlighted text block entirely */}
 
                 <div className="searchRow">
                   <form
@@ -176,13 +177,13 @@ export default function App() {
                 </div>
               </div>
 
-              <aside className="heroRight" aria-label="Featured card image">
-                <div
-                  className="cardFrame"
-                  role="img"
-                  aria-label="Crystal Card Keep featured art"
-                >
-                  <img src={bgFront} alt="Crystal Card Keep card art" />
+              <aside className="heroRight" aria-label="Featured card">
+                <div className="cardFrame" role="img" aria-label="Crystal Card Keep featured card">
+                  <div className="cardStage">
+                    <img className="cardImg" src={featuredCard} alt="The Crystal Card Keep card" />
+                    <div className="cardShine" aria-hidden="true" />
+                    <div className="cardEdge" aria-hidden="true" />
+                  </div>
                 </div>
               </aside>
             </div>
@@ -191,9 +192,7 @@ export default function App() {
           <footer className="footer">
             <div className="wrap foot">
               <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
-              <small>
-                Rolla / Saint James, MO • Live auctions • Singles • Sealed
-              </small>
+              <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
             </div>
           </footer>
         </div>
