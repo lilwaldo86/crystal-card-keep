@@ -1,5 +1,6 @@
 {
   "version": 1,
-  "include": ["/*"],
-  "exclude": ["/img/*"]
+  "exclude": [
+    "/img/*"
+  ]
 }
