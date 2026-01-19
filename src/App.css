@@ -121,3 +121,53 @@ footer{
   .name{font-size:34px}
   .quickRow{grid-template-columns:1fr}
 }
+/* === HERO IMAGE LAYOUT === */
+.heroGrid{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap:28px;
+  align-items:center;
+}
+
+.heroArt{
+  position:relative;
+  min-height:360px;
+}
+
+.cardStack{
+  position:relative;
+  width:100%;
+  max-width:360px;
+  margin-left:auto;
+  transform: translateY(6px);
+}
+
+.card{
+  position:absolute;
+  width:100%;
+  border-radius:14px;
+  box-shadow:0 30px 70px rgba(0,0,0,.55);
+}
+
+.card.back{
+  transform: translate(-18px, 18px) rotate(-6deg);
+  opacity:.92;
+}
+
+.card.front{
+  transform: translate(18px, -6px) rotate(4deg);
+}
+
+@media (max-width: 880px){
+  .heroGrid{
+    grid-template-columns: 1fr;
+  }
+  .heroArt{
+    order:-1;
+    min-height:260px;
+  }
+  .cardStack{
+    margin:0 auto 10px;
+  }
+}
+
