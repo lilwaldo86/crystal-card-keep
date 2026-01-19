@@ -7,7 +7,7 @@ export default function App() {
   const bgFront = "/img/crystal-card-keep-bc-front.png";
 
   // Featured card image (you can point this at whichever looks best)
-  // If you have a dedicated “full card” asset, swap it here.
+  // If you have a dedicated full card asset, swap it here.
   const featuredCard = "/img/crystal-card-keep-bc-front.png";
 
   return (
@@ -62,7 +62,7 @@ export default function App() {
                 <h1 className="heroTitle">The Crystal Card Keep</h1>
                 <p className="heroSubline">BUY • SELL • TRADE</p>
 
-                {/* ✅ Removed the highlighted text block entirely */}
+                {/* Removed the highlighted text block entirely */}
 
                 <div className="searchRow">
                   <form
@@ -178,11 +178,11 @@ export default function App() {
               </div>
 
               <aside className="heroRight" aria-label="Featured card">
-                <div className="cardFrame" role="img" aria-label="Crystal Card Keep featured card">
-                  <div className="cardStage">
-                    <img className="cardImg" src={featuredCard} alt="The Crystal Card Keep card" />
-                    <div className="cardShine" aria-hidden="true" />
-                    <div className="cardEdge" aria-hidden="true" />
+                <div className="cardFrameLegacy" role="img" aria-label="Crystal Card Keep featured card">
+                  <div className="cardStageLegacy">
+                    <img className="cardImgLegacy" src={featuredCard} alt="The Crystal Card Keep card" />
+                    <div className="cardShineLegacy" aria-hidden="true" />
+                    <div className="cardEdgeLegacy" aria-hidden="true" />
                   </div>
                 </div>
               </aside>
@@ -200,3 +200,4 @@ export default function App() {
     </div>
   );
 }
+
