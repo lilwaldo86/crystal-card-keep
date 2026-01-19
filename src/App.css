@@ -169,6 +169,7 @@ a{color:inherit;text-decoration:none}
   display:grid;
   grid-template-columns: 1fr;
   gap:18px;
+  min-height: 520px;
 }
 
 .heroBg{
@@ -372,3 +373,47 @@ a{color:inherit;text-decoration:none}
   }
   .quickRow{grid-template-columns:1fr 1fr 1fr}
 }
+
+/* ---- Tuning: make hero feel sleeker / less busy behind text ---- */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(
+    90deg,
+    rgba(11,15,20,.78) 0%,
+    rgba(11,15,20,.62) 45%,
+    rgba(11,15,20,.40) 100%
+  );
+  pointer-events:none;
+  z-index:1;
+}
+
+.heroInner{ z-index:2; } /* keep content above overlay */
+
+/* soften + darken background layers */
+.heroBgBack{
+  opacity:.22 !important;
+  filter: blur(2px) saturate(.9) contrast(.95);
+}
+.heroBgFront{
+  opacity:.10 !important;
+  filter: blur(6px) saturate(.85) contrast(.9);
+}
+
+/* keep the hero from feeling "crunched tall" */
+@media (min-width:860px){
+  .heroInner{
+    padding:30px !important;
+  }
+  .hero{
+    border-radius:26px;
+  }
+}
+
+/* featured image: less aggressive crop */
+.cardFrame img{
+  object-fit: contain !important;
+  background: rgba(0,0,0,.20);
+}
+
