@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 
 export default function App() {
-  // These should exist at: /public/img/...
-  // Cloudflare Pages will serve them at: https://your-site.pages.dev/img/...
   const bgBack = "/img/crystal-card-keep-bc-back.png";
   const bgFront = "/img/crystal-card-keep-bc-front.png";
 
@@ -43,7 +41,6 @@ export default function App() {
       <main className="main">
         <div className="wrap">
           <section className="hero" aria-label="Landing">
-            {/* Background art layers (safe: they will NOT break layout) */}
             <div
               className="heroBg heroBgBack"
               style={{ backgroundImage: `url(${bgBack})` }}
@@ -56,7 +53,6 @@ export default function App() {
             />
 
             <div className="heroInner">
-              {/* Left content */}
               <div className="heroLeft">
                 <h1 className="heroTitle">The Crystal Card Keep</h1>
                 <p className="heroSubline">Buy • Sell • Trade</p>
@@ -180,28 +176,19 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Right panel */}
               <aside className="heroRight" aria-label="Featured card art">
-               <div className="cardMeta">
-  <div className="cardTitleRow">
-    <h4>Featured card art</h4>
-  </div>
-</div>
-
-
-                <div className="cardFrame" role="img" aria-label="Crystal Card Keep featured art">
-                  {/* IMPORTANT: constrained image so it can’t blow up layout */}
-                  <img src={bgFront} alt="Crystal Card Keep card back (front)" />
+                <div className="cardMeta">
+                  <div className="cardTitleRow">
+                    <h4>Featured card art</h4>
+                  </div>
                 </div>
 
-                <div className="panelFoot">
-                  <div className="panelFootLabel">Expected URL:</div>
-                  <code className="codeInline">/img/crystal-card-keep-bc-front.png</code>
-                  <p className="panelFootText">
-                    If that URL redirects to the homepage, Pages is serving SPA fallback.
-                    Now that your <code className="codeInline">img</code> folder shows in Assets uploaded,
-                    this should load directly.
-                  </p>
+                <div
+                  className="cardFrame"
+                  role="img"
+                  aria-label="Crystal Card Keep featured art"
+                >
+                  <img src={bgFront} alt="Crystal Card Keep card back (front)" />
                 </div>
               </aside>
             </div>
