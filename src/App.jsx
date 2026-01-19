@@ -1,124 +1,216 @@
 import React from "react";
-
-/**
- * IMPORTANT:
- * These images are served directly from Cloudflare Pages:
- * https://crystal-card-keep.pages.dev/img/...
- * Do NOT import them via JS bundling.
- */
-const FRONT_CARD = "/img/crystal-card-keep-bc-front.png";
-const BACK_CARD = "/img/crystal-card-keep-bc-back.png";
+import "./App.css";
 
 export default function App() {
+  // These should exist at: /public/img/...
+  // Cloudflare Pages will serve them at: https://your-site.pages.dev/img/...
+  const bgBack = "/img/crystal-card-keep-bc-back.png";
+  const bgFront = "/img/crystal-card-keep-bc-front.png";
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#05060a] via-[#0b1020] to-[#0a1a1f] text-white">
-      {/* NAV */}
-      <header className="flex items-center justify-between px-10 py-6">
-        <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-400" />
-          <div>
-            <div className="font-semibold tracking-wide">
-              THE CRYSTAL CARD KEEP
-            </div>
-            <div className="text-xs text-gray-400">Buy · Sell · Trade</div>
+    <div className="appRoot">
+      <div className="gridOverlay" aria-hidden="true" />
+
+      <header className="siteHeader">
+        <div className="wrap navBar">
+          <a className="brand" href="/" aria-label="The Crystal Card Keep">
+            <span className="sigil" aria-hidden="true" />
+            <span className="brandText">
+              <span className="brandName">THE CRYSTAL CARD KEEP</span>
+              <span className="brandTag">Buy • Sell • Trade</span>
+            </span>
+          </a>
+
+          <nav className="navLinks" aria-label="Primary navigation">
+            <a href="/shop">Shop</a>
+            <a href="/sell">Sell</a>
+            <a href="/trade">Trade</a>
+            <a href="/live">Live</a>
+            <a href="/contact">Contact</a>
+          </nav>
+
+          <div className="navActions">
+            <a className="btn" href="/sell">
+              Sell to us
+            </a>
+            <a className="btn primary" href="/shop">
+              Shop
+            </a>
           </div>
         </div>
-
-        <nav className="flex items-center gap-6 text-sm text-gray-300">
-          <a href="#">Shop</a>
-          <a href="#">Sell</a>
-          <a href="#">Trade</a>
-          <a href="#">Live</a>
-          <a href="#">Contact</a>
-          <button className="rounded-full bg-white/10 px-4 py-2 hover:bg-white/20">
-            Sell to us
-          </button>
-          <button className="rounded-full bg-gradient-to-r from-amber-400 to-amber-300 px-4 py-2 text-black font-medium">
-            Shop
-          </button>
-        </nav>
       </header>
 
-      {/* HERO */}
-      <main className="mx-auto max-w-7xl px-10 pt-16">
-        <div className="relative rounded-3xl bg-white/5 backdrop-blur-xl p-12 overflow-hidden">
-          {/* BACKGROUND CARD (SUBTLE) */}
-          <img
-            src={BACK_CARD}
-            alt="Crystal Card Back"
-            className="absolute -right-40 -top-40 w-[900px] opacity-20 blur-sm pointer-events-none"
-          />
+      <main className="main">
+        <div className="wrap">
+          <section className="hero" aria-label="Landing">
+            {/* Background art layers (safe: they will NOT break layout) */}
+            <div
+              className="heroBg heroBgBack"
+              style={{ backgroundImage: `url(${bgBack})` }}
+              aria-hidden="true"
+            />
+            <div
+              className="heroBg heroBgFront"
+              style={{ backgroundImage: `url(${bgFront})` }}
+              aria-hidden="true"
+            />
 
-          <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* LEFT */}
-            <div>
-              <h1 className="text-5xl font-semibold mb-4">
-                The Crystal Card Keep
-              </h1>
-              <p className="text-gray-300 mb-6 max-w-xl">
-                Clean listings, fast shipping, and live auctions that don’t feel
-                like a circus. Search singles and sealed across Pokémon, One
-                Piece, and more.
-              </p>
+            <div className="heroInner">
+              {/* Left content */}
+              <div className="heroLeft">
+                <h1 className="heroTitle">The Crystal Card Keep</h1>
+                <p className="heroSubline">Buy • Sell • Trade</p>
 
-              <div className="flex gap-3 mb-6">
-                <input
-                  className="flex-1 rounded-full bg-white/10 px-5 py-3 text-sm outline-none"
-                  placeholder="Search singles, sealed, sets, character"
-                />
-                <button className="rounded-full bg-white/10 px-4 py-3">
-                  Pokémon
-                </button>
-                <button className="rounded-full bg-white/10 px-4 py-3">
-                  One Piece
-                </button>
-                <button className="rounded-full bg-white/10 px-4 py-3">
-                  MTG
-                </button>
+                <p className="heroTagline">
+                  Clean listings, fast shipping, and live auctions that don’t feel like a circus.
+                  <br />
+                  Search singles and sealed across Pokémon, One Piece, and more.
+                </p>
+
+                <div className="searchRow">
+                  <form
+                    className="search"
+                    role="search"
+                    aria-label="Search the site"
+                    onSubmit={(e) => e.preventDefault()}
+                  >
+                    <span className="ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                          d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                        />
+                        <path
+                          d="M16.5 16.5 21 21"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                    </span>
+                    <input
+                      name="q"
+                      type="search"
+                      placeholder="Search singles, sealed, sets, character…"
+                      autoComplete="off"
+                    />
+                  </form>
+
+                  <span className="pill">Pokémon</span>
+                  <span className="pill">One Piece</span>
+                  <span className="pill">MTG</span>
+                </div>
+
+                <div className="ctaRow">
+                  <a className="btn primary" href="/shop">
+                    Browse inventory
+                  </a>
+                  <a className="btn" href="/live">
+                    Watch live
+                  </a>
+                  <a className="btn" href="/trade">
+                    Trade options
+                  </a>
+                  <a className="btn" href="/sell">
+                    Sell to us
+                  </a>
+                </div>
+
+                <div className="quickRow">
+                  <a className="quick" href="/shop/pokemon">
+                    <div>
+                      <b>Pokémon</b>
+                      <span>Sealed + singles</span>
+                    </div>
+                    <div className="arrow" aria-hidden="true">
+                      <span className="ico">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M9 6l6 6-6 6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a className="quick" href="/shop/one-piece">
+                    <div>
+                      <b>One Piece</b>
+                      <span>Hard-to-find drops</span>
+                    </div>
+                    <div className="arrow" aria-hidden="true">
+                      <span className="ico">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M9 6l6 6-6 6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+
+                  <a className="quick" href="/shop/singles">
+                    <div>
+                      <b>Singles</b>
+                      <span>Chase + staples</span>
+                    </div>
+                    <div className="arrow" aria-hidden="true">
+                      <span className="ico">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M9 6l6 6-6 6"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                </div>
               </div>
 
-              <div className="flex gap-4 mb-8">
-                <button className="rounded-xl bg-gradient-to-r from-amber-400 to-amber-300 px-6 py-3 text-black font-medium">
-                  Browse inventory
-                </button>
-                <button className="rounded-xl bg-white/10 px-6 py-3">
-                  Watch live
-                </button>
-                <button className="rounded-xl bg-white/10 px-6 py-3">
-                  Trade options
-                </button>
-                <button className="rounded-xl bg-white/10 px-6 py-3">
-                  Sell to us
-                </button>
-              </div>
+              {/* Right panel */}
+              <aside className="heroRight" aria-label="Featured card art">
+                <div className="panelTitleRow">
+                  <div className="panelTitle">Featured card art</div>
+                  <div className="panelHint">static asset test</div>
+                </div>
 
-              <div className="grid grid-cols-3 gap-4 text-sm">
-                <div className="rounded-xl bg-white/10 p-4">
-                  <div className="font-medium">Pokémon</div>
-                  <div className="text-gray-400 text-xs">Sealed + singles</div>
+                <div className="cardFrame" role="img" aria-label="Crystal Card Keep featured art">
+                  {/* IMPORTANT: constrained image so it can’t blow up layout */}
+                  <img src={bgFront} alt="Crystal Card Keep card back (front)" />
                 </div>
-                <div className="rounded-xl bg-white/10 p-4">
-                  <div className="font-medium">One Piece</div>
-                  <div className="text-gray-400 text-xs">
-                    Hard-to-find drops
-                  </div>
+
+                <div className="panelFoot">
+                  <div className="panelFootLabel">Expected URL:</div>
+                  <code className="codeInline">/img/crystal-card-keep-bc-front.png</code>
+                  <p className="panelFootText">
+                    If that URL redirects to the homepage, Pages is serving SPA fallback.
+                    Now that your <code className="codeInline">img</code> folder shows in Assets uploaded,
+                    this should load directly.
+                  </p>
                 </div>
-                <div className="rounded-xl bg-white/10 p-4">
-                  <div className="font-medium">Singles</div>
-                  <div className="text-gray-400 text-xs">Chase + staples</div>
-                </div>
-              </div>
+              </aside>
             </div>
+          </section>
 
-            {/* RIGHT */}
-            <div className="relative flex items-center justify-center">
-              <img
-                src={FRONT_CARD}
-                alt="Crystal Card Front"
-                className="w-[420px] rounded-2xl shadow-2xl"
-              />
+          <footer className="footer">
+            <div className="wrap foot">
+              <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
+              <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
             </div>
-          </div>
+          </footer>
         </div>
       </main>
     </div>
