@@ -179,7 +179,7 @@ export default function App() {
               <aside className="heroRight" aria-label="Featured card art">
                 <div className="cardMeta">
                   <div className="cardTitleRow">
-                    <h4>Featured card art</h4>
+                    {/* title removed */}
                   </div>
                 </div>
 
