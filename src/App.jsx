@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 
 export default function App() {
@@ -58,7 +57,8 @@ export default function App() {
                 <p className="heroSubline">Buy • Sell • Trade</p>
 
                 <p className="heroTagline">
-                  Clean listings, fast shipping, and live auctions that don’t feel like a circus.
+                  Clean listings, fast shipping, and live auctions that don’t
+                  feel like a circus.
                   <br />
                   Search singles and sealed across Pokémon, One Piece, and more.
                 </p>
@@ -179,7 +179,7 @@ export default function App() {
               <aside className="heroRight" aria-label="Featured card art">
                 <div className="cardMeta">
                   <div className="cardTitleRow">
-                    {/* title removed */}
+                    <h4>Featured card art</h4>
                   </div>
                 </div>
 
@@ -188,7 +188,7 @@ export default function App() {
                   role="img"
                   aria-label="Crystal Card Keep featured art"
                 >
-                  <img src={bgFront} alt="Crystal Card Keep card back (front)" />
+                  <img src={bgFront} alt="Crystal Card Keep card art" />
                 </div>
               </aside>
             </div>
@@ -196,7 +196,9 @@ export default function App() {
 
           <footer className="footer">
             <div className="wrap foot">
-              <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
+              <small>
+                © {new Date().getFullYear()} The Crystal Card Keep
+              </small>
               <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
             </div>
           </footer>
