@@ -182,10 +182,12 @@ export default function App() {
 
               {/* Right panel */}
               <aside className="heroRight" aria-label="Featured card art">
-                <div className="panelTitleRow">
-                  <div className="panelTitle">Featured card art</div>
-                  <div className="panelHint">static asset test</div>
-                </div>
+               <div className="cardMeta">
+  <div className="cardTitleRow">
+    <h4>Featured card art</h4>
+  </div>
+</div>
+
 
                 <div className="cardFrame" role="img" aria-label="Crystal Card Keep featured art">
                   {/* IMPORTANT: constrained image so it can’t blow up layout */}
