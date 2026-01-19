@@ -176,13 +176,7 @@ export default function App() {
                 </div>
               </div>
 
-              <aside className="heroRight" aria-label="Featured card art">
-                <div className="cardMeta">
-                  <div className="cardTitleRow">
-                    <h4>Featured card art</h4>
-                  </div>
-                </div>
-
+              <aside className="heroRight" aria-label="Featured card image">
                 <div
                   className="cardFrame"
                   role="img"
@@ -196,10 +190,10 @@ export default function App() {
 
           <footer className="footer">
             <div className="wrap foot">
+              <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
               <small>
-                © {new Date().getFullYear()} The Crystal Card Keep
+                Rolla / Saint James, MO • Live auctions • Singles • Sealed
               </small>
-              <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
             </div>
           </footer>
         </div>
