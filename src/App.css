@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -20,7 +20,7 @@
   --gold2: rgba(210, 180, 90, 0.30);
 
   /* Card tilt controls */
-  --card-tilt-z: -28deg; /* Ã¢Å“€¦ within 25Ã¢‚¬€œ40deg request */
+  --card-tilt-z: -28deg;
   --card-tilt-y: 12deg;
 }
 
@@ -128,6 +128,7 @@ a:hover{ text-decoration:none; }
   padding:8px 10px;
   border-radius:10px;
   transition: background 120ms ease, color 120ms ease;
+  white-space:nowrap;
 }
 .navLinks a:hover{
   color:rgba(255,255,255,0.92);
@@ -278,54 +279,6 @@ a:hover{ text-decoration:none; }
   margin-top: 14px;
 }
 
-.quickRow{
-  display:grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap:12px;
-  margin-top: 16px;
-}
-
-.quick{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-  padding: 14px 14px;
-  border-radius: 16px;
-  background: rgba(0,0,0,0.26);
-  border:1px solid rgba(255,255,255,0.10);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.28);
-  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
-  min-height: 62px;
-}
-.quick:hover{
-  transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.16);
-  background: rgba(0,0,0,0.30);
-}
-.quick b{
-  display:block;
-  font-size: 14px;
-}
-.quick span{
-  display:block;
-  margin-top: 3px;
-  font-size: 12px;
-  color: rgba(255,255,255,0.60);
-}
-
-.arrow{
-  width:34px;
-  height:34px;
-  border-radius: 999px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  background: rgba(255,255,255,0.06);
-  border:1px solid rgba(255,255,255,0.10);
-}
-.arrow .ico{ width:18px; height:18px; color: rgba(255,255,255,0.75); }
-
 .heroRight{
   display:flex;
   align-items:center;
@@ -333,7 +286,7 @@ a:hover{ text-decoration:none; }
   padding: 10px 6px;
 }
 
-/* ===== Card Panel + Ã¢‚¬Å“real cardÃ¢‚¬ styling ===== */
+/* ===== Card Panel + “real card” styling ===== */
 .cardFrameLegacy{
   width: 100%;
   height: 100%;
@@ -351,7 +304,6 @@ a:hover{ text-decoration:none; }
 
 .cardStageLegacy{
   position:relative;
-  /* Proper TCG ratio: 63x88mm Ã¢€°Ë† 0.716 */
   width: min(340px, 40vw);
   aspect-ratio: 63 / 88;
   transform-origin: 50% 60%;
@@ -383,7 +335,6 @@ a:hover{ text-decoration:none; }
   display:block;
   object-fit: fill;
   border-radius: 16px;
-  /* Slight Ã¢‚¬Å“edgeÃ¢‚¬ + depth */
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.10),
     0 18px 42px rgba(0,0,0,0.55);
@@ -429,197 +380,6 @@ a:hover{ text-decoration:none; }
   color: rgba(255,255,255,0.60);
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 980px){
-  .navLinks{ display:none; }
-  .heroInner{
-    grid-template-columns: 1fr;
-    padding: 26px;
-  }
-  .cardFrameLegacy{
-    min-height: 420px;
-  }
-  .cardStageLegacy{
-    width: min(340px, 78vw);
-  
-  --card-tilt-y: 0deg;
-  --card-tilt-z: -12deg;
-}
-  .quickRow{
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-
-/* --- Fix: keep the landing hero as a single full-height panel (reduces visible seam) --- */
-.hero{ min-height: auto; }
-html, body { min-height: auto; }
-/* --- ONEPAGE_OVERRIDES_START --- */
-/* Make the hero fit one screen (no scroll) */
-.heroInner{
-  min-height: 0 !important;
-  padding-top: 22px !important;
-  padding-bottom: 0 !important;
-}
-
-/* Shrink ONLY the outer frame (blue) to hug the card */
-.cardFrameLegacy{
-  height: auto !important;
-  min-height: 0 !important;
-  align-self: start !important;
-  padding: 14px !important;
-}
-
-/* Stop the stage from forcing the frame taller */
-.cardStageLegacy{
-  width: min(340px, 40vw) !important;  /* keep your existing size */
-}
-
-/* --- ONEPAGE_OVERRIDES_END --- */
-
-
-/* === HERO: force the right-side card frame to shrink (single-screen) === */
-.hero__right .cardFrameLegacy,
-.heroArt .cardFrameLegacy,
-.cardFrameLegacy.heroCardFrame {
-  width: min(360px, 36vw) !important;
-  height: auto !important;
-  min-height: 0 !important;
-  padding: 12px !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-}
-
-/* Reduce layout stretch that causes scroll */
-.hero,
-.heroInner,
-.hero__grid {
-  min-height: 0 !important;
-  align-items: start !important;
-}
-
-/* Keep the card itself from re-scaling bigger */
-.hero__right .tcgCardWrap {
-  --card-scale: 0.68 !important;
-}
-
-
-
-
-/* === HERO CARDFRAME OVERRIDE (auto) === */
-.hero__right .cardFrame{
-  /* shrink the BLUE frame to match the card (no forced tall panel) */
-  height: auto !important;
-  min-height: 0 !important;
-  width: fit-content !important;
-  max-width: min(420px, 42vw) !important;
-
-  /* less padding so it doesn't push the page taller */
-  padding: 10px !important;
-
-  /* keep the nice look, but don't create extra layout height */
-  overflow: visible !important;
-}
-
-.hero, .hero__grid{
-  min-height: 0 !important;
-}
-
-/* === HERO SINGLE-PAGE HARD CLAMP (authoritative) === */
-
-/* Stop the page itself from forcing viewport height */
-html, body {
-  min-height: auto !important;
-  height: auto !important;
-  overflow-x: hidden;
-}
-
-/* Let hero collapse to content */
-.hero,
-.hero__grid {
-  min-height: auto !important;
-  height: auto !important;
-  padding-bottom: 0 !important;
-}
-
-/* Ensure right side does not force height */
-.hero__right {
-  min-height: auto !important;
-  height: auto !important;
-  align-self: flex-start !important;
-}
-
-/* Frame wraps card tightly */
-.hero__right .cardFrame {
-  height: auto !important;
-  min-height: 0 !important;
-  width: fit-content !important;
-  max-width: min(420px, 40vw) !important;
-  padding: 8px !important;
-  overflow: visible !important;
-}
-
-/* === CCK HERO OVERRIDE START === */
-
-/* 1) Fix the encoding artifacts site-wide (bullets, etc.) happens when file isn't UTF-8 */
-:root { }
-
-/* 2) Stop ANY wrapper from forcing viewport height */
-html, body, #root, #app {
-  min-height: 0 !important;
-  height: auto !important;
-}
-
-/* Common app wrappers (safe even if some don't exist) */
-.app, .App, .page, .shell, .layout, main {
-  min-height: 0 !important;
-  height: auto !important;
-}
-
-/* 3) Hero must size to content, NOT viewport */
-.hero,
-.hero__grid,
-.hero__right {
-  min-height: 0 !important;
-  height: auto !important;
-}
-
-/* Remove extra top/bottom padding that can create the scroll seam */
-.hero {
-  padding-top: 24px !important;
-  padding-bottom: 0 !important;
-}
-
-/* 4) THIS is the blue frame: force it to shrink-wrap the card */
-.hero__right .cardFrame,
-.cardFrame {
-  width: fit-content !important;
-  height: fit-content !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  padding: 10px !important;  /* small frame */
-  overflow: visible !important;
-}
-
-/* 5) Keep the card size as-is; don't let parent scaling inflate it */
-.hero__right .tcgCardWrap {
-  width: auto !important;
-  height: auto !important;
-}
-
-/* 6) If a footer is creating the €œline/seam€, prevent it from adding scroll height */
-footer, .footer, .siteFooter {
-  margin-top: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 0 !important;
-}
-
-/* === CCK HERO OVERRIDE END === */
-
-
-
 /* === CONTACT PAGE === */
 .contactCard{
   background: var(--glass);
@@ -628,23 +388,19 @@ footer, .footer, .siteFooter {
   padding: 22px;
   box-shadow: var(--shadow2);
 }
-
 .contactCard.subtle{
   background: var(--glass2);
 }
-
 .contactCard h3{
   margin-top: 0;
   font-size: 16px;
   letter-spacing: 0.06em;
 }
-
 .contactForm{
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
 .contactForm input,
 .contactForm textarea{
   background: rgba(0,0,0,0.35);
@@ -654,3 +410,78 @@ footer, .footer, .siteFooter {
   color: var(--text);
   font-size: 14px;
 }
+
+/* ===== Responsive ===== */
+@media (max-width: 980px){
+  /* Slightly reduce outer side margins so the hero panel centers better on phones */
+  .wrap{
+    width: calc(100% - 28px);
+  }
+
+  /* Mobile parity: keep nav available and swipe-scrollable */
+  .navBar{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .brand{
+    min-width: 0;
+  }
+
+  .navLinks{
+    display:flex !important;
+    width:100%;
+    order:3;
+    justify-content:flex-start;
+    overflow-x:auto;
+    overflow-y:hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 2px 8px;
+    gap:12px;
+    scrollbar-width: none;
+  }
+  .navLinks::-webkit-scrollbar{ display:none; }
+  .navLinks a{ flex: 0 0 auto; }
+
+  .navActions{
+    width:100%;
+    justify-content:center;
+    order:4;
+  }
+
+  /* Critical: make the hero content fit, so it doesn't look clipped/off-center */
+  .main{
+    padding: 16px 0 28px;
+  }
+
+  .heroInner{
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap:14px;
+  }
+
+  .heroTitle{
+    font-size: clamp(34px, 9vw, 52px);
+  }
+
+  /* Reduce the frame size so the card doesn't get clipped inside the hero (overflow:hidden) */
+  .cardFrameLegacy{
+    min-height: 320px;
+    padding: 14px;
+  }
+
+  .cardStageLegacy{
+    width: min(300px, 78vw);
+    --card-tilt-y: 0deg;
+    --card-tilt-z: -12deg;
+  }
+
+  .foot{
+    flex-direction:column;
+    gap:6px;
+  }
+}
+
+/* Keep hero sizing to content (single clean panel) */
+.hero{ min-height: auto; }
+html, body { min-height: auto; }

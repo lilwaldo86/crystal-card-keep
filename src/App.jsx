@@ -71,8 +71,6 @@ export default function App() {
                   <h1 className="heroTitle">The Crystal Card Keep</h1>
                   <p className="heroSubline">BUY • SELL • TRADE</p>
 
-                  {/* Removed the highlighted text block entirely */}
-
                   <div className="searchRow">
                     <form
                       className="search"
@@ -123,67 +121,7 @@ export default function App() {
                     </a>
                   </div>
 
-                  <div className="quickRow">
-                    <a className="quick" href="/shop/pokemon">
-                      <div>
-                        <b>Pokémon</b>
-                        <span>Sealed + singles</span>
-                      </div>
-                      <div className="arrow" aria-hidden="true">
-                        <span className="ico">
-                          <svg viewBox="0 0 24 24" fill="none">
-                            <path
-                              d="M9 6l6 6-6 6"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </a>
-
-                    <a className="quick" href="/shop/one-piece">
-                      <div>
-                        <b>One Piece</b>
-                        <span>Hard-to-find drops</span>
-                      </div>
-                      <div className="arrow" aria-hidden="true">
-                        <span className="ico">
-                          <svg viewBox="0 0 24 24" fill="none">
-                            <path
-                              d="M9 6l6 6-6 6"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </a>
-
-                    <a className="quick" href="/shop/singles">
-                      <div>
-                        <b>Singles</b>
-                        <span>Chase + staples</span>
-                      </div>
-                      <div className="arrow" aria-hidden="true">
-                        <span className="ico">
-                          <svg viewBox="0 0 24 24" fill="none">
-                            <path
-                              d="M9 6l6 6-6 6"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </a>
-                  </div>
+                  {/* Removed the 3 large quick tiles (Pokémon / One Piece / Singles) — pills above are enough */}
                 </div>
 
                 <aside className="heroRight" aria-label="Featured card">
