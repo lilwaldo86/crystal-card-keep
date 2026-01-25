@@ -1,5 +1,7 @@
-import React from "react";
+﻿import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   // Background layers (make sure these exist in /public/img)
@@ -10,26 +12,24 @@ export default function App() {
   // If you have a dedicated full card asset, swap it here.
   const featuredCard = "/img/crystal-card-keep-bc-front.png";
 
-  return (
-    <div className="appRoot">
-      <div className="gridOverlay" aria-hidden="true" />
-
+  function SiteHeader() {
+    return (
       <header className="siteHeader">
         <div className="wrap navBar">
-          <a className="brand" href="/" aria-label="The Crystal Card Keep">
+          <Link className="brand" to="/" aria-label="The Crystal Card Keep">
             <span className="sigil" aria-hidden="true" />
             <span className="brandText">
               <span className="brandName">THE CRYSTAL CARD KEEP</span>
               <span className="brandTag">Buy • Sell • Trade</span>
             </span>
-          </a>
+          </Link>
 
           <nav className="navLinks" aria-label="Primary navigation">
             <a href="/shop">Shop</a>
             <a href="/sell">Sell</a>
             <a href="/trade">Trade</a>
             <a href="/live">Live</a>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           <div className="navActions">
@@ -42,162 +42,178 @@ export default function App() {
           </div>
         </div>
       </header>
+    );
+  }
 
-      <main className="main">
-        <div className="wrap">
-          <section className="hero" aria-label="Landing">
-            <div
-              className="heroBg heroBgBack"
-              style={{ backgroundImage: `url(${bgBack})` }}
-              aria-hidden="true"
-            />
-            <div
-              className="heroBg heroBgFront"
-              style={{ backgroundImage: `url(${bgFront})` }}
-              aria-hidden="true"
-            />
+  function Home() {
+    return (
+      <div className="appRoot">
+        <div className="gridOverlay" aria-hidden="true" />
 
-            <div className="heroInner">
-              <div className="heroLeft">
-                <h1 className="heroTitle">The Crystal Card Keep</h1>
-                <p className="heroSubline">BUY • SELL • TRADE</p>
+        <SiteHeader />
 
-                {/* Removed the highlighted text block entirely */}
+        <main className="main">
+          <div className="wrap">
+            <section className="hero" aria-label="Landing">
+              <div
+                className="heroBg heroBgBack"
+                style={{ backgroundImage: `url(${bgBack})` }}
+                aria-hidden="true"
+              />
+              <div
+                className="heroBg heroBgFront"
+                style={{ backgroundImage: `url(${bgFront})` }}
+                aria-hidden="true"
+              />
 
-                <div className="searchRow">
-                  <form
-                    className="search"
-                    role="search"
-                    aria-label="Search the site"
-                    onSubmit={(e) => e.preventDefault()}
-                  >
-                    <span className="ico" aria-hidden="true">
-                      <svg viewBox="0 0 24 24" fill="none">
-                        <path
-                          d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
-                          stroke="currentColor"
-                          strokeWidth="1.8"
-                        />
-                        <path
-                          d="M16.5 16.5 21 21"
-                          stroke="currentColor"
-                          strokeWidth="1.8"
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                    </span>
-                    <input
-                      name="q"
-                      type="search"
-                      placeholder="Search singles, sealed, sets, character…"
-                      autoComplete="off"
-                    />
-                  </form>
+              <div className="heroInner">
+                <div className="heroLeft">
+                  <h1 className="heroTitle">The Crystal Card Keep</h1>
+                  <p className="heroSubline">BUY • SELL • TRADE</p>
 
-                  <span className="pill">Pokémon</span>
-                  <span className="pill">One Piece</span>
-                  <span className="pill">MTG</span>
-                </div>
+                  {/* Removed the highlighted text block entirely */}
 
-                <div className="ctaRow">
-                  <a className="btn primary" href="/shop">
-                    Browse inventory
-                  </a>
-                  <a className="btn" href="/live">
-                    Watch live
-                  </a>
-                  <a className="btn" href="/trade">
-                    Trade options
-                  </a>
-                  <a className="btn" href="/sell">
-                    Sell to us
-                  </a>
-                </div>
-
-                <div className="quickRow">
-                  <a className="quick" href="/shop/pokemon">
-                    <div>
-                      <b>Pokémon</b>
-                      <span>Sealed + singles</span>
-                    </div>
-                    <div className="arrow" aria-hidden="true">
-                      <span className="ico">
+                  <div className="searchRow">
+                    <form
+                      className="search"
+                      role="search"
+                      aria-label="Search the site"
+                      onSubmit={(e) => e.preventDefault()}
+                    >
+                      <span className="ico" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none">
                           <path
-                            d="M9 6l6 6-6 6"
+                            d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
                             stroke="currentColor"
-                            strokeWidth="2"
+                            strokeWidth="1.8"
+                          />
+                          <path
+                            d="M16.5 16.5 21 21"
+                            stroke="currentColor"
+                            strokeWidth="1.8"
                             strokeLinecap="round"
-                            strokeLinejoin="round"
                           />
                         </svg>
                       </span>
-                    </div>
-                  </a>
+                      <input
+                        name="q"
+                        type="search"
+                        placeholder="Search singles, sealed, sets, character…"
+                        autoComplete="off"
+                      />
+                    </form>
 
-                  <a className="quick" href="/shop/one-piece">
-                    <div>
-                      <b>One Piece</b>
-                      <span>Hard-to-find drops</span>
-                    </div>
-                    <div className="arrow" aria-hidden="true">
-                      <span className="ico">
-                        <svg viewBox="0 0 24 24" fill="none">
-                          <path
-                            d="M9 6l6 6-6 6"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </a>
+                    <span className="pill">Pokémon</span>
+                    <span className="pill">One Piece</span>
+                    <span className="pill">MTG</span>
+                  </div>
 
-                  <a className="quick" href="/shop/singles">
-                    <div>
-                      <b>Singles</b>
-                      <span>Chase + staples</span>
-                    </div>
-                    <div className="arrow" aria-hidden="true">
-                      <span className="ico">
-                        <svg viewBox="0 0 24 24" fill="none">
-                          <path
-                            d="M9 6l6 6-6 6"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </div>
-                  </a>
-                </div>
-              </div>
+                  <div className="ctaRow">
+                    <a className="btn primary" href="/shop">
+                      Browse inventory
+                    </a>
+                    <a className="btn" href="/live">
+                      Watch live
+                    </a>
+                    <a className="btn" href="/trade">
+                      Trade options
+                    </a>
+                    <a className="btn" href="/sell">
+                      Sell to us
+                    </a>
+                  </div>
 
-              <aside className="heroRight" aria-label="Featured card">
-                <div className="cardFrameLegacy" role="img" aria-label="Crystal Card Keep featured card">
-                  <div className="cardStageLegacy">
-                    <img className="cardImgLegacy" src={featuredCard} alt="The Crystal Card Keep card" />
-                    <div className="cardShineLegacy" aria-hidden="true" />
-                    <div className="cardEdgeLegacy" aria-hidden="true" />
+                  <div className="quickRow">
+                    <a className="quick" href="/shop/pokemon">
+                      <div>
+                        <b>Pokémon</b>
+                        <span>Sealed + singles</span>
+                      </div>
+                      <div className="arrow" aria-hidden="true">
+                        <span className="ico">
+                          <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M9 6l6 6-6 6"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+
+                    <a className="quick" href="/shop/one-piece">
+                      <div>
+                        <b>One Piece</b>
+                        <span>Hard-to-find drops</span>
+                      </div>
+                      <div className="arrow" aria-hidden="true">
+                        <span className="ico">
+                          <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M9 6l6 6-6 6"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
+
+                    <a className="quick" href="/shop/singles">
+                      <div>
+                        <b>Singles</b>
+                        <span>Chase + staples</span>
+                      </div>
+                      <div className="arrow" aria-hidden="true">
+                        <span className="ico">
+                          <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                              d="M9 6l6 6-6 6"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </span>
+                      </div>
+                    </a>
                   </div>
                 </div>
-              </aside>
-            </div>
-          </section>
 
-          <footer className="footer">
-            <div className="wrap foot">
-              <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
-              <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
-            </div>
-          </footer>
-        </div>
-      </main>
-    </div>
+                <aside className="heroRight" aria-label="Featured card">
+                  <div className="cardFrameLegacy" role="img" aria-label="Crystal Card Keep featured card">
+                    <div className="cardStageLegacy">
+                      <img className="cardImgLegacy" src={featuredCard} alt="The Crystal Card Keep card" />
+                      <div className="cardShineLegacy" aria-hidden="true" />
+                      <div className="cardEdgeLegacy" aria-hidden="true" />
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </section>
+
+            <footer className="footer">
+              <div className="wrap foot">
+                <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
+                <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
+              </div>
+            </footer>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 }
-
