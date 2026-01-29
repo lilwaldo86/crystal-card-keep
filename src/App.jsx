@@ -8,8 +8,7 @@ export default function App() {
   const bgBack = "/img/crystal-card-keep-bc-back.png";
   const bgFront = "/img/crystal-card-keep-bc-front.png";
 
-  // Featured card image (you can point this at whichever looks best)
-  // If you have a dedicated full card asset, swap it here.
+  // Featured card image
   const featuredCard = "/img/crystal-card-keep-bc-front.png";
 
   function SiteHeader() {
@@ -32,14 +31,7 @@ export default function App() {
             <Link to="/contact">Contact</Link>
           </nav>
 
-          <div className="navActions">
-            <a className="btn" href="/sell">
-              Sell to us
-            </a>
-            <a className="btn primary" href="/shop">
-              Shop
-            </a>
-          </div>
+          {/* Intentionally removed: redundant header action bubbles (Sell to us / Shop) */}
         </div>
       </header>
     );
@@ -120,14 +112,20 @@ export default function App() {
                       Sell to us
                     </a>
                   </div>
-
-                  {/* Removed the 3 large quick tiles (Pokémon / One Piece / Singles) — pills above are enough */}
                 </div>
 
                 <aside className="heroRight" aria-label="Featured card">
-                  <div className="cardFrameLegacy" role="img" aria-label="Crystal Card Keep featured card">
+                  <div
+                    className="cardFrameLegacy"
+                    role="img"
+                    aria-label="Crystal Card Keep featured card"
+                  >
                     <div className="cardStageLegacy">
-                      <img className="cardImgLegacy" src={featuredCard} alt="The Crystal Card Keep card" />
+                      <img
+                        className="cardImgLegacy"
+                        src={featuredCard}
+                        alt="The Crystal Card Keep card"
+                      />
                       <div className="cardShineLegacy" aria-hidden="true" />
                       <div className="cardEdgeLegacy" aria-hidden="true" />
                     </div>
@@ -151,7 +149,20 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route
+        path="/contact"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Contact />
+              </div>
+            </main>
+          </div>
+        }
+      />
     </Routes>
   );
 }
