@@ -29,7 +29,7 @@ export default function Affiliates() {
       <div className="heroInner">
         <div className="heroLeft">
           <h1 className="heroTitle">Affiliates</h1>
-          <p className="heroSubline">Trusted shops and tools we like (links coming soon).</p>
+          <p className="heroSubline">Restocks. Deals. Streams. All killer, no filler.</p>
 
           <div className="affiliatesList" role="list">
             {affiliates.map((a) => (
@@ -49,5 +49,6 @@ export default function Affiliates() {
     </section>
   );
 }
+
 
 
