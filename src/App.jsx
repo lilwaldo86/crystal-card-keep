@@ -2,6 +2,8 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Contact from "./pages/Contact.jsx";
+import Affiliates from "./pages/Affiliates.jsx";
+import Shop from "./pages/Shop.jsx";
 
 export default function App() {
   // Background layers (make sure these exist in /public/img)
@@ -29,6 +31,7 @@ export default function App() {
             <a href="/trade">Trade</a>
             <a href="/live">Live</a>
             <Link to="/contact">Contact</Link>
+            <Link to="/affiliates">Affiliates</Link>
           </nav>
 
           {/* Intentionally removed: redundant header action bubbles (Sell to us / Shop) */}
@@ -163,6 +166,35 @@ export default function App() {
           </div>
         }
       />
+      <Route
+        path="/affiliates"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Affiliates />
+              </div>
+            </main>
+          </div>
+        }
+      />
+      <Route
+        path="/shop"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Shop />
+              </div>
+            </main>
+          </div>
+        }
+      />
     </Routes>
   );
 }
+

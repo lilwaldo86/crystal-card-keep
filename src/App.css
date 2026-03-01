@@ -525,3 +525,67 @@ a:hover{ text-decoration:none; }
     padding: 12px 14px;
   }
 }
+/* CKK_AFFILIATES_AND_SHOP_DESKTOP
+   Scope: Desktop only. Mobile untouched.
+   Note: Do not rewrite App.css wholesale. Append-only block. */
+@media (min-width: 1024px) {
+  /* Affiliates */
+  .affiliatesList { margin-top: 18px; display: grid; gap: 12px; }
+  .affiliateCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 14px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+  }
+  .affiliateName { font-weight: 700; letter-spacing: 0.2px; }
+  .affiliateDesc { opacity: 0.9; margin-top: 4px; }
+  .affiliateBtn { white-space: nowrap; }
+
+  /* Shop */
+  .shopControls {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .shopFilters { display: flex; gap: 10px; flex-wrap: wrap; }
+  .shopPill.isActive { outline: 2px solid rgba(255,255,255,0.25); }
+
+  .shopSort { display: inline-flex; align-items: center; gap: 10px; }
+  .shopSortLabel { opacity: 0.9; }
+  .shopSortSelect {
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 12px;
+  }
+
+  .shopGrid {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .productCard {
+    display: grid;
+    gap: 10px;
+    padding: 14px 14px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+  }
+  .productMedia {
+    height: 170px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .productMedia img { max-width: 100%; max-height: 100%; display: block; }
+  .productTitle { font-weight: 700; }
+  .productPrice { opacity: 0.95; }
+  .productBtn { width: 100%; }
+}
