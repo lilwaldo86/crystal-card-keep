@@ -579,3 +579,62 @@ a:hover{ text-decoration:none; }
 }
 /* === CONTACT DESKTOP FIT (ChatGPT) END === */
 
+
+/* CONTACT DESKTOP FIT (no-scroll) */
+@media (min-width: 980px) and (min-height: 720px) {
+  /* Keep the Contact hero within one viewport on desktop */
+  .contactHero {
+    /* prevents the whole page from needing to scroll just to hit Send */
+    min-height: calc(100vh - 140px);
+    max-height: calc(100vh - 140px);
+    overflow: hidden;
+  }
+
+  /* Tighten inner spacing (desktop only) */
+  .contactHero .heroInner {
+    padding-top: 28px;
+    padding-bottom: 18px;
+  }
+
+  /* Shrink the big "Contact" title on desktop */
+  .contactHero .heroTitle {
+    font-size: clamp(40px, 4.2vw, 58px);
+    margin: 0 0 10px 0;
+    line-height: 1.05;
+  }
+
+  /* Reduce vertical space used by the grid/cards */
+  .contactHero .contactGrid {
+    gap: 18px;
+    margin-top: 10px;
+  }
+
+  .contactHero .contactCard {
+    padding: 18px 18px;
+  }
+
+  /* Form: tighten controls so the button stays above fold */
+  .contactHero .contactForm input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .contactHero .contactForm textarea {
+    min-height: 120px;
+    max-height: 140px;
+    resize: none;
+  }
+
+  /* Turnstile eats a lot of height — slightly scale on desktop only */
+  .contactHero .cf-turnstile {
+    transform: scale(0.92);
+    transform-origin: left top;
+    margin-top: 10px;
+  }
+
+  /* Slightly tighten message spacing */
+  .contactHero .contactForm small {
+    margin-top: 6px;
+    display: block;
+  }
+}
