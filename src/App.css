@@ -459,6 +459,32 @@ a:hover{ text-decoration:none; }
 }
 /* CKK_CONTACT_DESKTOP_FIX */
 @media (min-width: 900px) {
+  /* Make sure the hero container itself never clips taller content */
+  .hero[aria-label="Contact"] {
+    min-height: calc(100vh - 120px);
+    padding-bottom: 48px;
+  }
+
+  /* Give the contact hero inner container extra bottom padding so the right column never gets clipped */
+  .hero[aria-label="Contact"] .heroInner.contactInner {
+    padding-bottom: 120px;
+  }
+
+  /* Ensure grid/cards can fully render without getting visually cut at the hero edge */
+  .hero[aria-label="Contact"] .contactGrid {
+    align-items: stretch;
+  }
+
+  .hero[aria-label="Contact"] .contactCard {
+    overflow: visible;
+  }
+
+  /* Turnstile spacing so it doesn't sit on the edge of the panel */
+  .hero[aria-label="Contact"] .cf-turnstile {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
   /* Give the contact hero inner container extra bottom padding so the right column never gets clipped */
   .hero .heroInner.contactInner {
     padding-bottom: 56px;
