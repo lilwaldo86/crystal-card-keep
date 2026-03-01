@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -456,4 +456,26 @@ a:hover{ text-decoration:none; }
   .cardStageLegacy{ width: min(300px, 78vw); --card-tilt-y: 8deg; --card-tilt-z: -18deg; }
 
   .foot{ flex-direction:column; gap:6px; }
+}
+/* CKK_CONTACT_DESKTOP_FIX */
+@media (min-width: 900px) {
+  /* Give the contact hero inner container extra bottom padding so the right column never gets clipped */
+  .hero .heroInner.contactInner {
+    padding-bottom: 56px;
+  }
+
+  /* Ensure grid/cards can fully render without getting visually cut at the hero edge */
+  .hero .contactGrid {
+    align-items: stretch;
+  }
+
+  .hero .contactCard {
+    overflow: visible;
+  }
+
+  /* Turnstile spacing so it doesn't sit on the edge of the panel */
+  .hero .cf-turnstile {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
 }
