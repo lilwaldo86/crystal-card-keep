@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -530,3 +530,52 @@ a:hover{ text-decoration:none; }
     margin-bottom: 14px;
   }
 }
+
+/* === CONTACT DESKTOP FIT (ChatGPT) START === */
+@media (min-width: 1024px) {
+  /* Apply ONLY to the Contact page */
+  .contactHero {
+    /* Keep the section from becoming taller than the viewport */
+    min-height: calc(100vh - 120px);
+  }
+
+  .contactHero .heroInner.contactInner {
+    padding-top: 24px;
+    padding-bottom: 18px;
+  }
+
+  .contactHero .contactTop {
+    margin-bottom: 10px;
+  }
+
+  /* Slightly reduce the big "Contact" title so everything fits */
+  .contactHero .heroTitle {
+    font-size: clamp(44px, 4vw, 58px);
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+
+  /* Tighten grid spacing so you don't have to scroll */
+  .contactHero .contactGrid {
+    margin-top: 14px;
+    gap: 16px;
+  }
+
+  .contactHero .contactCard {
+    padding: 18px;
+  }
+
+  /* Reduce the form height on desktop */
+  .contactHero .contactForm textarea {
+    height: 135px;
+  }
+
+  /* Turnstile is tall; scaling it slightly helps fit without breaking mobile */
+  .contactHero .cf-turnstile {
+    transform: scale(0.92);
+    transform-origin: left top;
+    margin-top: 10px;
+  }
+}
+/* === CONTACT DESKTOP FIT (ChatGPT) END === */
+

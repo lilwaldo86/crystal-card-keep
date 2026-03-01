@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+﻿import React, { useEffect, useState } from "react";
 
 export default function Contact() {
   // Keep the same watermark/blur vibe as the home hero
@@ -60,7 +60,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="hero" aria-label="Contact">
+    <section className="hero contactHero" aria-label="Contact">
       <div
         className="heroBg heroBgBack"
         style={{ backgroundImage: `url(${bgBack})` }}
@@ -75,8 +75,7 @@ export default function Contact() {
       <div className="heroInner contactInner">
         <div className="contactTop">
           <h1 className="heroTitle">Contact</h1>
-          <p className="heroSubline">THE CRYSTAL CARD KEEP</p>
-        </div>
+</div>
 
         <div className="contactGrid">
           {/* LEFT: business info */}
@@ -154,3 +153,4 @@ export default function Contact() {
     </section>
   );
 }
+
