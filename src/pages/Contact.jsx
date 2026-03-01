@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Contact() {
   // Keep the same watermark/blur vibe as the home hero
@@ -63,12 +63,12 @@ export default function Contact() {
     <section className="hero" aria-label="Contact">
       <div
         className="heroBg heroBgBack"
-        style={{ backgroundImage: url() }}
+        style={{ backgroundImage: `url(${bgBack})` }}
         aria-hidden="true"
       />
       <div
         className="heroBg heroBgFront"
-        style={{ backgroundImage: url() }}
+        style={{ backgroundImage: `url(${bgBack})` }}
         aria-hidden="true"
       />
 
