@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Contact() {
   // Keep the same watermark/blur vibe as the home hero

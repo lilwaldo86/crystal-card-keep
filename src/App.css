@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -636,5 +636,70 @@ a:hover{ text-decoration:none; }
   .contactHero .contactForm small {
     margin-top: 6px;
     display: block;
+  }
+}
+
+
+/* === Contact page desktop-only fit (no scroll @ 1920x1080). Mobile untouched. === */
+@media (min-width: 1100px) and (min-height: 700px) {
+
+  /* Full-bleed the watermarked panel inside the narrow .wrap (24px gutters ~ 0.25") */
+  .hero.contactHero{
+    width: calc(100vw - 48px);
+    margin-left: calc(50% - 50vw + 24px);
+    margin-right: calc(50% - 50vw + 24px);
+
+    /* Fit within viewport so Contact never requires scroll */
+    height: calc(100vh - 140px);        /* header + main padding buffer */
+    max-height: calc(100vh - 140px);
+    min-height: 0;
+  }
+
+  /* Tighten inner padding so everything fits */
+  .hero.contactHero .heroInner{
+    padding: 18px 24px 16px;
+    height: 100%;
+  }
+
+  /* Shrink "Contact" title (desktop only) */
+  .hero.contactHero .heroTitle{
+    font-size: 52px;
+    line-height: 1.02;
+    margin: 0 0 8px;
+  }
+
+  /* Hide any subline if it exists (extra safety) */
+  .hero.contactHero .heroSubline{
+    display: none !important;
+  }
+
+  /* Reduce vertical spacing so the form + Turnstile + button fit with no scroll */
+  .hero.contactHero .contactGrid{
+    margin-top: 0;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .hero.contactHero .contactCard{
+    padding: 18px;
+  }
+
+  .hero.contactHero .contactForm input{
+    padding: 12px 14px;
+  }
+
+  .hero.contactHero .contactForm textarea{
+    min-height: 120px;
+  }
+
+  /* Turnstile is big; scale slightly on desktop so button stays visible */
+  .hero.contactHero .cf-turnstile{
+    margin-top: 10px;
+    transform: scale(0.94);
+    transform-origin: left top;
+  }
+
+  .hero.contactHero .btn.primary{
+    padding: 12px 16px;
   }
 }
