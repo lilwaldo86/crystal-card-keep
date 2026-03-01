@@ -19,7 +19,7 @@ export default function Affiliates() {
     },
     {
       name: "Mandingo6420 — Whatnot Stream",
-      desc: "My business partner’s live stream — singles, sealed, and stream deals.",
+      desc: "The Crystal Card Keep's very own Mandingo quickfiring off singles, slabs, and big hits!",
       href: "https://www.whatnot.com/user/mandingo6420?app=android&sender_id=22337761&sharing_channel=copylink",
     },
   ];
@@ -49,4 +49,5 @@ export default function Affiliates() {
     </section>
   );
 }
+
 
