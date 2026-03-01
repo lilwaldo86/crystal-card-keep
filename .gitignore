@@ -2,3 +2,7 @@ node_modules
 dist
 .env
 .DS_Store
+
+_CHATGPT_UPLOAD/
+_CHATGPT_UPLOAD.zip
+_live_index.js
