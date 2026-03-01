@@ -1,0 +1,7 @@
+﻿name = "crystal-card-keep"
+compatibility_date = "2024-12-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "crystal_card_keep_messages"
+database_id = "62cf09cf-681b-48ec-8027-64596eede17f"
