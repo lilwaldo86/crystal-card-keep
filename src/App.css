@@ -457,249 +457,71 @@ a:hover{ text-decoration:none; }
 
   .foot{ flex-direction:column; gap:6px; }
 }
-/* CKK_CONTACT_DESKTOP_FIX */
-@media (min-width: 900px) {
-  /* IMPORTANT: do NOT force the Contact hero to be viewport-tall.
-     That was causing the watermark/blur to look like it 'covered the whole site'. */
-  .hero[aria-label="Contact"] {
-    min-height: unset !important;
-    height: auto !important;
-    padding-bottom: 0 !important;
-  }
 
-  /* The clipping is caused by the rounded hero container + Turnstile adding height.
-     Fix by guaranteeing enough internal bottom padding for the Contact layout. */
-  .hero[aria-label="Contact"] .heroInner.contactInner {
-    padding-bottom: 220px !important;
-  }
-
-  /* Extra safety: give the grid a little breathing room at the bottom */
-  .hero[aria-label="Contact"] .contactGrid {
-    margin-bottom: 18px !important;
-  }
-
-  /* Turnstile spacing so it never sits on the edge */
-  .hero[aria-label="Contact"] .cf-turnstile {
-    margin-top: 16px !important;
-    margin-bottom: 16px !important;
-  }
-}
-  /* Make sure the hero container itself never clips taller content */
-  .hero[aria-label="Contact"] {
-    min-height: calc(100vh - 120px);
-    padding-bottom: 48px;
-  }
-
-  /* Give the contact hero inner container extra bottom padding so the right column never gets clipped */
-  .hero[aria-label="Contact"] .heroInner.contactInner {
-    padding-bottom: 120px;
-  }
-
-  /* Ensure grid/cards can fully render without getting visually cut at the hero edge */
-  .hero[aria-label="Contact"] .contactGrid {
-    align-items: stretch;
-  }
-
-  .hero[aria-label="Contact"] .contactCard {
-    overflow: visible;
-  }
-
-  /* Turnstile spacing so it doesn't sit on the edge of the panel */
-  .hero[aria-label="Contact"] .cf-turnstile {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-}
-  /* Give the contact hero inner container extra bottom padding so the right column never gets clipped */
-  .hero .heroInner.contactInner {
-    padding-bottom: 56px;
-  }
-
-  /* Ensure grid/cards can fully render without getting visually cut at the hero edge */
-  .hero .contactGrid {
-    align-items: stretch;
-  }
-
-  .hero .contactCard {
-    overflow: visible;
-  }
-
-  /* Turnstile spacing so it doesn't sit on the edge of the panel */
-  .hero .cf-turnstile {
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-}
-
-/* === CONTACT DESKTOP FIT (ChatGPT) START === */
+/* CKK_CONTACT_DESKTOP_FIX_V2
+   Goal: 1920x1080 desktop fits in one viewport (no scroll)
+   Scope: Desktop only. Mobile untouched. */
 @media (min-width: 1024px) {
-  /* Apply ONLY to the Contact page */
-  .contactHero {
-    /* Keep the section from becoming taller than the viewport */
-    min-height: calc(100vh - 120px);
+  /* Pull the watermarked hero box up and tighten outer margins */
+  .contactHero.hero {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-height: calc(100vh - 88px); /* header allowance */
   }
 
+  /* Reduce "page margins" to ~0.25" feel */
   .contactHero .heroInner.contactInner {
-    padding-top: 24px;
-    padding-bottom: 18px;
-  }
-
-  .contactHero .contactTop {
-    margin-bottom: 10px;
-  }
-
-  /* Slightly reduce the big "Contact" title so everything fits */
-  .contactHero .heroTitle {
-    font-size: clamp(44px, 4vw, 58px);
-    line-height: 1.05;
-    margin-bottom: 6px;
-  }
-
-  /* Tighten grid spacing so you don't have to scroll */
-  .contactHero .contactGrid {
-    margin-top: 14px;
-    gap: 16px;
-  }
-
-  .contactHero .contactCard {
-    padding: 18px;
-  }
-
-  /* Reduce the form height on desktop */
-  .contactHero .contactForm textarea {
-    height: 135px;
-  }
-
-  /* Turnstile is tall; scaling it slightly helps fit without breaking mobile */
-  .contactHero .cf-turnstile {
-    transform: scale(0.92);
-    transform-origin: left top;
-    margin-top: 10px;
-  }
-}
-/* === CONTACT DESKTOP FIT (ChatGPT) END === */
-
-
-/* CONTACT DESKTOP FIT (no-scroll) */
-@media (min-width: 980px) and (min-height: 720px) {
-  /* Keep the Contact hero within one viewport on desktop */
-  .contactHero {
-    /* prevents the whole page from needing to scroll just to hit Send */
-    min-height: calc(100vh - 140px);
-    max-height: calc(100vh - 140px);
-    overflow: hidden;
-  }
-
-  /* Tighten inner spacing (desktop only) */
-  .contactHero .heroInner {
-    padding-top: 28px;
-    padding-bottom: 18px;
-  }
-
-  /* Shrink the big "Contact" title on desktop */
-  .contactHero .heroTitle {
-    font-size: clamp(40px, 4.2vw, 58px);
-    margin: 0 0 10px 0;
-    line-height: 1.05;
-  }
-
-  /* Reduce vertical space used by the grid/cards */
-  .contactHero .contactGrid {
-    gap: 18px;
-    margin-top: 10px;
-  }
-
-  .contactHero .contactCard {
+    margin: 10px auto 0;
+    max-width: 1480px;
     padding: 18px 18px;
   }
 
-  /* Form: tighten controls so the button stays above fold */
-  .contactHero .contactForm input {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .contactHero .contactForm textarea {
-    min-height: 120px;
-    max-height: 140px;
-    resize: none;
-  }
-
-  /* Turnstile eats a lot of height — slightly scale on desktop only */
-  .contactHero .cf-turnstile {
-    transform: scale(0.92);
-    transform-origin: left top;
-    margin-top: 10px;
-  }
-
-  /* Slightly tighten message spacing */
-  .contactHero .contactForm small {
-    margin-top: 6px;
-    display: block;
-  }
-}
-
-
-/* === Contact page desktop-only fit (no scroll @ 1920x1080). Mobile untouched. === */
-@media (min-width: 1100px) and (min-height: 700px) {
-
-  /* Full-bleed the watermarked panel inside the narrow .wrap (24px gutters ~ 0.25") */
-  .hero.contactHero{
-    width: calc(100vw - 48px);
-    margin-left: calc(50% - 50vw + 24px);
-    margin-right: calc(50% - 50vw + 24px);
-
-    /* Fit within viewport so Contact never requires scroll */
-    height: calc(100vh - 140px);        /* header + main padding buffer */
-    max-height: calc(100vh - 140px);
-    min-height: 0;
-  }
-
-  /* Tighten inner padding so everything fits */
-  .hero.contactHero .heroInner{
-    padding: 18px 24px 16px;
-    height: 100%;
-  }
-
-  /* Shrink "Contact" title (desktop only) */
-  .hero.contactHero .heroTitle{
-    font-size: 52px;
+  /* Make title smaller so it stops stealing vertical space */
+  .contactHero .heroTitle {
+    font-size: 64px;
     line-height: 1.02;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
   }
 
-  /* Hide any subline if it exists (extra safety) */
-  .hero.contactHero .heroSubline{
-    display: none !important;
+  /* Tighten the top section spacing */
+  .contactHero .contactTop {
+    margin-bottom: 12px;
   }
 
-  /* Reduce vertical spacing so the form + Turnstile + button fit with no scroll */
-  .hero.contactHero .contactGrid{
-    margin-top: 0;
+  /* Grid: keep roomy horizontally, tighter vertically */
+  .contactHero .contactGrid {
     gap: 18px;
     align-items: start;
   }
 
-  .hero.contactHero .contactCard{
-    padding: 18px;
+  /* Cards: reduce padding slightly to reclaim height */
+  .contactHero .contactCard {
+    padding: 16px 16px;
   }
 
-  .hero.contactHero .contactForm input{
-    padding: 12px 14px;
+  /* Right form: tighten control heights so Turnstile + button fit */
+  .contactHero .contactForm {
+    gap: 10px;
   }
 
-  .hero.contactHero .contactForm textarea{
-    min-height: 120px;
+  .contactHero .contactForm input {
+    height: 42px;
+    padding: 10px 12px;
   }
 
-  /* Turnstile is big; scale slightly on desktop so button stays visible */
-  .hero.contactHero .cf-turnstile{
-    margin-top: 10px;
-    transform: scale(0.94);
+  .contactHero .contactForm textarea {
+    min-height: 118px; /* key: prevents scroll */
+    padding: 10px 12px;
+  }
+
+  /* Turnstile: scale down just a bit so it doesn’t force scrolling */
+  .contactHero .cf-turnstile {
+    transform: scale(0.90);
     transform-origin: left top;
   }
 
-  .hero.contactHero .btn.primary{
-    padding: 12px 16px;
+  /* Button: slightly tighter */
+  .contactHero .btn.primary {
+    padding: 12px 14px;
   }
 }
