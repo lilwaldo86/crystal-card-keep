@@ -8,5 +8,3 @@ pages_build_output_dir = "dist"
 binding = "DB"
 database_name = "crystal_card_keep_messages"
 database_id = "62cf09cf-681b-48ec-8027-64596eede17f"
-# deploy-trigger 2026-03-01T12:55:19
-
