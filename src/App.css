@@ -459,6 +459,31 @@ a:hover{ text-decoration:none; }
 }
 /* CKK_CONTACT_DESKTOP_FIX */
 @media (min-width: 900px) {
+  /* IMPORTANT: do NOT force the Contact hero to be viewport-tall.
+     That was causing the watermark/blur to look like it 'covered the whole site'. */
+  .hero[aria-label="Contact"] {
+    min-height: unset !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* The clipping is caused by the rounded hero container + Turnstile adding height.
+     Fix by guaranteeing enough internal bottom padding for the Contact layout. */
+  .hero[aria-label="Contact"] .heroInner.contactInner {
+    padding-bottom: 220px !important;
+  }
+
+  /* Extra safety: give the grid a little breathing room at the bottom */
+  .hero[aria-label="Contact"] .contactGrid {
+    margin-bottom: 18px !important;
+  }
+
+  /* Turnstile spacing so it never sits on the edge */
+  .hero[aria-label="Contact"] .cf-turnstile {
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+  }
+}
   /* Make sure the hero container itself never clips taller content */
   .hero[aria-label="Contact"] {
     min-height: calc(100vh - 120px);
