@@ -135,10 +135,7 @@ export default function Contact() {
                   required
                 />
 
-                <div
-                  className="cf-turnstile"
-                  data-sitekey="0x4AAAAAACkf8vOsYYjXuW7-"
-                ></div>
+                <div className="cf-turnstile" data-sitekey="0x4AAAAAACkf8vOsYYjXuW7-"></div>
 
                 <button type="submit" className="btn primary" style={{ width: "100%" }} disabled={sending}>
                   {sending ? "Sending..." : "Send message"}
