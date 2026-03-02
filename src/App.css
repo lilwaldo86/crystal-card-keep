@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -37,7 +37,6 @@ body{
 }
 
 a{ color:inherit; text-decoration:none; }
-a:hover{ text-decoration:none; }
 
 .wrap{
   width:min(1180px, calc(100% - 48px));
@@ -459,8 +458,6 @@ a:hover{ text-decoration:none; }
 }
 
 /* CKK_CONTACT_DESKTOP_FIX_V2
-   Goal: 1920x1080 desktop fits in one viewport (no scroll)
-   Scope: Desktop only. Mobile untouched. */
 @media (min-width: 1024px) {
   /* Pull the watermarked hero box up and tighten outer margins */
   .contactHero.hero {
@@ -514,7 +511,7 @@ a:hover{ text-decoration:none; }
     padding: 10px 12px;
   }
 
-  /* Turnstile: scale down just a bit so it doesn’t force scrolling */
+  /* Turnstile: scale down just a bit so it doesnâ€™t force scrolling */
   .contactHero .cf-turnstile {
     transform: scale(0.90);
     transform-origin: left top;
@@ -524,10 +521,7 @@ a:hover{ text-decoration:none; }
   .contactHero .btn.primary {
     padding: 12px 14px;
   }
-}
 /* CKK_AFFILIATES_AND_SHOP_DESKTOP
-   Scope: Desktop only. Mobile untouched.
-   Note: Do not rewrite App.css wholesale. Append-only block. */
 @media (min-width: 1024px) {
   /* Affiliates */
   .affiliatesList { margin-top: 18px; display: grid; gap: 12px; }
@@ -588,4 +582,1092 @@ a:hover{ text-decoration:none; }
   .productTitle { font-weight: 700; }
   .productPrice { opacity: 0.95; }
   .productBtn { width: 100%; }
+
+/* Make the watermarked card area the scroll container */
+  .shopHero .heroInner {
+    margin: 10px auto 0;
+    max-width: 1480px;
+    height: calc(100vh - 140px); /* tuned for 1920x1080 */
+    overflow: auto;
+    padding-right: 6px; /* tiny room for scrollbar */
+  }
+
+  .shopTabs { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+.shopSectionHead {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  /* Smaller, thumbprint-style set tiles */
+  .setGrid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .setTile {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 54px 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+  }
+  .setTile.isActive { outline: 2px solid rgba(255,255,255,0.22); }
+
+  .setImg {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .setImg img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .setName { font-weight: 800; font-size: 14px; line-height: 1.1; }
+  .setDate { opacity: 0.8; font-size: 12px; margin-top: 2px; }
+
+  .categoryRow { margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .shopCategory { opacity: 0.95; }
+
+  .productGrid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .productMeta { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  .setGrid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .setTile {
+    text-align: left;
+    display: grid;
+    gap: 10px;
+    padding: 12px 12px;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+  }
+  .setTile.isActive { outline: 2px solid rgba(255,255,255,0.22); }
+
+  .setImg {
+    height: 120px;
+    border-radius: 12px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .setImg img { max-width: 100%; max-height: 100%; display: block; }
+
+  .setName { font-weight: 800; }
+  .setDate { opacity: 0.8; font-size: 13px; margin-top: 2px; }
+
+  .categoryRow { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .shopCategory { opacity: 0.95; }
+
+  .productGrid {
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+  .productMeta { opacity: 0.85; font-size: 13px; margin-top: 4px; }
+
+  .shopHero .heroInner {
+    margin: 10px auto 0;
+    max-width: 1480px;
+    height: calc(100vh - 140px);
+    overflow: auto;
+    padding-right: 10px;
+  }
+
+  /* Make tab rows span across the watermark card */
+  .shopTabs, .shopGroupTabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .pillBtn {
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.25);
+    color: rgba(255,255,255,0.92);
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.35);
+  }
+
+.shopSectionHead {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  /* Set list rows (clean + readable) */
+  .setList { margin-top: 12px; display: grid; gap: 10px; }
+
+  .setRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    text-align: left;
+  }
+  .setRow:hover { border-color: rgba(255,255,255,0.20); }
+
+  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
+  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .setRowText { display: grid; gap: 2px; min-width: 0; }
+  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .setRowMeta { opacity: 0.8; font-size: 12px; }
+
+  .setRowRight {
+    opacity: 0.9;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.18);
+  }
+
+  .emptyNote { opacity: 0.85; padding: 14px; }
+
+/* CKK_SHOP_TABS_MATCH_PILLS
+@media (min-width: 1024px) {
+  .pillBtn {
+    /* match pill vibe */
+  .pillBtn:hover {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.28);
+    transform: translateY(-1px);
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.28);
+    background: rgba(0,0,0,0.34);
+  }
+  .pillBtn:focus { outline: none; }
+  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
+
+/* CKK_SHOP_TABS_PILLBTN_GLOBAL
+.pillBtn{
+.pillBtn:hover{
+.pillBtn.isActive{
+.pillBtn:focus{ outline:none; }
+.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
+
+  .shopHero .heroInner {
+
+  /* Make tab rows span across the watermark card */
+  .shopTabs, .shopGroupTabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .pillBtn {
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.25);
+    color: rgba(255,255,255,0.92);
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.35);
+  }
+
+.shopSectionHead {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  /* Set list rows (clean + readable) */
+  .setList { margin-top: 12px; display: grid; gap: 10px; }
+
+  .setRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    text-align: left;
+  }
+  .setRow:hover { border-color: rgba(255,255,255,0.20); }
+
+  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
+  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .setRowText { display: grid; gap: 2px; min-width: 0; }
+  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .setRowMeta { opacity: 0.8; font-size: 12px; }
+
+  .setRowRight {
+    opacity: 0.9;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.18);
+  }
+
+  .emptyNote { opacity: 0.85; padding: 14px; }
+
+/* CKK_SHOP_TABS_MATCH_PILLS
+@media (min-width: 1024px) {
+  .pillBtn {
+    /* match pill vibe */
+  .pillBtn:hover {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.28);
+    transform: translateY(-1px);
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.28);
+    background: rgba(0,0,0,0.34);
+  }
+  .pillBtn:focus { outline: none; }
+  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
+
+/* CKK_SHOP_TABS_PILLBTN_GLOBAL
+.pillBtn{
+.pillBtn:hover{
+.pillBtn.isActive{
+.pillBtn:focus{ outline:none; }
+.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
+
+  .shopHero .heroInner {
+
+  /* Make tab rows span across the watermark card */
+  .shopTabs, .shopGroupTabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .pillBtn {
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.25);
+    color: rgba(255,255,255,0.92);
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.35);
+  }
+
+.shopSectionHead {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  /* Set list rows (clean + readable) */
+  .setList { margin-top: 12px; display: grid; gap: 10px; }
+
+  .setRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    text-align: left;
+  }
+  .setRow:hover { border-color: rgba(255,255,255,0.20); }
+
+  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
+  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .setRowText { display: grid; gap: 2px; min-width: 0; }
+  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .setRowMeta { opacity: 0.8; font-size: 12px; }
+
+  .setRowRight {
+    opacity: 0.9;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.18);
+  }
+
+  .emptyNote { opacity: 0.85; padding: 14px; }
+
+/* CKK_SHOP_TABS_MATCH_PILLS
+@media (min-width: 1024px) {
+  .pillBtn {
+    /* match pill vibe */
+  .pillBtn:hover {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.28);
+    transform: translateY(-1px);
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.28);
+    background: rgba(0,0,0,0.34);
+  }
+  .pillBtn:focus { outline: none; }
+  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
+
+/* CKK_SHOP_TABS_PILLBTN_GLOBAL
+.pillBtn{
+.pillBtn:hover{
+.pillBtn.isActive{
+.pillBtn:focus{ outline:none; }
+.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
+
+  .shopHero .heroInner {
+
+  /* Make tab rows span across the watermark card */
+  .shopTabs, .shopGroupTabs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .pillBtn {
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.25);
+    color: rgba(255,255,255,0.92);
+    border-radius: 999px;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.35);
+  }
+
+.shopSectionHead {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
+  .shopSectionHint { opacity: 0.85; font-size: 14px; }
+
+  /* Set list rows (clean + readable) */
+  .setList { margin-top: 12px; display: grid; gap: 10px; }
+
+  .setRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(0,0,0,0.22);
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    text-align: left;
+  }
+  .setRow:hover { border-color: rgba(255,255,255,0.20); }
+
+  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
+  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .setRowText { display: grid; gap: 2px; min-width: 0; }
+  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .setRowMeta { opacity: 0.8; font-size: 12px; }
+
+  .setRowRight {
+    opacity: 0.9;
+    font-weight: 700;
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.18);
+  }
+
+  .emptyNote { opacity: 0.85; padding: 14px; }
+
+/* CKK_SHOP_TABS_MATCH_PILLS
+@media (min-width: 1024px) {
+  .pillBtn {
+    /* match pill vibe */
+  .pillBtn:hover {
+    border-color: rgba(255,255,255,0.22);
+    background: rgba(0,0,0,0.28);
+    transform: translateY(-1px);
+  }
+  .pillBtn.isActive {
+    border-color: rgba(255,255,255,0.28);
+    background: rgba(0,0,0,0.34);
+  }
+  .pillBtn:focus { outline: none; }
+  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
+
+/* CKK_SHOP_TABS_PILLBTN_GLOBAL
+.pillBtn{
+.pillBtn:hover{
+.pillBtn.isActive{
+.pillBtn:focus{ outline:none; }
+.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
+
+/* CKK_HERO_CARD_STANDARD
+   Shared watermark "card" margins so pages match Home.
+.heroCardStandard .heroInner{
+
+/* Desktop: match Home card placement more closely */
+@media (min-width: 1024px){
+  .heroCardStandard .heroInner{
+    margin: 18px auto 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
+/* CKK_WRAP_WIDE_V1
+   Mobile untouched. Global .wrap untouched. */
+@media (min-width: 1024px){
+  .wrap.wrapWide{
+    width: min(1480px, calc(100% - 48px));
+    margin: 0 auto;
+  }
+}
+
+/* CKK_SHOP_QUICKPICKS */
+.shopRight{
+  display:flex;
+  justify-content:flex-start;
+}
+
+.shopQuickPicks{
+  width: 100%;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.shopPickBlock{
+  padding: 12px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.16);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+}
+
+.shopPickTitle{
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+
+.shopPickRow{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shopPickHint{
+  opacity: 0.82;
+  line-height: 1.35;
+}
+
+/* CKK_SHOP_HEADER_CENTER */
+/* Shop page: center title, reduce top padding, keep responsive safe */
+.shopHero .heroInner{
+  /* move content up a bit (was 34px default) */
+  padding-top: 22px;
+}
+
+/* Center the left header block (Shop + tagline) */
+.shopHero .shopHeaderLeft{
+  text-align: center;
+}
+
+/* Pull the title up (reduce default margins) */
+.shopHero .heroTitle{
+  margin: 0 0 8px;
+}
+
+/* Keep tagline tight */
+.shopHero .heroSubline{
+  margin: 0 0 14px;
+}
+
+/* Make right-side group headings look like pills */
+.shopHero .pillSectionHeader{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Slightly “header-ish” pill (same family as pillBtn) */
+.shopHero .pillBtn.pillHeader{
+  pointer-events: none;
+  cursor: default;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+/* Mobile: don't force extra top padding */
+@media (max-width: 980px){
+  .shopHero .heroInner{
+    padding-top: 18px;
+  }
+  .shopHero .shopHeaderLeft{
+    text-align: left;
+  }
+}
+
+/* CKK_SHOP_PILL_HEADERS_V2 */
+.shopHero .pillSectionHeader{
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 10px;
+}
+.shopHero .pillBtn.pillHeader{
+  pointer-events: none;
+  cursor: default;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  opacity: 0.95;
+}
+
+/* CKK_SHOP_CENTER_HEADER_TABS_UNDER_V1 */
+/* Shop: move content up inside watermark card */
+.shopHero .heroInner{
+  padding-top: 14px; /* was 22/34 in various blocks */
+}
+
+/* Center the Shop title + subline only */
+.shopHero .shopHeaderCenter{
+  text-align: center;
+}
+.shopHero .heroTitle{
+  margin: 0 0 6px;
+}
+.shopHero .heroSubline{
+  margin: 0 0 12px;
+}
+
+/* Tabs live UNDER the header and start on the left */
+.shopHero .shopTabs{
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 6px;
+}
+
+/* Section headers are pill buttons (clickable) */
+.shopHero .pillBtn.pillHeader{
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  opacity: 0.98;
+}
+
+/* Mobile-safe: keep breathing room */
+@media (max-width: 980px){
+  .shopHero .heroInner{
+    padding-top: 16px;
+  }
+  .shopHero .shopHeaderCenter{
+    text-align: left;
+  }
+}
+
+/* CKK_SHOP_LAYOUT_V3 */
+/* Goal: /shop is NOT scrollable inside the hero card. Single-column flow. Fits at 1080p. */
+.shopHero .heroInner.shopHeroInner{
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+}
+
+/* Compact, centered header pushed upward */
+.shopHeroInner .shopHeader{
+  text-align: center;
+  margin-top: -6px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+.shopHeroInner .shopTitle{
+  margin: 0;
+  padding: 0;
+}
+
+.shopHeroInner .shopTagline{
+  margin: 8px auto 0;
+  max-width: 900px;
+  opacity: 0.92;
+}
+
+/* Bubble tabs: left-aligned under centered tagline (not jammed right) */
+.shopHeroInner .shopTabs{
+  margin: 12px 0 0;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Tab pills */
+.shopHeroInner .shopTab{
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(10,10,14,0.35);
+  color: rgba(255,255,255,0.92);
+  border-radius: 999px;
+  padding: 10px 14px;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.shopHeroInner .shopTab:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.26);
+  background: rgba(10,10,14,0.48);
+}
+
+.shopHeroInner .shopTab.isActive{
+  border-color: rgba(255,255,255,0.38);
+  background: rgba(10,10,14,0.62);
+}
+
+/* Sections flow */
+.shopHeroInner .shopSections{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+/* Subtle active emphasis (does NOT create a side panel) */
+.shopHeroInner .shopSection{
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(10,10,14,0.22);
+  border-radius: 18px;
+  padding: 12px 12px 14px;
+}
+
+.shopHeroInner .shopSection.isActive{
+  border-color: rgba(255,255,255,0.18);
+  background: rgba(10,10,14,0.28);
+}
+
+/* Set pills */
+.shopHeroInner .shopSetPills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.shopHeroInner .shopSetPill{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.18);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.93);
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.shopHeroInner .shopSetPill:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.24);
+  background: rgba(0,0,0,0.28);
+}
+
+.shopHeroInner .shopComingSoon{
+  margin: 10px 2px 0;
+  opacity: 0.85;
+}
+
+/* Keep hero card from internal overflow clipping weirdness */
+.shopHero{
+  overflow: hidden;
+}
+
+
+/* CKK_SHOP_LAYOUT_V4_NUKE */
+/* This block intentionally overrides ANY older two-column Shop hero layout + internal scrolling. */
+.shopHero .heroInner{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+
+  /* kill any grid leftovers */
+  grid-template-columns: none !important;
+  grid-template-rows: none !important;
+}
+
+/* Ensure header is centered, moved up, and stays compact */
+.shopHero .shopHeader{
+  text-align: center !important;
+  margin-top: -10px !important;
+  padding-top: 6px !important;
+  padding-bottom: 10px !important;
+}
+
+/* Tabs must be left-aligned under the centered tagline */
+.shopHero .shopTabs{
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  margin-top: 12px !important;
+}
+
+/* Force the sections to be in the main flow (no right panel) */
+.shopHero .shopSections{
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 14px !important;
+  margin-top: 10px !important;
+}
+
+/* If any legacy columns exist, hide them (safe even if not present) */
+.shopHero .shopRight,
+.shopHero .shopLeft,
+.shopHero .shopSidebar,
+.shopHero .rightPanel{
+  display: none !important;
+}
+
+
+/* CKK_SHOP_LAYOUT_V5_COLUMNS */
+/* Desktop: 4 columns. Tablet: 2 columns. Mobile: 1 column. Compact so nothing feels cut off. */
+
+/* Kill any legacy internal scroll + grid leftovers */
+.shopHero .heroInner{
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  grid-template-columns: none !important;
+}
+
+/* Header spacing: less vertical waste */
+.shopHero .shopHeader{
+  text-align: center !important;
+  margin-top: -12px !important;
+  padding-top: 4px !important;
+  padding-bottom: 8px !important;
+}
+.shopHero .shopTagline{
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  max-width: 920px;
+}
+
+/* Tabs row: left aligned under centered header */
+.shopHero .shopTabs{
+  display: flex !important;
+  justify-content: flex-start !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  margin-top: 12px !important;
+}
+
+/* 4-column grid */
+.shopHero .shopGrid{
+  margin-top: 14px !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 14px !important;
+  align-items: start !important;
+}
+
+/* Column cards: compact, not full-width panels */
+.shopHero .shopCol{
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(10,10,14,0.22);
+  border-radius: 18px;
+  padding: 12px;
+}
+
+.shopHero .shopCol.isActive{
+  border-color: rgba(255,255,255,0.20);
+  background: rgba(10,10,14,0.28);
+}
+
+/* Column header */
+.shopHero .shopColHeader{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.shopHero .shopColTitle{
+  cursor: pointer;
+}
+
+/* Set pills stack naturally and wrap */
+.shopHero .shopSetPills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shopHero .shopSetPill{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.18);
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.93);
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.shopHero .shopSetPill:hover{
+  transform: translateY(-1px);
+  border-color: rgba(255,255,255,0.24);
+  background: rgba(0,0,0,0.28);
+}
+
+.shopHero .shopComingSoonWrap{
+  padding-top: 6px;
+}
+.shopHero .shopComingSoon{
+  margin: 0;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 1100px){
+  .shopHero .shopGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 620px){
+  .shopHero .shopGrid{
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* If any legacy right panel containers exist, hide them */
+.shopHero .shopRight,
+.shopHero .shopLeft,
+.shopHero .shopSidebar,
+.shopHero .rightPanel{
+  display: none !important;
+}
+
+
+/* CKK_SHOP_LAYOUT_V6_STACKED_SETS */
+/* Force each set pill to its own line (vertical stack per column) */
+
+.shopHero .shopSetPills{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 10px !important;
+}
+
+/* Make pills full-width inside column but not stretched ugly */
+.shopHero .shopSetPill{
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* CKK_SHOP_LAYOUT_V7_EQUAL_HEIGHT */
+/* Make all shop columns equal height and clean */
+
+.shopHero .shopGrid{
+  align-items: stretch !important;
+}
+
+.shopHero .shopCol{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Push content to top and allow equal fill */
+.shopHero .shopCol > *:last-child{
+  margin-bottom: 0;
+}
+
+/* Optional: ensure pills area grows evenly */
+.shopHero .shopSetPills{
+  flex-grow: 1;
+}
+
+
+
+/* CKK_AFFILIATES_BLURFIX_V1 */
+/* If any affiliate row/card accidentally uses filter: blur(), it will blur text.
+   Backdrop blur is fine; filter blur on the element is not. */
+.affiliatesHero .affiliateRow,
+.affiliatesHero .affiliateCard,
+.affiliatesHero .affiliateItem{
+  filter: none !important;
+}
+
+/* Specifically ensure first item is crisp */
+.affiliatesHero .affiliateRow:first-child,
+.affiliatesHero .affiliateCard:first-child,
+.affiliatesHero .affiliateItem:first-child{
+  filter: none !important;
+}
+
+/* CKK_HERO_WATERMARK_GLOBAL_V2_HOME_MATCH */
+/* Global watermark for any hero using .heroCardStandard (Home/Shop/Affiliates + future) */
+/* Uses the business card front/back from /public/img so Shop matches Home permanently. */
+
+.hero.heroCardStandard{
+  position: relative;
+}
+
+.hero.heroCardStandard .heroBgBack,
+.hero.heroCardStandard .heroBgFront{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero.heroCardStandard .heroBgBack{
+  background-image: url('/img/crystal-card-keep-bc-back.png');
+  opacity: 0.18;
+  transform: scale(1.02);
+}
+
+.hero.heroCardStandard .heroBgFront{
+  background-image: url('/img/crystal-card-keep-bc-front.png');
+  opacity: 0.08;
+  mix-blend-mode: screen;
+}
+
+.hero.heroCardStandard .heroInner{
+  position: relative;
+  z-index: 1;
+}
+/* /CKK_HERO_WATERMARK_GLOBAL_V2_HOME_MATCH */
+
+/* CKK_SHOP_BG_FINAL_V1 */
+/* Shop background (deterministic):
+   - Uses a REAL element with .heroBg (which already has blur in your CSS)
+   - Kills any ::before/::after art layers so nothing can override it
+   - Keeps business-card watermark layers (heroBgBack/heroBgFront) above it
+*/
+
+.shopHero{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kill any pseudo background layers that might be drawing crisp art */
+.shopHero::before,
+.shopHero::after{
+  content: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* The blurred art layer (THIS is what Home effectively does) */
+.shopHero .shopArtBg{
+  background-image: url("./assets/hero-card-art.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+
+  /* Make it obviously blurred */
+  filter: blur(26px) saturate(1.08) !important;
+  transform: scale(1.08) !important;
+  opacity: 0.34 !important;
+
+  /* Make sure it sits behind watermark + content */
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Watermark layers above blurred art */
+.shopHero .heroBgBack,
+.shopHero .heroBgFront{
+  z-index: 1 !important;
+}
+
+/* Content above all */
+.shopHero .heroInner{
+  position: relative !important;
+  z-index: 2 !important;
+}
+/* /CKK_SHOP_BG_FINAL_V1 */
+
