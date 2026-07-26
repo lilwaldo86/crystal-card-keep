@@ -6,3 +6,6 @@ dist
 _CHATGPT_UPLOAD/
 _CHATGPT_UPLOAD.zip
 _live_index.js
+
+# Local backup files
+*.bak*

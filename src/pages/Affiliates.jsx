@@ -1,6 +1,9 @@
 ﻿import React from "react";
 
 export default function Affiliates() {
+  // Hero watermark layers (same assets as Home)
+  const bgBack = "/img/crystal-card-keep-bc-back.png";
+  const bgFront = "/img/crystal-card-keep-bc-front.png";
     const affiliates = [
     {
       name: "PokePings Discord (Restock Alerts)",
@@ -25,7 +28,17 @@ export default function Affiliates() {
   ];
 
   return (
-    <section className="hero affiliatesHero" aria-label="Affiliates">
+    <section className="hero affiliatesHero heroCardStandard" aria-label="Affiliates">
+      <div
+        className="heroBg heroBgBack"
+        style={{ backgroundImage: `url(${bgBack})` }}
+        aria-hidden="true"
+      />
+      <div
+        className="heroBg heroBgFront"
+        style={{ backgroundImage: `url(${bgFront})` }}
+        aria-hidden="true"
+      />
       <div className="heroInner">
         <div className="heroLeft">
           <h1 className="heroTitle">Affiliates</h1>
@@ -49,6 +62,8 @@ export default function Affiliates() {
     </section>
   );
 }
+
+
 
 
 
