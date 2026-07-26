@@ -62,3 +62,40 @@ Branch: `sprint-0-baseline`
 ### Sprint 0 build result
 
 `npm run build` passed before this log was created.
+
+## Sprint 1 â€” Navigation and Route Stabilization
+
+Date: 2026-07-26
+Branch: `sprint-1-route-stabilization`
+Starting commit: `4b838c26cab62f830e5d3a247008947070393ca3`
+
+### Route inventory and decisions
+
+- `/` â€” Home; retained.
+- `/shop` â€” Shop; retained.
+- `/contact` â€” Contact; retained.
+- `/affiliates` â€” Affiliates; retained.
+- `/live` â€” restored using the existing compatible `Live.jsx` page.
+- `/sell` â€” deferred because no existing Sell page is present; misleading links removed.
+- `/trade` â€” deferred because no existing Trade page is present; misleading links removed.
+- `*` â€” branded not-found fallback added.
+
+### Navigation changes
+
+- Internal navigation now uses React Router links.
+- Desktop and mobile navigation expose only intentional registered destinations.
+- Home call-to-action links to missing Sell and Trade pages were removed.
+- Search remains visible and nonfunctional; implementation and redesign remain deferred for Prime review.
+
+### Direct loading
+
+- Existing `public/_redirects` SPA fallback supports direct URL loading and refresh on Cloudflare Pages.
+
+### Verification
+
+- Production build is run by the Sprint 1 installer.
+- Desktop Home, Shop, Live, Contact, and Affiliates navigation passed browser verification.
+- Mobile navigation was checked but does not scroll horizontally as expected, and the full hero does not fit correctly.
+- Christopher deferred all mobile corrections until the desktop site is otherwise ready.
+- The animated Crystal Card Keep logo card has clipped/incomplete borders; visual repair is deferred for one consolidated desktop/mobile correction.
+

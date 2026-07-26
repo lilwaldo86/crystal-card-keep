@@ -1,9 +1,10 @@
-﻿import React from "react";
+import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Contact from "./pages/Contact.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
 import Shop from "./pages/Shop.jsx";
+import Live from "./pages/Live.jsx";
 
 export default function App() {
   // Background layers (make sure these exist in /public/img)
@@ -26,10 +27,8 @@ export default function App() {
           </Link>
 
           <nav className="navLinks" aria-label="Primary navigation">
-            <a href="/shop">Shop</a>
-            <a href="/sell">Sell</a>
-            <a href="/trade">Trade</a>
-            <a href="/live">Live</a>
+            <Link to="/shop">Shop</Link>
+            <Link to="/live">Live</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/affiliates">Affiliates</Link>
           </nav>
@@ -102,18 +101,12 @@ export default function App() {
                   </div>
 
                   <div className="ctaRow">
-                    <a className="btn primary" href="/shop">
+                    <Link className="btn primary" to="/shop">
                       Browse inventory
-                    </a>
-                    <a className="btn" href="/live">
+                    </Link>
+                    <Link className="btn" to="/live">
                       Watch live
-                    </a>
-                    <a className="btn" href="/trade">
-                      Trade options
-                    </a>
-                    <a className="btn" href="/sell">
-                      Sell to us
-                    </a>
+                    </Link>
                   </div>
                 </div>
 
@@ -143,6 +136,37 @@ export default function App() {
                 <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
               </div>
             </footer>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  function NotFound() {
+    return (
+      <div className="appRoot">
+        <div className="gridOverlay" aria-hidden="true" />
+        <SiteHeader />
+        <main className="main">
+          <div className="wrap">
+            <section className="hero heroCardStandard" aria-label="Page not found">
+              <div className="heroInner">
+                <div className="heroLeft">
+                  <h1 className="heroTitle">Page Not Found</h1>
+                  <p className="heroSubline">
+                    This destination is not currently available.
+                  </p>
+                  <div className="ctaRow">
+                    <Link className="btn primary" to="/">
+                      Return home
+                    </Link>
+                    <Link className="btn" to="/shop">
+                      Visit shop
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
       </div>
@@ -194,6 +218,21 @@ export default function App() {
           </div>
         }
       />
+      <Route
+        path="/live"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Live />
+              </div>
+            </main>
+          </div>
+        }
+      />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
