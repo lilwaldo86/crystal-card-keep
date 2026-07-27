@@ -1,10 +1,10 @@
-﻿import React from "react";
+import React from "react";
 
 export default function Affiliates() {
   // Hero watermark layers (same assets as Home)
   const bgBack = "/img/crystal-card-keep-bc-back.png";
   const bgFront = "/img/crystal-card-keep-bc-front.png";
-    const affiliates = [
+  const affiliates = [
     {
       name: "PokePings Discord (Restock Alerts)",
       desc: "Real-time Pokémon restock/drop alerts + custom monitors across major retailers.",
@@ -45,13 +45,18 @@ export default function Affiliates() {
           <p className="heroSubline">Restocks. Deals. Streams. All killer, no filler.</p>
 
           <div className="affiliatesList" role="list">
-            {affiliates.map((a) => (
-              <article className="affiliateCard" role="listitem" key={a.name}>
+            {affiliates.map((affiliate) => (
+              <article className="affiliateCard" role="listitem" key={affiliate.name}>
                 <div className="affiliateMain">
-                  <div className="affiliateName">{a.name}</div>
-                  <div className="affiliateDesc">{a.desc}</div>
+                  <div className="affiliateName">{affiliate.name}</div>
+                  <div className="affiliateDesc">{affiliate.desc}</div>
                 </div>
-                <a className="btn affiliateBtn" href={a.href}>
+                <a
+                  className="btn affiliateBtn"
+                  href={affiliate.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Visit
                 </a>
               </article>
@@ -62,8 +67,3 @@ export default function Affiliates() {
     </section>
   );
 }
-
-
-
-
-

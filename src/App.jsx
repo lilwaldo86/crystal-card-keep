@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./App.css";
 import Contact from "./pages/Contact.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
@@ -7,12 +7,21 @@ import Shop from "./pages/Shop.jsx";
 import Live from "./pages/Live.jsx";
 
 export default function App() {
+  const navigate = useNavigate();
+
   // Background layers (make sure these exist in /public/img)
   const bgBack = "/img/crystal-card-keep-bc-back.png";
   const bgFront = "/img/crystal-card-keep-bc-front.png";
 
   // Featured card image
   const featuredCard = "/img/crystal-card-keep-bc-front.png";
+
+  function handleHomeSearch(event) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const query = String(formData.get("q") || "").trim();
+    navigate(query ? `/shop?q=${encodeURIComponent(query)}` : "/shop");
+  }
 
   function SiteHeader() {
     return (
@@ -69,11 +78,25 @@ export default function App() {
                     <form
                       className="search"
                       role="search"
-                      aria-label="Search the site"
-                      onSubmit={(e) => e.preventDefault()}
+                      aria-label="Search the shop"
+                      onSubmit={handleHomeSearch}
                     >
-                      <span className="ico" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none">
+                      <button
+                        className="ico"
+                        type="submit"
+                        aria-label="Search the shop"
+                        style={{
+                          appearance: "none",
+                          border: 0,
+                          background: "transparent",
+                          padding: 0,
+                          margin: 0,
+                          color: "inherit",
+                          cursor: "pointer",
+                          font: "inherit",
+                        }}
+                      >
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                           <path
                             d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
                             stroke="currentColor"
@@ -86,18 +109,27 @@ export default function App() {
                             strokeLinecap="round"
                           />
                         </svg>
-                      </span>
+                      </button>
                       <input
                         name="q"
                         type="search"
-                        placeholder="Search singles, sealed, sets, character…"
+                        aria-label="Search sets"
+                        placeholder="Search current sets…"
                         autoComplete="off"
                       />
                     </form>
 
-                    <span className="pill">Pokémon</span>
-                    <span className="pill">One Piece</span>
-                    <span className="pill">MTG</span>
+                    <div className="gamePills" aria-label="Shop by game">
+                      <Link className="pill" to="/shop/pokemon">
+                        Pok&eacute;mon
+                      </Link>
+                      <Link className="pill" to="/shop/one-piece">
+                        One Piece
+                      </Link>
+                      <Link className="pill" to="/shop/mtg">
+                        MTG
+                      </Link>
+                    </div>
                   </div>
 
                   <div className="ctaRow">
@@ -219,6 +251,48 @@ export default function App() {
         }
       />
       <Route
+        path="/shop/pokemon"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Shop game="pokemon" />
+              </div>
+            </main>
+          </div>
+        }
+      />
+      <Route
+        path="/shop/one-piece"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Shop game="onepiece" />
+              </div>
+            </main>
+          </div>
+        }
+      />
+      <Route
+        path="/shop/mtg"
+        element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main">
+              <div className="wrap">
+                <Shop game="mtg" />
+              </div>
+            </main>
+          </div>
+        }
+      />
+      <Route
         path="/live"
         element={
           <div className="appRoot">
@@ -236,5 +310,3 @@ export default function App() {
     </Routes>
   );
 }
-
-

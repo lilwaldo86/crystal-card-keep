@@ -1,4 +1,4 @@
-﻿# Crystal Card Keep Development Log
+# Crystal Card Keep Development Log
 
 ## Sprint 0 — Repository Baseline and Stabilization
 
@@ -99,3 +99,46 @@ Starting commit: `4b838c26cab62f830e5d3a247008947070393ca3`
 - Christopher deferred all mobile corrections until the desktop site is otherwise ready.
 - The animated Crystal Card Keep logo card has clipped/incomplete borders; visual repair is deferred for one consolidated desktop/mobile correction.
 
+## Sprint 2 â€” Desktop Interaction Audit and Stabilization
+
+Date: 2026-07-26
+Branch: `sprint-2-desktop-interactions`
+Starting commit: `27e5ad02c2efcb37469b826dc89230d9f3cf5463`
+
+### Approved interaction repairs
+
+- Home search now routes to `/shop?q=...`.
+- Search filters only the active Shop page's local static `DATA`.
+- Matching and no-results messages are provided.
+- The search icon is an accessible submit button.
+- Nonfunctional Shop set anchors are now noninteractive display elements.
+- Affiliate destinations open in new tabs with safe relationship attributes.
+
+### Explicit deferrals
+
+- `shopCatalog.js` remains disconnected pending a separate controlled migration.
+- Live remains unchanged pending confirmation of the official Whatnot URL.
+- Contact, product data, commerce behavior, mobile code, and animated-card styling were not intentionally changed.
+
+### Verification
+
+- Production build is run by the Sprint 2 Phase B installer.
+- Desktop browser verification is required before commit approval.
+
+### Phase B verification repair
+
+- Corrected Windows PowerShell source-encoding corruption in the modified JSX files.
+- Removed controlled Home search state so typing retains keyboard focus.
+- Search now treats punctuation and spacing as aliases; for example, OP14, OP-14, and OP 14 are equivalent.
+- Fuzzy matching remains deferred to avoid unrelated results.
+
+### Approved bounded game-route extension
+
+- Added canonical routes `/shop/pokemon`, `/shop/one-piece`, and `/shop/mtg`.
+- All three routes reuse the existing Shop component and active static `DATA`.
+- Each game route selects and displays only that game's current sets.
+- Home game bubbles now link to their canonical routes.
+- Desktop game bubbles are aligned in one row directly below the Home search bar.
+- `/shop` remains the general Shop destination.
+- Query search remains compatible with game-specific routes.
+- No mobile-specific rule, duplicate page component, or `shopCatalog.js` integration was added.
