@@ -1,0 +1,52 @@
+﻿{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "crystal-intel-amazon-beta",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-30",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *",
+      "*/5 * * * *"
+    ]
+  },
+  "vars": {
+    "AMAZON_MARKETPLACE": "www.amazon.com",
+    "MONITOR_ENABLED": "true",
+    "DAILY_PHASE_STEP_SECONDS": "5",
+    "BASE_BLOCK_RETRY_SECONDS": "30",
+    "MAX_BLOCK_RETRY_SECONDS": "1800",
+    "DISCOVERY_ENABLED": "true",
+    "AMAZON_DISCOVERY_URL": "https://www.amazon.com/s?k=trading+card+game",
+    "AMAZON_DISCOVERY_QUERY": "trading card game"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "crystal-intel-beta",
+      "database_id": "e28ed299-2fb1-4506-92f0-aa6198adf3fd",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "MONITOR_QUEUE",
+        "queue": "crystal-intel-monitor-jobs"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "crystal-intel-monitor-jobs",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 3,
+        "dead_letter_queue": "crystal-intel-monitor-dead-letter"
+      }
+    ]
+  }
+}
+

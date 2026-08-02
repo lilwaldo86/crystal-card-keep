@@ -1,0 +1,18 @@
+{
+  "name": "@crystal-intel/amazon-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --experimental-transform-types --test test/alerts/*.test.ts test/catalog/*.test.ts test/discovery/*.test.ts test/integration/*.test.ts test/orchestration/*.test.ts test/retailers/*.test.ts test/runtime/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "^5.9.2",
+    "wrangler": "latest"
+  }
+}
