@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
+import { SHOP_DATA as DATA } from "../data/catalog.js";
 
 const TABS = [
   { key: "pokemon", label: "Pokémon" },
@@ -7,37 +8,6 @@ const TABS = [
   { key: "mtg", label: "MTG" },
   { key: "other", label: "Other TCGs" },
 ];
-
-const DATA = {
-  pokemon: {
-    header: "Pokémon",
-    sets: [
-      { code: "MEGA", name: "Perfect Order" },
-      { code: "MEGA", name: "Ascended Heroes" },
-      { code: "MEGA", name: "Phantasmal Flames" },
-    ],
-  },
-  onepiece: {
-    header: "One Piece",
-    sets: [
-      { code: "EB03", name: "One Piece Heroines Edition" },
-      { code: "OP14", name: "The Azure Sea's Seven" },
-      { code: "OP13", name: "Carrying On His Will" },
-    ],
-  },
-  mtg: {
-    header: "Magic: The Gathering",
-    sets: [
-      { code: "MTG", name: "TMNT" },
-      { code: "MTG", name: "Lorwyn Eclipsed" },
-      { code: "MTG", name: "Avatar: The Last Airbender" },
-    ],
-  },
-  other: {
-    header: "Other TCGs",
-    sets: [],
-  },
-};
 
 function normalizeSearch(value) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
@@ -63,7 +33,7 @@ export default function Shop({ game = null }) {
         {
           ...column,
           sets: column.sets.filter((set) =>
-            normalizeSearch(`${column.header} ${set.code} ${set.name}`)
+            normalizeSearch(`${column.header} ${set.code} ${set.name} ${(set.aliases || []).join(" ")}`)
               .includes(normalizedQuery)
           ),
         },

@@ -142,3 +142,22 @@ Starting commit: `27e5ad02c2efcb37469b826dc89230d9f3cf5463`
 - `/shop` remains the general Shop destination.
 - Query search remains compatible with game-specific routes.
 - No mobile-specific rule, duplicate page component, or `shopCatalog.js` integration was added.
+
+
+## Sprint 3 - Canonical storefront catalog
+
+- Replaced the active embedded Shop data dependency with one canonical
+  storefront catalog module.
+- Added 43 valid set records: 37 Pokemon, 3 One Piece, and 3 MTG.
+- Preserved the nine sets currently displayed by the Shop interface.
+- Excluded the fake One Piece and MTG example sets and their placeholder
+  products.
+- Added opaque permanent set IDs that are independent of names, slugs,
+  release dates, retailer identifiers, and array positions.
+- Kept display labels, search aliases, canonical routes, and storefront
+  visibility separate from permanent IDs.
+- Added npm run verify:catalog for record-count, identifier, placeholder,
+  visibility, and runtime-dependency checks.
+- Left shopCatalog.js and the former embedded source available for historical
+  reference during this gate, but neither is used at runtime.
+- Crystal Intel, mobile behavior, and hero-card styling were not changed.
