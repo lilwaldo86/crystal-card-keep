@@ -7,6 +7,8 @@ export interface RuntimeConfiguration {
   DISCOVERY_ENABLED: string;
   AMAZON_DISCOVERY_URL: string;
   AMAZON_DISCOVERY_QUERY: string;
+  ARCHIVE_ENABLED: string;
+  ARCHIVE_BACKFILL_HOURS_PER_RUN: string;
 }
 
 export interface ConfigurationValidation {
@@ -30,7 +32,11 @@ export function validateRuntimeConfiguration(
 ): ConfigurationValidation {
   const errors: string[] = [];
 
-  for (const key of ["MONITOR_ENABLED", "DISCOVERY_ENABLED"] as const) {
+  for (const key of [
+    "MONITOR_ENABLED",
+    "DISCOVERY_ENABLED",
+    "ARCHIVE_ENABLED",
+  ] as const) {
     if (!booleanValues.has(env[key]?.toLowerCase())) {
       errors.push(`${key} must be true or false.`);
     }
@@ -71,6 +77,10 @@ export function validateRuntimeConfiguration(
 
   if (!(env.AMAZON_DISCOVERY_QUERY ?? "").trim()) {
     errors.push("AMAZON_DISCOVERY_QUERY must not be empty.");
+  }
+
+  if (!integerInRange(env.ARCHIVE_BACKFILL_HOURS_PER_RUN, 0, 24)) {
+    errors.push("ARCHIVE_BACKFILL_HOURS_PER_RUN must be an integer from 0 to 24.");
   }
 
   return { valid: errors.length === 0, errors };

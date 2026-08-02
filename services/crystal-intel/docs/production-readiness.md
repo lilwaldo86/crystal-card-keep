@@ -6,11 +6,12 @@ This checklist prepares the consolidated Crystal Intel foundation for review. It
 
 - TypeScript compilation completes with no errors.
 - Unit and integration tests cover catalog identity, retailer adapters, discovery, orchestration, observations, alerts, configuration, and concurrent replay.
-- Migrations `0001` through `0008` apply in order and can be rerun safely.
+- Migrations `0001` through `0009` apply in order and can be rerun safely.
 - `PRAGMA foreign_key_check` reports no violations after migration and rollback/reapply verification.
 - Migration `0008` tables can be removed in reverse dependency order and reapplied.
 - The one-minute live monitor schedule and five-minute discovery schedule remain distinct.
 - Discovery remains review-gated; external alert delivery remains unchanged.
+- The hourly R2 archive processes only closed UTC windows and cannot interrupt monitoring or discovery on failure.
 
 ## Required before first push
 
@@ -29,6 +30,7 @@ This checklist prepares the consolidated Crystal Intel foundation for review. It
 4. Verify `/health`, scheduled discovery, candidate review, listing creation, observation recording, and internal notification events.
 5. Confirm replay does not duplicate jobs, observations, alerts, or notification events.
 6. Obtain a separate production deployment authorization.
+7. For archive-enabled releases, verify the R2 bucket, binding, first gzip object, checksum metadata, and daily manifest.
 
 ## Rollback guidance
 

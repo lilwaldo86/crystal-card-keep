@@ -10,7 +10,8 @@
   "triggers": {
     "crons": [
       "* * * * *",
-      "*/5 * * * *"
+      "*/5 * * * *",
+      "7 * * * *"
     ]
   },
   "vars": {
@@ -21,7 +22,9 @@
     "MAX_BLOCK_RETRY_SECONDS": "1800",
     "DISCOVERY_ENABLED": "true",
     "AMAZON_DISCOVERY_URL": "https://www.amazon.com/s?k=trading+card+game",
-    "AMAZON_DISCOVERY_QUERY": "trading card game"
+    "AMAZON_DISCOVERY_QUERY": "trading card game",
+    "ARCHIVE_ENABLED": "false",
+    "ARCHIVE_BACKFILL_HOURS_PER_RUN": "0"
   },
   "d1_databases": [
     {
@@ -29,6 +32,12 @@
       "database_name": "crystal-intel-beta",
       "database_id": "e28ed299-2fb1-4506-92f0-aa6198adf3fd",
       "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ARCHIVE_BUCKET",
+      "bucket_name": "crystal-intel-archive"
     }
   ],
   "queues": {
@@ -49,4 +58,3 @@
     ]
   }
 }
-

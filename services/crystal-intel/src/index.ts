@@ -34,6 +34,11 @@ import {
   recordDiagnostic,
   validateRuntimeConfiguration,
 } from "./runtime/index";
+import {
+  closedHourWindow,
+  D1ArchiveRepository,
+  HistoricalArchiveService,
+} from "./archive/index.ts";
 
 interface Env {
   DB: D1Database;
@@ -46,6 +51,9 @@ interface Env {
   DISCOVERY_ENABLED: string;
   AMAZON_DISCOVERY_URL: string;
   AMAZON_DISCOVERY_QUERY: string;
+  ARCHIVE_BUCKET: R2Bucket;
+  ARCHIVE_ENABLED: string;
+  ARCHIVE_BACKFILL_HOURS_PER_RUN: string;
   ADMIN_TOKEN?: string;
   DISCORD_WEBHOOK_URL?: string;
 }
@@ -85,6 +93,7 @@ interface Previous {
 
 const now = (): string => new Date().toISOString();
 const DISCOVERY_CRON = "*/5 * * * *";
+const ARCHIVE_CRON = "7 * * * *";
 
 const phase = (date: Date, step: number): number => {
   const day = Math.floor(
@@ -589,12 +598,68 @@ async function runDiscoveryCycle(
   await orchestrator.processApprovedCandidates(100);
 }
 
+async function runArchiveCycle(
+  env: Env,
+  scheduledTime: number,
+): Promise<void> {
+  if (env.ARCHIVE_ENABLED.toLowerCase() !== "true") {
+    return;
+  }
+
+  const window = closedHourWindow(scheduledTime);
+  const repository = new D1ArchiveRepository(env.DB);
+  const archive = new HistoricalArchiveService(
+    repository,
+    repository,
+    env.ARCHIVE_BUCKET,
+  );
+
+  try {
+    await archive.archive(window);
+
+    const earliestSource = await repository.earliestSourceTimestamp();
+    let cursor = await repository.earliestArchivedStart();
+    const backfillLimit = Number.parseInt(
+      env.ARCHIVE_BACKFILL_HOURS_PER_RUN,
+      10,
+    ) || 0;
+
+    for (
+      let count = 0;
+      earliestSource && cursor && count < backfillLimit;
+      count += 1
+    ) {
+      const end = new Date(cursor);
+      const start = new Date(end.getTime() - 3_600_000);
+      if (end.getTime() <= new Date(earliestSource).getTime()) break;
+      await archive.archive({
+        start: start.toISOString(),
+        end: end.toISOString(),
+      });
+      cursor = start.toISOString();
+    }
+  } catch (error) {
+    recordDiagnostic({
+      level: "ERROR",
+      event: "HISTORICAL_ARCHIVE_FAILED",
+      windowStart: window.start,
+      windowEnd: window.end,
+      error: errorMessage(error),
+    });
+  }
+}
+
 export default {
   async scheduled(
     controller: ScheduledController,
     env: Env,
   ): Promise<void> {
     assertRuntimeConfiguration(env);
+
+    if (controller.cron === ARCHIVE_CRON) {
+      await runArchiveCycle(env, controller.scheduledTime);
+      return;
+    }
 
     if (controller.cron === DISCOVERY_CRON) {
       await runDiscoveryCycle(env, controller.scheduledTime);

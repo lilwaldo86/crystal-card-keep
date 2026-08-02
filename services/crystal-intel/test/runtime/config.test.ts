@@ -15,6 +15,8 @@ const valid = () => ({
   DISCOVERY_ENABLED: "true",
   AMAZON_DISCOVERY_URL: "https://www.amazon.com/s?k=trading+card+game",
   AMAZON_DISCOVERY_QUERY: "trading card game",
+  ARCHIVE_ENABLED: "false",
+  ARCHIVE_BACKFILL_HOURS_PER_RUN: "0",
 });
 
 test("accepts the production-shaped runtime configuration", () => {
@@ -39,4 +41,9 @@ test("reports invalid booleans, retry bounds, URLs, and empty queries", () => {
   assert.equal(result.valid, false);
   assert.equal(result.errors.length, 5);
   assert.throws(() => assertRuntimeConfiguration({ ...valid(), DISCOVERY_ENABLED: "1" }));
+  assert.throws(() => assertRuntimeConfiguration({ ...valid(), ARCHIVE_ENABLED: "yes" }));
+  assert.throws(() => assertRuntimeConfiguration({
+    ...valid(),
+    ARCHIVE_BACKFILL_HOURS_PER_RUN: "25",
+  }));
 });
