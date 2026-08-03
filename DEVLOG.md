@@ -161,3 +161,10 @@ Starting commit: `27e5ad02c2efcb37469b826dc89230d9f3cf5463`
 - Left shopCatalog.js and the former embedded source available for historical
   reference during this gate, but neither is used at runtime.
 - Crystal Intel, mobile behavior, and hero-card styling were not changed.
+## Sprint 4 - Desktop hero-card border repair
+
+- Corrected the desktop featured-card stage to use the source artwork's true 814:1536 proportions.
+- Changed desktop artwork fitting from crop (`cover`) to complete containment (`contain`).
+- Retained the existing perspective, tilt, hover, shine, edge, and visual treatment.
+- Scoped the repair to desktop widths above 980px; mobile behavior is unchanged.
+- Catalog, search, routes, product data, and Crystal Intel artifacts are unchanged.

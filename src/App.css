@@ -414,6 +414,19 @@ a{ color:inherit; text-decoration:none; }
   color: rgba(255,255,255,0.60);
 }
 
+/* SPRINT_4_DESKTOP_HERO_CARD_REPAIR
+   The source artwork is 814 x 1536 (0.5299:1), not 63:88.
+   Keep the complete printed border visible without changing the mobile rule. */
+@media (min-width: 981px) {
+  .cardStageLegacy {
+    width: min(220px, 19vw, calc((100vh - 260px) * 0.529948));
+    aspect-ratio: 814 / 1536;
+  }
+
+  .cardImgLegacy {
+    object-fit: contain;
+  }
+}
 /* ===== Mobile ===== */
 @media (max-width: 980px){
   .wrap{ width: calc(100% - 28px); }
