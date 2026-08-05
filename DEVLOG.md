@@ -168,3 +168,13 @@ Starting commit: `27e5ad02c2efcb37469b826dc89230d9f3cf5463`
 - Retained the existing perspective, tilt, hover, shine, edge, and visual treatment.
 - Scoped the repair to desktop widths above 980px; mobile behavior is unchanged.
 - Catalog, search, routes, product data, and Crystal Intel artifacts are unchanged.
+## Sprint 5 - Mobile responsive repair
+
+- Removed phone-width overflow sources without enabling horizontal page scrolling.
+- Wrapped all primary navigation links into a compact two-column mobile row.
+- Contained Home, Live, Affiliates, Shop, Contact, and not-found layouts at phone widths.
+- Preserved desktop behavior, catalog/search logic, routes, affiliate destinations, and product data.
+- Kept the Sprint 4 desktop hero-card repair intact while showing the complete artwork on mobile.
+- Crystal Intel artifacts remain outside the tracked change set.
+- Contained mobile vertical scrolling inside each hero/card region so the viewport shell and company footer remain stable.
+- Moved phone touch scrolling from the legacy outer hero to its interior panel; Live retains its working stack scroller.

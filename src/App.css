@@ -1703,3 +1703,390 @@ a{ color:inherit; text-decoration:none; }
     flex-wrap: nowrap;
   }
 }
+/* SPRINT_5_PHASE_B_MOBILE_REPAIR
+   Final phone-width containment layer. Desktop rules remain unchanged. */
+@media (max-width: 620px) {
+  html,
+  body,
+  #root,
+  .appRoot {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+  }
+
+  .wrap,
+  .main,
+  .main > .wrap,
+  .hero,
+  .heroInner,
+  .heroLeft,
+  .heroRight,
+  .stack,
+  .card,
+  .subcard {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .wrap {
+    padding-inline: 14px;
+  }
+
+  .main {
+    padding: 12px 0 24px;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding-block: 10px;
+  }
+
+  .brand {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .brandText,
+  .brandName,
+  .brandTag {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .brandName {
+    white-space: normal;
+  }
+
+  .navLinks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    gap: 6px;
+    padding: 0;
+  }
+
+  .navLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 44px;
+    padding: 8px 6px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 0;
+  }
+
+  .heroInner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+    padding: 16px;
+  }
+
+  .heroTitle,
+  .h1,
+  .h2,
+  .h3,
+  .shopHero h1 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .heroTitle,
+  .h1,
+  .shopHero h1 {
+    font-size: clamp(30px, 10vw, 42px);
+    line-height: 1.04;
+  }
+
+  .heroSubline,
+  .p,
+  .note,
+  .shopComingSoon,
+  .shopHero header p,
+  .affiliateName,
+  .affiliateDesc,
+  .contactCard,
+  .setName,
+  .setDate,
+  li,
+  code {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    white-space: normal;
+  }
+
+  .searchRow,
+  .search,
+  .gamePills,
+  .ctaRow {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .search {
+    min-width: 0;
+  }
+
+  .search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .gamePills,
+  .ctaRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .gamePills .pill,
+  .ctaRow .btn {
+    min-height: 44px;
+  }
+
+  .cardFrameLegacy {
+    width: 100%;
+    min-height: 0;
+    padding: 18px;
+    overflow: visible;
+  }
+
+  .cardStageLegacy {
+    width: min(190px, 52vw);
+    aspect-ratio: 814 / 1536;
+  }
+
+  .cardImgLegacy {
+    object-fit: contain;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 12px;
+  }
+
+  .card,
+  .subcard {
+    padding-inline: 14px;
+  }
+
+  .affiliatesList,
+  .affiliateCard,
+  .affiliateMain {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .affiliateCard {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .affiliateBtn {
+    width: 100%;
+    min-height: 44px;
+    white-space: normal;
+  }
+
+  .shopHero .heroInner,
+  .shopHero header,
+  .shopHero .shopGrid,
+  .shopHero .shopCol,
+  .shopHero .shopSections,
+  .shopHero .shopSetPills,
+  .shopTabs,
+  .shopFilters,
+  .categoryRow {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .shopHero .heroInner {
+    height: auto;
+    overflow: visible;
+    padding: 16px;
+  }
+
+  .shopTabs,
+  .shopFilters,
+  .categoryRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .shopPill,
+  .shopCategory {
+    min-height: 44px;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .shopHero .shopGrid,
+  .shopHero .shopSections {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .shopSetPill,
+  .shopCol,
+  .shopColHeader {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contactGrid {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contactCol,
+  .contactCard,
+  .contactForm,
+  .contactForm input,
+  .contactForm textarea,
+  .cf-turnstile,
+  .cf-turnstile > div,
+  .cf-turnstile iframe {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .contactCard {
+    padding-inline: 14px;
+  }
+
+  .footer,
+  .foot {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+/* SPRINT_5_PHASE_B_MOBILE_SCROLL_REPAIR
+   Keep the phone viewport fixed and scroll page content inside its hero/card region. */
+@media (max-width: 620px) {
+  html,
+  body,
+  #root {
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .appRoot {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .siteHeader {
+    flex: 0 0 auto;
+  }
+
+  .main {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .main > .wrap {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .main > .wrap > .hero,
+  .main > .wrap > .stack {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  .heroInner,
+  .shopHero .heroInner {
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+  }
+
+  .footer {
+    flex: 0 0 auto;
+    margin-top: 8px;
+    padding-bottom: max(4px, env(safe-area-inset-bottom));
+  }
+
+  .foot {
+    gap: 2px;
+  }
+}
+/* SPRINT_5_HERO_INTERIOR_SCROLL_FIX
+   Legacy hero overflow rules require the inner panel to own phone touch scrolling. */
+@media (max-width: 620px) {
+  .main > .wrap > .hero {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .main > .wrap > .hero > .heroInner {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+  }
+
+  .main > .wrap > .hero > .heroInner > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
