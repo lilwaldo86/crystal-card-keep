@@ -28,6 +28,5 @@ INSERT OR IGNORE INTO catalog_media_sources (
   datetime('now'), datetime('now')
 );
 
-ALTER TABLE catalog_products ADD COLUMN media_source_id TEXT REFERENCES catalog_media_sources(id);
-UPDATE catalog_products SET media_source_id='tcgcsv-tcgplayer' WHERE provider='tcgcsv-tcgplayer';
-
+ALTER TABLE storefront_catalog_products ADD COLUMN media_source_id TEXT REFERENCES catalog_media_sources(id);
+UPDATE storefront_catalog_products SET media_source_id='tcgcsv-tcgplayer' WHERE provider='tcgcsv-tcgplayer';

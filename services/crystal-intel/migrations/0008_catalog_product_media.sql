@@ -1,6 +1,6 @@
 PRAGMA foreign_keys = ON;
 
-CREATE TABLE IF NOT EXISTS catalog_groups (
+CREATE TABLE IF NOT EXISTS storefront_catalog_groups (
   provider TEXT NOT NULL,
   external_group_id TEXT NOT NULL,
   game_key TEXT NOT NULL,
@@ -12,9 +12,9 @@ CREATE TABLE IF NOT EXISTS catalog_groups (
   PRIMARY KEY (provider, external_group_id)
 );
 
-CREATE INDEX IF NOT EXISTS catalog_groups_game_idx ON catalog_groups(game_key, release_date DESC, set_name);
+CREATE INDEX IF NOT EXISTS storefront_catalog_groups_game_idx ON storefront_catalog_groups(game_key, release_date DESC, set_name);
 
-CREATE TABLE IF NOT EXISTS catalog_products (
+CREATE TABLE IF NOT EXISTS storefront_catalog_products (
   provider TEXT NOT NULL,
   external_product_id TEXT NOT NULL,
   external_group_id TEXT NOT NULL,
@@ -31,12 +31,11 @@ CREATE TABLE IF NOT EXISTS catalog_products (
   source_modified_at TEXT,
   synced_at TEXT NOT NULL,
   PRIMARY KEY (provider, external_product_id),
-  FOREIGN KEY (provider, external_group_id) REFERENCES catalog_groups(provider, external_group_id)
+  FOREIGN KEY (provider, external_group_id) REFERENCES storefront_catalog_groups(provider, external_group_id)
 );
 
-CREATE INDEX IF NOT EXISTS catalog_products_match_idx ON catalog_products(game_key, set_name, product_name);
-CREATE INDEX IF NOT EXISTS catalog_products_set_code_idx ON catalog_products(game_key, set_code, collector_number);
+CREATE INDEX IF NOT EXISTS storefront_catalog_products_match_idx ON storefront_catalog_products(game_key, set_name, product_name);
+CREATE INDEX IF NOT EXISTS storefront_catalog_products_set_code_idx ON storefront_catalog_products(game_key, set_code, collector_number);
 
 ALTER TABLE inventory_listings ADD COLUMN external_catalog_provider TEXT;
 ALTER TABLE inventory_listings ADD COLUMN external_catalog_product_id TEXT;
-
