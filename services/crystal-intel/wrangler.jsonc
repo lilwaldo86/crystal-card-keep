@@ -23,7 +23,7 @@
     ,"SQUARE_LOCATION_ID": "L4WHZN60W9NR6"
     ,"SQUARE_API_VERSION": "2026-09-16"
     ,"SQUARE_WEBHOOK_URL": "https://crystal-intel-amazon-beta.chris-waldron319-a01.workers.dev/api/storefront/webhooks/square"
-    ,"STOREFRONT_ORIGIN": "https://thecrystalcardkeep.com"
+    ,"STOREFRONT_ORIGIN": "*"
     ,"CHECKOUT_ENABLED": "false"
     ,"TAX_MODE": "disabled"
   },
