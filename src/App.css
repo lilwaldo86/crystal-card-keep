@@ -1,4 +1,4 @@
-:root{
+﻿:root{
   --bg0:#070812;
   --bg1:#0b0d16;
   --glass: rgba(18, 20, 33, 0.55);
@@ -524,7 +524,7 @@ a{ color:inherit; text-decoration:none; }
     padding: 10px 12px;
   }
 
-  /* Turnstile: scale down just a bit so it doesnâ€™t force scrolling */
+  /* Turnstile: scale down just a bit so it doesnÃ¢â‚¬â„¢t force scrolling */
   .contactHero .cf-turnstile {
     transform: scale(0.90);
     transform-origin: left top;
@@ -780,314 +780,6 @@ a{ color:inherit; text-decoration:none; }
 
   .emptyNote { opacity: 0.85; padding: 14px; }
 
-/* CKK_SHOP_TABS_MATCH_PILLS
-@media (min-width: 1024px) {
-  .pillBtn {
-    /* match pill vibe */
-  .pillBtn:hover {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.28);
-    transform: translateY(-1px);
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.28);
-    background: rgba(0,0,0,0.34);
-  }
-  .pillBtn:focus { outline: none; }
-  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
-
-/* CKK_SHOP_TABS_PILLBTN_GLOBAL
-.pillBtn{
-.pillBtn:hover{
-.pillBtn.isActive{
-.pillBtn:focus{ outline:none; }
-.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
-
-  .shopHero .heroInner {
-
-  /* Make tab rows span across the watermark card */
-  .shopTabs, .shopGroupTabs {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-
-  .pillBtn {
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.25);
-    color: rgba(255,255,255,0.92);
-    border-radius: 999px;
-    padding: 10px 14px;
-    cursor: pointer;
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.35);
-  }
-
-.shopSectionHead {
-    margin-top: 14px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
-  .shopSectionHint { opacity: 0.85; font-size: 14px; }
-
-  /* Set list rows (clean + readable) */
-  .setList { margin-top: 12px; display: grid; gap: 10px; }
-
-  .setRow {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.22);
-    backdrop-filter: blur(6px);
-    cursor: pointer;
-    text-align: left;
-  }
-  .setRow:hover { border-color: rgba(255,255,255,0.20); }
-
-  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
-  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
-  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  .setRowText { display: grid; gap: 2px; min-width: 0; }
-  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .setRowMeta { opacity: 0.8; font-size: 12px; }
-
-  .setRowRight {
-    opacity: 0.9;
-    font-weight: 700;
-    border: 1px solid rgba(255,255,255,0.10);
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.18);
-  }
-
-  .emptyNote { opacity: 0.85; padding: 14px; }
-
-/* CKK_SHOP_TABS_MATCH_PILLS
-@media (min-width: 1024px) {
-  .pillBtn {
-    /* match pill vibe */
-  .pillBtn:hover {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.28);
-    transform: translateY(-1px);
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.28);
-    background: rgba(0,0,0,0.34);
-  }
-  .pillBtn:focus { outline: none; }
-  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
-
-/* CKK_SHOP_TABS_PILLBTN_GLOBAL
-.pillBtn{
-.pillBtn:hover{
-.pillBtn.isActive{
-.pillBtn:focus{ outline:none; }
-.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
-
-  .shopHero .heroInner {
-
-  /* Make tab rows span across the watermark card */
-  .shopTabs, .shopGroupTabs {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-
-  .pillBtn {
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.25);
-    color: rgba(255,255,255,0.92);
-    border-radius: 999px;
-    padding: 10px 14px;
-    cursor: pointer;
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.35);
-  }
-
-.shopSectionHead {
-    margin-top: 14px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
-  .shopSectionHint { opacity: 0.85; font-size: 14px; }
-
-  /* Set list rows (clean + readable) */
-  .setList { margin-top: 12px; display: grid; gap: 10px; }
-
-  .setRow {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.22);
-    backdrop-filter: blur(6px);
-    cursor: pointer;
-    text-align: left;
-  }
-  .setRow:hover { border-color: rgba(255,255,255,0.20); }
-
-  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
-  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
-  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  .setRowText { display: grid; gap: 2px; min-width: 0; }
-  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .setRowMeta { opacity: 0.8; font-size: 12px; }
-
-  .setRowRight {
-    opacity: 0.9;
-    font-weight: 700;
-    border: 1px solid rgba(255,255,255,0.10);
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.18);
-  }
-
-  .emptyNote { opacity: 0.85; padding: 14px; }
-
-/* CKK_SHOP_TABS_MATCH_PILLS
-@media (min-width: 1024px) {
-  .pillBtn {
-    /* match pill vibe */
-  .pillBtn:hover {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.28);
-    transform: translateY(-1px);
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.28);
-    background: rgba(0,0,0,0.34);
-  }
-  .pillBtn:focus { outline: none; }
-  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
-
-/* CKK_SHOP_TABS_PILLBTN_GLOBAL
-.pillBtn{
-.pillBtn:hover{
-.pillBtn.isActive{
-.pillBtn:focus{ outline:none; }
-.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
-
-  .shopHero .heroInner {
-
-  /* Make tab rows span across the watermark card */
-  .shopTabs, .shopGroupTabs {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-
-  .pillBtn {
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.25);
-    color: rgba(255,255,255,0.92);
-    border-radius: 999px;
-    padding: 10px 14px;
-    cursor: pointer;
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.35);
-  }
-
-.shopSectionHead {
-    margin-top: 14px;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  .shopSectionTitle { font-weight: 800; letter-spacing: 0.2px; }
-  .shopSectionHint { opacity: 0.85; font-size: 14px; }
-
-  /* Set list rows (clean + readable) */
-  .setList { margin-top: 12px; display: grid; gap: 10px; }
-
-  .setRow {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 12px 14px;
-    border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.10);
-    background: rgba(0,0,0,0.22);
-    backdrop-filter: blur(6px);
-    cursor: pointer;
-    text-align: left;
-  }
-  .setRow:hover { border-color: rgba(255,255,255,0.20); }
-
-  .setRowLeft { display: flex; align-items: center; gap: 12px; min-width: 0; }
-  .setThumb { width: 40px; height: 40px; border-radius: 12px; overflow: hidden; flex: 0 0 auto; }
-  .setThumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  .setRowText { display: grid; gap: 2px; min-width: 0; }
-  .setRowName { font-weight: 800; font-size: 14px; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .setRowMeta { opacity: 0.8; font-size: 12px; }
-
-  .setRowRight {
-    opacity: 0.9;
-    font-weight: 700;
-    border: 1px solid rgba(255,255,255,0.10);
-    padding: 8px 12px;
-    border-radius: 999px;
-    background: rgba(0,0,0,0.18);
-  }
-
-  .emptyNote { opacity: 0.85; padding: 14px; }
-
-/* CKK_SHOP_TABS_MATCH_PILLS
-@media (min-width: 1024px) {
-  .pillBtn {
-    /* match pill vibe */
-  .pillBtn:hover {
-    border-color: rgba(255,255,255,0.22);
-    background: rgba(0,0,0,0.28);
-    transform: translateY(-1px);
-  }
-  .pillBtn.isActive {
-    border-color: rgba(255,255,255,0.28);
-    background: rgba(0,0,0,0.34);
-  }
-  .pillBtn:focus { outline: none; }
-  .pillBtn:focus-visible { outline: 2px solid rgba(255,255,255,0.22); outline-offset: 2px; }
-
-/* CKK_SHOP_TABS_PILLBTN_GLOBAL
-.pillBtn{
-.pillBtn:hover{
-.pillBtn.isActive{
-.pillBtn:focus{ outline:none; }
-.pillBtn:focus-visible{ outline:2px solid rgba(255,255,255,0.22); outline-offset:2px; }
-
 /* CKK_HERO_CARD_STANDARD
    Shared watermark "card" margins so pages match Home.
 .heroCardStandard .heroInner{
@@ -1178,7 +870,7 @@ a{ color:inherit; text-decoration:none; }
   margin-bottom: 10px;
 }
 
-/* Slightly “header-ish” pill (same family as pillBtn) */
+/* Slightly â€œheader-ishâ€ pill (same family as pillBtn) */
 .shopHero .pillBtn.pillHeader{
   pointer-events: none;
   cursor: default;
@@ -2090,3 +1782,310 @@ a{ color:inherit; text-decoration:none; }
     max-width: 100%;
   }
 }
+/* CKK_SHOP_LAYOUT_FINAL */
+.shopHero {
+  position: relative;
+  overflow: hidden;
+}
+
+.shopHero .heroInner.shopHeroInner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  padding: 28px 34px 30px;
+  gap: 16px;
+}
+
+.shopHero .shopHeader {
+  display: grid;
+  justify-items: center;
+  gap: 7px;
+  margin: 0;
+  text-align: center;
+}
+
+.shopHero .shopTitle {
+  margin: 0;
+  line-height: 0.95;
+}
+
+.shopHero .shopTagline {
+  max-width: 680px;
+  margin: 0;
+  text-align: center;
+}
+
+.shopHero .shopTabs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 9px;
+  width: 100%;
+  margin: 0;
+}
+
+.shopHero .pillBtn {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(8, 10, 18, 0.42);
+  color: var(--text);
+  font: inherit;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.shopHero .shopTab {
+  padding: 9px 15px;
+}
+
+.shopHero .pillBtn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(210, 180, 90, 0.58);
+  background: rgba(18, 20, 33, 0.72);
+}
+
+.shopHero .pillBtn:focus-visible {
+  outline: 2px solid rgba(210, 180, 90, 0.78);
+  outline-offset: 3px;
+}
+
+.shopHero .shopTab.isActive,
+.shopHero .shopSection.isActive .shopSectionTitle {
+  border-color: rgba(210, 180, 90, 0.78);
+  background:
+    linear-gradient(135deg, rgba(210, 180, 90, 0.22), rgba(95, 72, 190, 0.25)),
+    rgba(8, 10, 18, 0.62);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+}
+
+.shopHero .shopSections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 12px;
+  width: 100%;
+}
+
+.shopHero .shopSection {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+  background: rgba(8, 10, 18, 0.32);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.shopHero .shopSectionTitle {
+  justify-self: start;
+  padding: 7px 13px;
+}
+
+.shopHero .shopSetPills {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.shopHero .shopSetPill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.24);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.88rem;
+  font-weight: 650;
+  line-height: 1.15;
+}
+
+.shopHero .shopComingSoon {
+  margin: 2px 3px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .shopHero {
+    overflow: visible;
+  }
+
+  .shopHero .heroInner.shopHeroInner {
+    padding: 22px 18px 24px;
+  }
+
+  .shopHero .shopSections {
+    grid-template-columns: 1fr;
+  }
+}
+/* /CKK_SHOP_LAYOUT_FINAL */
+/* CKK_SHOP_ACTIVE_PANEL_SCROLL */
+@media (min-width: 761px) {
+  .shopHero {
+    height: calc(100dvh - 112px);
+    min-height: 560px;
+    max-height: calc(100dvh - 112px);
+    overflow: hidden !important;
+  }
+
+  .shopHero .heroInner.shopHeroInner {
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr);
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .shopHero .shopSections {
+    display: block;
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 7px;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(210, 180, 90, 0.58) rgba(0, 0, 0, 0.18);
+  }
+
+  .shopHero .shopSections::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .shopHero .shopSections::-webkit-scrollbar-track {
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.18);
+  }
+
+  .shopHero .shopSections::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(210, 180, 90, 0.58);
+  }
+
+  .shopHero .shopSection {
+    width: 100%;
+  }
+}
+
+.shopHero .shopSectionTitle {
+  margin: 0;
+  font-size: inherit;
+}
+/* /CKK_SHOP_ACTIVE_PANEL_SCROLL */
+
+/* CKK_SHOP_CATALOG_ACCORDION */
+.shopHero .shopHeroInner{grid-template-rows:auto auto auto minmax(0,1fr)!important;gap:12px!important}
+.shopTools{display:flex;align-items:center;gap:10px;width:100%;min-width:0}
+.shopSearch{flex:1;min-width:180px}
+.shopSearch input{width:100%;padding:10px 14px;border:1px solid rgba(255,255,255,.15);border-radius:999px;background:rgba(5,7,14,.62);color:var(--text);font:inherit;outline:none}
+.shopSearch input:focus{border-color:rgba(210,180,90,.72);box-shadow:0 0 0 3px rgba(210,180,90,.1)}
+.shopKind{display:flex;gap:6px}.shopKindBtn{padding:8px 12px}.shopKindBtn.isActive{border-color:rgba(210,180,90,.78);background:rgba(210,180,90,.18)}
+.shopCatalogHeading{display:flex;align-items:center;justify-content:space-between;padding:2px 4px 9px}.shopCatalogHeading h2{margin:0;font-size:1.05rem}.shopCatalogHeading span{color:var(--muted);font-size:.82rem}
+.shopEra{margin-bottom:8px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(5,7,14,.38);overflow:hidden}
+.shopEraToggle{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;width:100%;padding:12px 14px;border:0;background:rgba(15,17,28,.68);color:var(--text);font:inherit;font-weight:800;text-align:left;cursor:pointer}
+.shopEraToggle:hover{background:rgba(28,29,44,.78)}.shopEraCount{padding:3px 8px;border-radius:999px;background:rgba(255,255,255,.08);color:var(--muted);font-size:.75rem}
+.shopSetRows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.06)}
+.shopSetRow{display:grid;grid-template-columns:64px 1fr auto;align-items:center;gap:10px;min-width:0;padding:10px 12px;border:0;background:rgba(7,8,16,.92);color:var(--text);font:inherit;text-align:left;cursor:pointer}
+.shopSetRow:hover{background:rgba(31,28,48,.94)}.shopSetCode{color:rgba(220,190,105,.96);font-size:.76rem;font-weight:900;letter-spacing:.04em}.shopSetFullName{min-width:0;font-size:.88rem;font-weight:650}.shopSetArrow{color:var(--muted);font-size:1.2rem}.shopEmpty{padding:24px;text-align:center;color:var(--muted)}
+.srOnly{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){.shopTools{align-items:stretch;flex-direction:column}.shopKind{flex-wrap:wrap}.shopSetRows{grid-template-columns:1fr}.shopHero .shopHeroInner{display:flex!important}.shopHero .shopSections{overflow:visible}}
+/* /CKK_SHOP_CATALOG_ACCORDION */
+
+/* CKK_SHOP_INTERACTION_REPAIR_V2 */
+@media (min-width:761px){
+  .main>.wrap>.shopHero{height:calc(100dvh - 112px)!important;min-height:560px!important;max-height:calc(100dvh - 112px)!important;overflow:hidden!important}
+  .main>.wrap>.shopHero>.shopHeroInner{display:grid!important;grid-template-rows:auto auto auto auto minmax(0,1fr)!important;height:100%!important;min-height:0!important;max-height:100%!important;overflow:hidden!important;padding:24px 34px 26px!important}
+  .main>.wrap>.shopHero>.shopHeroInner>.shopHeader,.main>.wrap>.shopHero>.shopHeroInner>.shopTabs,.main>.wrap>.shopHero>.shopHeroInner>.shopTools{height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;visibility:visible!important;opacity:1!important}
+  .main>.wrap>.shopHero>.shopHeroInner>.shopSections{display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow-x:hidden!important;overflow-y:scroll!important;visibility:visible!important;opacity:1!important;padding:0 8px 18px 0!important;overscroll-behavior:contain!important;scrollbar-gutter:stable!important}
+}
+.main>.wrap>.shopHero .shopEra{display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:hidden!important;visibility:visible!important;opacity:1!important}
+.main>.wrap>.shopHero .shopEraToggle{display:grid!important;min-height:54px!important;height:auto!important;max-height:none!important;overflow:visible!important;visibility:visible!important;opacity:1!important;color:rgba(255,255,255,.94)!important}
+.main>.wrap>.shopHero .shopSetRows{display:grid!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;visibility:visible!important;opacity:1!important}
+.main>.wrap>.shopHero .shopSetRow{display:grid!important;min-height:46px!important;height:auto!important;max-height:none!important;overflow:visible!important;visibility:visible!important;opacity:1!important;color:rgba(255,255,255,.92)!important}
+.main>.wrap>.shopHero .shopSetCode,.main>.wrap>.shopHero .shopSetFullName{display:block!important;visibility:visible!important;opacity:1!important;overflow:visible!important;text-overflow:clip!important;white-space:normal!important}
+/* /CKK_SHOP_INTERACTION_REPAIR_V2 */
+@media (min-width:761px){
+  html:has(.shopHero),body:has(.shopHero){height:100%;overflow:hidden!important}
+  .appRoot:has(.shopHero){height:100dvh!important;min-height:0!important;overflow:hidden!important}
+}
+
+/* CKK_SQUARE_CHECKOUT_V1 */
+.checkoutShell{min-height:calc(100vh - 190px);overflow:auto}.checkoutPanel{position:relative;z-index:2;width:min(1040px,calc(100% - 40px));margin:28px auto;padding:30px;border:1px solid rgba(255,255,255,.16);border-radius:26px;background:rgba(11,12,20,.86);backdrop-filter:blur(18px)}.checkoutPanel h1{font-size:clamp(2.4rem,6vw,4.6rem);margin:.1em 0}.checkoutPanel h2{margin:0 0 14px}.checkoutGrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:26px}.checkoutItems,.checkoutPayment{padding:22px;border:1px solid rgba(255,255,255,.12);border-radius:20px;background:rgba(18,18,29,.76)}.checkoutLine{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}.checkoutSubtotal{margin-top:8px;font-size:1.08rem}.checkoutChoice{display:flex;gap:10px;align-items:flex-start;margin:12px 0;padding:12px;border:1px solid rgba(255,255,255,.12);border-radius:14px}.checkoutEmail{display:grid;gap:7px;margin:18px 0}.checkoutEmail input{padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#11131d;color:#fff}.squareCard{min-height:90px}.checkoutPay{width:100%;justify-content:center}.checkoutError{color:#ff9b9b}.checkoutEmpty{margin-top:24px}.checkoutOrder{font-family:monospace;overflow-wrap:anywhere}@media(max-width:760px){.checkoutGrid{grid-template-columns:1fr}.checkoutPanel{width:min(100% - 20px,1040px);padding:20px;margin:10px auto}}
+
+
+/* CKK_CHECKOUT_FRAME_V2 */
+.checkoutShell {
+  height: calc(100dvh - 112px) !important;
+  min-height: 520px !important;
+  max-height: calc(100dvh - 112px) !important;
+  overflow: hidden !important;
+}
+.checkoutShell > .heroBgBack,
+.checkoutShell > .heroBgFront {
+  z-index: 0;
+}
+.checkoutViewport {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-gutter: stable;
+}
+.checkoutPanel {
+  background: rgba(11, 12, 20, 0.72);
+}
+html:has(.checkoutShell),
+body:has(.checkoutShell),
+.appRoot:has(.checkoutShell) {
+  height: 100%;
+  overflow: hidden !important;
+}
+@media (max-width: 760px) {
+  .checkoutShell {
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+  }
+  .checkoutViewport {
+    touch-action: pan-y;
+  }
+}
+/* /CKK_CHECKOUT_FRAME_V2 */
+
+/* CKK_CHECKOUT_ADDRESS_TOTALS_V1 */
+.checkoutAddress{display:grid;gap:12px;margin:18px 0}.checkoutAddress label,.checkoutAddressRow label{display:grid;gap:7px;font-size:.9rem;color:rgba(255,255,255,.82)}.checkoutAddress input,.checkoutAddressRow input{width:100%;min-width:0;padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:#11131d;color:#fff}.checkoutAddressRow{display:grid;grid-template-columns:minmax(0,1fr) 82px 110px;gap:10px}.checkoutTotals{display:grid;gap:9px;margin:20px 0;padding:16px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(8,9,15,.5)}.checkoutTotals h2{margin:0 0 4px}.checkoutTotals>div{display:flex;justify-content:space-between;gap:16px}.checkoutTotals small{color:rgba(255,255,255,.64);line-height:1.45}.checkoutGrandTotal{padding-top:10px;border-top:1px solid rgba(255,255,255,.14);font-size:1.15rem}@media(max-width:560px){.checkoutAddressRow{grid-template-columns:1fr 72px}.checkoutAddressRow label:last-child{grid-column:1/-1}}
+/* /CKK_CHECKOUT_ADDRESS_TOTALS_V1 */
+
+/* CKK_SHOP_PRODUCTS_CART_V1 */
+.shopCartBar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:7px 0;color:rgba(255,255,255,.7);font-size:.9rem}.shopCartLink{flex:0 0 auto}.shopSetRow.isSelected{border-color:rgba(226,188,74,.75)!important;background:rgba(78,61,25,.5)!important}.shopProducts{margin:0 0 18px;padding:16px;border:1px solid rgba(255,255,255,.15);border-radius:20px;background:rgba(10,11,18,.72)}.shopProductsHeading{display:flex;align-items:center;justify-content:space-between;gap:12px}.shopProductsHeading h2{margin:0}.shopProductStatus{color:rgba(255,255,255,.72)}.shopProductGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.shopProductCard{display:grid;grid-template-columns:92px minmax(0,1fr);gap:14px;padding:14px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(20,20,30,.84)}.shopProductImage{display:grid;place-items:center;aspect-ratio:3/4;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,rgba(105,78,160,.35),rgba(226,188,74,.18));font-size:2rem}.shopProductImage img{width:100%;height:100%;object-fit:contain}.shopProductBody{min-width:0}.shopProductBody h3{margin:8px 0;font-size:1rem}.shopProductBody p{margin:4px 0;color:rgba(255,255,255,.66)}.shopProductBadges{display:flex;flex-wrap:wrap;gap:6px}.shopProductBadges span{padding:4px 7px;border:1px solid rgba(255,255,255,.14);border-radius:999px;font-size:.72rem}.shopProductBuy{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}.shopProductBuy .btn{padding:8px 10px}@media(max-width:1100px){.shopProductGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.shopCartBar{align-items:flex-start}.shopProductGrid{grid-template-columns:1fr}.shopProductCard{grid-template-columns:78px minmax(0,1fr)}}
+/* /CKK_SHOP_PRODUCTS_CART_V1 */
+
+/* CKK_ADMIN_LEGAL_V1 */
+.adminInventoryShell,.legalShell{height:calc(100dvh - 112px)!important;min-height:520px!important;max-height:calc(100dvh - 112px)!important;overflow:hidden!important}.adminInventoryScroller,.legalScroller{position:relative;z-index:2;height:100%;min-height:0;overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}.adminInventoryPanel,.legalPanel{width:min(1080px,calc(100% - 40px));margin:28px auto;padding:30px;border:1px solid rgba(255,255,255,.15);border-radius:24px;background:rgba(10,11,18,.78);backdrop-filter:blur(16px)}.adminInventoryPanel h1,.legalPanel h1{font-size:clamp(2.2rem,5vw,4rem);margin:.1em 0}.adminInventoryForm{display:grid;gap:16px;margin-top:24px}.adminInventoryForm>label{display:grid;gap:7px}.adminInventoryForm input{padding:12px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:#11131d;color:#fff}.adminPreview{min-width:0}.adminPreviewTable{overflow:auto;border:1px solid rgba(255,255,255,.12);border-radius:14px}.adminPreview table{width:100%;border-collapse:collapse;font-size:.85rem}.adminPreview th,.adminPreview td{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.1);text-align:left;white-space:nowrap}.adminMessage{padding:12px;border-radius:12px;background:rgba(80,65,28,.45)}.adminActions{display:flex;flex-wrap:wrap;gap:10px}.legalPanel{max-width:900px}.legalPanel h2{margin-top:28px}.legalPanel p{color:rgba(255,255,255,.78);line-height:1.7}.footerLegal{display:flex;gap:6px}.footerLegal a{text-decoration:underline;text-underline-offset:3px}@media(max-width:760px){.adminInventoryShell,.legalShell{height:100%!important;min-height:0!important;max-height:100%!important}.adminInventoryPanel,.legalPanel{width:calc(100% - 20px);margin:10px auto;padding:20px}.footerLegal{justify-content:center}}
+/* /CKK_ADMIN_LEGAL_V1 */
+.checkoutTerms{font-size:.8rem;line-height:1.5;color:rgba(255,255,255,.62)}.checkoutTerms a{text-decoration:underline;text-underline-offset:3px;color:rgba(255,255,255,.86)}
+.adminInventoryScroller,.legalScroller{overflow-x:hidden!important;overflow-y:auto!important}
+.adminOrders{display:grid;gap:14px}.adminOrder{padding:16px;border:1px solid rgba(255,255,255,.13);border-radius:16px;background:rgba(15,16,24,.78)}.adminOrderHeading{display:flex;justify-content:space-between;gap:16px}.adminOrderHeading>div{display:grid;gap:4px}.adminOrderHeading small{font-family:monospace;color:rgba(255,255,255,.55);overflow-wrap:anywhere}.adminOrderHeading>span{height:max-content;padding:5px 8px;border-radius:999px;background:rgba(226,188,74,.15);font-size:.75rem}.adminOrderTotals{display:flex;flex-wrap:wrap;gap:8px 16px}.adminFulfill{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-top:14px}.adminFulfill input{min-width:0;padding:10px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:#11131d;color:#fff}@media(max-width:760px){.adminFulfill{grid-template-columns:1fr}.adminOrderHeading{align-items:flex-start}}

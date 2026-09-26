@@ -1,6 +1,7 @@
 node_modules
 dist
 .env
+.env.local
 .DS_Store
 
 _CHATGPT_UPLOAD/
@@ -9,3 +10,11 @@ _live_index.js
 
 # Local backup files
 *.bak*
+*.before-*
+backup-*/
+*-diagnostic.txt
+services.zip
+.wrangler/
+**/.wrangler/
+src/data/product-media/
+services/crystal-intel/Crystal_Intel_Unified_Catalog_Implementation_v1/

@@ -14,10 +14,11 @@ export default function Policies() {
         <div className="pane">
           <h2 className="h2">Shipping</h2>
           <ul className="list">
-            <li><strong>Singles + booster packs:</strong> $5 flat rate up to $50 order total.</li>
-            <li><strong>Sealed (excluding booster packs):</strong> $15 flat rate up to $100 cart total.</li>
-            <li><strong>Free shipping:</strong> orders over $100.</li>
-            <li>Shipping is shown at checkout and may adjust for oversize/insurance.</li>
+            <li><strong>Economy Letter:</strong> $1.99 for eligible singles-only orders under $50. This service is untracked and does not include a guaranteed delivery scan.</li>
+            <li><strong>Standard tracked shipping:</strong> $7.99 for orders under $75.</li>
+            <li><strong>Free standard tracked shipping:</strong> orders of $75 or more.*</li>
+            <li>*Free shipping includes the first standard package. A $5 charge applies for each additional package or when the first package weighs more than 50 lb. An additional package is not charged twice when it is also over 50 lb.</li>
+            <li>Freight and exceptional oversized products are identified separately. Every applicable charge is shown before payment.</li>
           </ul>
         </div>
         <div className="pane">

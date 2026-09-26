@@ -1,0 +1,38 @@
+name: Catalog sync
+
+on:
+  schedule:
+    - cron: "23 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run sync:catalog
+        env:
+          POKEMON_TCG_API_KEY: ${{ secrets.POKEMON_TCG_API_KEY }}
+      - name: Sync product thumbnails into the catalog database
+        if: ${{ env.CATALOG_SYNC_ENDPOINT != '' && env.ADMIN_TOKEN != '' }}
+        run: npm run sync:media
+        env:
+          CATALOG_SYNC_ENDPOINT: ${{ secrets.CATALOG_SYNC_ENDPOINT }}
+          ADMIN_TOKEN: ${{ secrets.CATALOG_ADMIN_TOKEN }}
+      - run: npm run verify:catalog
+      - run: npm run build
+      - name: Commit catalog changes
+        run: |
+          git config user.name "crystal-catalog-bot"
+          git config user.email "catalog-bot@users.noreply.github.com"
+          git add src/data/generatedCatalog.json
+          git diff --cached --quiet || git commit -m "chore: sync public card catalogs"
+          git push

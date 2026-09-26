@@ -1,0 +1,56 @@
+﻿{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "crystal-intel-amazon-beta",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-07-30",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true
+  },
+  "triggers": {
+    "crons": [
+      "* * * * *"
+    ]
+  },
+  "vars": {
+    "AMAZON_MARKETPLACE": "www.amazon.com",
+    "MONITOR_ENABLED": "true",
+    "DAILY_PHASE_STEP_SECONDS": "5",
+    "BASE_BLOCK_RETRY_SECONDS": "30",
+    "MAX_BLOCK_RETRY_SECONDS": "1800"
+    ,"SQUARE_ENVIRONMENT": "sandbox"
+    ,"SQUARE_APPLICATION_ID": "sandbox-sq0idb-t30ZEY57n7KbuUvPTLegBA"
+    ,"SQUARE_LOCATION_ID": "L4WHZN60W9NR6"
+    ,"SQUARE_API_VERSION": "2026-09-16"
+    ,"SQUARE_WEBHOOK_URL": "https://crystal-intel-amazon-beta.chris-waldron319-a01.workers.dev/api/storefront/webhooks/square"
+    ,"STOREFRONT_ORIGIN": "https://thecrystalcardkeep.com"
+    ,"CHECKOUT_ENABLED": "false"
+    ,"TAX_MODE": "disabled"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "crystal-intel-beta",
+      "database_id": "e28ed299-2fb1-4506-92f0-aa6198adf3fd",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "MONITOR_QUEUE",
+        "queue": "crystal-intel-monitor-jobs"
+      }
+    ],
+    "consumers": [
+      {
+        "queue": "crystal-intel-monitor-jobs",
+        "max_batch_size": 1,
+        "max_batch_timeout": 1,
+        "max_retries": 3,
+        "dead_letter_queue": "crystal-intel-monitor-dead-letter"
+      }
+    ]
+  }
+}
+

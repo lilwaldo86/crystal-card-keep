@@ -5,9 +5,11 @@
     const body = await request.json();
     const { name, email, message, turnstileToken } = body;
 
-    if (!name || !email || !message || !turnstileToken) {
+    if (!name || !email || !message || !turnstileToken || String(name).length > 120 || String(email).length > 254 || String(message).length > 5000) {
       return new Response(JSON.stringify({ error: "Missing fields" }), { status: 400 });
     }
+
+    const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]);
 
     // Verify Turnstile
     const formData = new FormData();
@@ -41,9 +43,9 @@
         to: "chris.waldron319@thecrystalcardkeep.com",
         subject: "New Contact Message",
         html:
-          "<strong>Name:</strong> " + name +
-          "<br/><strong>Email:</strong> " + email +
-          "<br/><br/>" + message
+          "<strong>Name:</strong> " + escapeHtml(name) +
+          "<br/><strong>Email:</strong> " + escapeHtml(email) +
+          "<br/><br/>" + escapeHtml(message).replace(/\n/g, "<br/>")
       })
     });
 

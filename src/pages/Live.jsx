@@ -6,19 +6,16 @@ export default function Live() {
       <section className="card">
         <h1 className="h1">Live Breaking • Rip & Ship</h1>
         <p className="p">
-          We run live breaks and rip-and-ship streams. This page is intentionally simple right now — it’s here so distributors (and customers) can see that the business is operational.
+          Live singles, sealed product, quick auctions, and rip-and-ship sessions from The Crystal Card Keep.
         </p>
         <div className="grid2">
           <div className="subcard">
             <h3 className="h3">Where we stream</h3>
             <ul className="bullets">
-              <li>Whatnot (primary)</li>
-              <li>eBay Live (planned)</li>
-              <li>TikTok Live (planned)</li>
+              <li><a href="https://www.whatnot.com/user/mandingo6420" target="_blank" rel="noopener noreferrer">Whatnot — Mandingo6420</a></li>
+              <li>Additional live channels will be announced here.</li>
             </ul>
-            <div className="note">
-              Add your stream links in <code>src/pages/Live.jsx</code>.
-            </div>
+            <a className="btn primary" href="https://www.whatnot.com/user/mandingo6420" target="_blank" rel="noopener noreferrer">Open Whatnot stream</a>
           </div>
           <div className="subcard">
             <h3 className="h3">How rip & ship works</h3>
@@ -34,7 +31,7 @@ export default function Live() {
 
       <section className="card">
         <h2 className="h2">Stream schedule</h2>
-        <p className="p muted">Coming soon. We’ll post weekly schedules here.</p>
+        <p className="p muted">Weekly schedules will be posted here and shared with subscribers once scheduling notifications launch.</p>
       </section>
     </div>
   )

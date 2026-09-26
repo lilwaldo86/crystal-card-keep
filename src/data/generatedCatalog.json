@@ -1,0 +1,4304 @@
+{
+  "generatedAt": "2026-09-26T18:12:06.041Z",
+  "sources": {
+    "pokemon": {
+      "status": "ok",
+      "syncedAt": "2026-09-26T18:12:06.041Z"
+    },
+    "mtg": {
+      "status": "ok",
+      "syncedAt": "2026-09-26T18:12:06.041Z"
+    }
+  },
+  "games": {
+    "mtg": [
+      {
+        "label": "2026",
+        "sets": [
+          {
+            "code": "TRK",
+            "name": "Star Trek",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
+          },
+          {
+            "code": "TRC",
+            "name": "Star Trek Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
+          },
+          {
+            "code": "MBC",
+            "name": "Mystery Booster Commander Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-09",
+            "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
+          },
+          {
+            "code": "FRA",
+            "name": "Reality Fracture",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
+          },
+          {
+            "code": "FRC",
+            "name": "Reality Fracture Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
+          },
+          {
+            "code": "HOB",
+            "name": "The Hobbit",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-08-14",
+            "sourceId": "59218c23-cb7a-4fde-9cff-3f2f71af1308"
+          },
+          {
+            "code": "MSH",
+            "name": "Marvel Super Heroes",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-06-26",
+            "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
+          },
+          {
+            "code": "MSC",
+            "name": "Marvel Super Heroes Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-06-26",
+            "sourceId": "9d739461-c5ac-43a1-af41-3d5a585b5c8d"
+          },
+          {
+            "code": "SOC",
+            "name": "Secrets of Strixhaven Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
+          },
+          {
+            "code": "SOS",
+            "name": "Secrets of Strixhaven",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
+          },
+          {
+            "code": "TMT",
+            "name": "Teenage Mutant Ninja Turtles",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-03-06",
+            "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
+          },
+          {
+            "code": "ECC",
+            "name": "Lorwyn Eclipsed Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
+          },
+          {
+            "code": "ECL",
+            "name": "Lorwyn Eclipsed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
+          }
+        ]
+      },
+      {
+        "label": "2025",
+        "sets": [
+          {
+            "code": "TLA",
+            "name": "Avatar: The Last Airbender",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-11-21",
+            "sourceId": "118f7e64-5caa-4cb7-99a8-184f4d3a7422"
+          },
+          {
+            "code": "SPM",
+            "name": "Marvel's Spider-Man",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-09-26",
+            "sourceId": "a1c7b891-9e96-434c-9994-be58b62b27f1"
+          },
+          {
+            "code": "EOE",
+            "name": "Edge of Eternities",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
+          },
+          {
+            "code": "EOC",
+            "name": "Edge of Eternities Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
+          },
+          {
+            "code": "FIC",
+            "name": "Final Fantasy Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-06-13",
+            "sourceId": "30659956-4558-4cbf-a65f-34cd00c89579"
+          },
+          {
+            "code": "FIN",
+            "name": "Final Fantasy",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-06-13",
+            "sourceId": "d7beb4b7-e1ff-4d35-ab07-5700f17ea1ea"
+          },
+          {
+            "code": "TDC",
+            "name": "Tarkir: Dragonstorm Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-04-11",
+            "sourceId": "bca9779c-0a0b-4ac1-8794-f3fc25549cf4"
+          },
+          {
+            "code": "TDM",
+            "name": "Tarkir: Dragonstorm",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-04-11",
+            "sourceId": "1361ca81-1304-49a8-b2e6-e76a4aa4a8c3"
+          },
+          {
+            "code": "DFT",
+            "name": "Aetherdrift",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-02-14",
+            "sourceId": "23464cc2-a69c-427d-b8a7-08e5d80235d7"
+          },
+          {
+            "code": "DRC",
+            "name": "Aetherdrift Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-02-14",
+            "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
+          },
+          {
+            "code": "INR",
+            "name": "Innistrad Remastered",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-01-24",
+            "sourceId": "b9618c8c-9f31-4b42-9798-2991893c27bf"
+          }
+        ]
+      },
+      {
+        "label": "2024",
+        "sets": [
+          {
+            "code": "J25",
+            "name": "Foundations Jumpstart",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+          },
+          {
+            "code": "FDN",
+            "name": "Foundations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
+          },
+          {
+            "code": "FDC",
+            "name": "Foundations Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
+          },
+          {
+            "code": "DSK",
+            "name": "Duskmourn: House of Horror",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-09-27",
+            "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
+          },
+          {
+            "code": "DSC",
+            "name": "Duskmourn: House of Horror Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-09-27",
+            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
+          },
+          {
+            "code": "BLC",
+            "name": "Bloomburrow Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
+          },
+          {
+            "code": "MB2",
+            "name": "Mystery Booster 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+          },
+          {
+            "code": "BLB",
+            "name": "Bloomburrow",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
+          },
+          {
+            "code": "ACR",
+            "name": "Assassin's Creed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-07-05",
+            "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
+          },
+          {
+            "code": "MH3",
+            "name": "Modern Horizons 3",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
+          },
+          {
+            "code": "M3C",
+            "name": "Modern Horizons 3 Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
+          },
+          {
+            "code": "H2R",
+            "name": "Modern Horizons 2 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
+          },
+          {
+            "code": "BIG",
+            "name": "The Big Score",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
+          },
+          {
+            "code": "OTC",
+            "name": "Outlaws of Thunder Junction Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
+          },
+          {
+            "code": "OTJ",
+            "name": "Outlaws of Thunder Junction",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
+          },
+          {
+            "code": "PIP",
+            "name": "Fallout",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-03-08",
+            "sourceId": "d84d7a49-2ef4-4808-83b4-8c65b4aa0e2d"
+          },
+          {
+            "code": "CLU",
+            "name": "Ravnica: Clue Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-23",
+            "sourceId": "d4bfabcf-a859-43a4-9d8a-665533c8b174"
+          },
+          {
+            "code": "MKM",
+            "name": "Murders at Karlov Manor",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-09",
+            "sourceId": "2b17794b-15c3-4796-ad6f-0887a0eceeca"
+          },
+          {
+            "code": "MKC",
+            "name": "Murders at Karlov Manor Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-09",
+            "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
+          },
+          {
+            "code": "RVR",
+            "name": "Ravnica Remastered",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-01-12",
+            "sourceId": "fed2c8cd-ab92-44f6-808a-41e7809bcfe2"
+          }
+        ]
+      },
+      {
+        "label": "2023",
+        "sets": [
+          {
+            "code": "LCC",
+            "name": "The Lost Caverns of Ixalan Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
+          },
+          {
+            "code": "LCI",
+            "name": "The Lost Caverns of Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
+          },
+          {
+            "code": "WHO",
+            "name": "Doctor Who",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-10-13",
+            "sourceId": "efdfdd99-cee7-4c11-a5e9-03d60f88bdd6"
+          },
+          {
+            "code": "WOC",
+            "name": "Wilds of Eldraine Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-09-08",
+            "sourceId": "51c0814a-2db2-4182-9aac-77340e9a540d"
+          },
+          {
+            "code": "WOE",
+            "name": "Wilds of Eldraine",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-09-08",
+            "sourceId": "79139661-13ee-43c4-8bad-a8c069f1a1df"
+          },
+          {
+            "code": "CMM",
+            "name": "Commander Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-08-04",
+            "sourceId": "cd05036f-2698-43e6-a48e-5c8d82f0a551"
+          },
+          {
+            "code": "LTC",
+            "name": "Tales of Middle-earth Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-06-23",
+            "sourceId": "e567c19c-0fe4-446e-a7bf-fce8a150cd2e"
+          },
+          {
+            "code": "LTR",
+            "name": "The Lord of the Rings: Tales of Middle-earth",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-06-23",
+            "sourceId": "08078706-ac5d-439b-8f01-894d38751367"
+          },
+          {
+            "code": "MAT",
+            "name": "March of the Machine: The Aftermath",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-05-12",
+            "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
+          },
+          {
+            "code": "MOC",
+            "name": "March of the Machine Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-04-21",
+            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
+          },
+          {
+            "code": "MOM",
+            "name": "March of the Machine",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-04-21",
+            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
+          },
+          {
+            "code": "ONE",
+            "name": "Phyrexia: All Will Be One",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-02-10",
+            "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
+          },
+          {
+            "code": "ONC",
+            "name": "Phyrexia: All Will Be One Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-02-10",
+            "sourceId": "8c5e86d4-ae2d-42f7-a0e5-0e4141eb953d"
+          },
+          {
+            "code": "DMR",
+            "name": "Dominaria Remastered",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-01-13",
+            "sourceId": "ca4c2884-e539-4b7f-980d-5d6a50220f2a"
+          }
+        ]
+      },
+      {
+        "label": "2022",
+        "sets": [
+          {
+            "code": "SCD",
+            "name": "Starter Commander Decks",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-12-02",
+            "sourceId": "adc5d965-43ea-46bc-aebd-8a39282ce168"
+          },
+          {
+            "code": "J22",
+            "name": "Jumpstart 2022",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-12-02",
+            "sourceId": "247df475-e4ce-4e5e-9317-11892d2211e0"
+          },
+          {
+            "code": "BRC",
+            "name": "The Brothers' War Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-11-18",
+            "sourceId": "81d56780-1efc-4487-9803-43d634ca13d0"
+          },
+          {
+            "code": "BRO",
+            "name": "The Brothers' War",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-11-18",
+            "sourceId": "4219a14e-6701-4ddd-a185-21dc054ab19b"
+          },
+          {
+            "code": "40K",
+            "name": "Warhammer 40,000 Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-10-07",
+            "sourceId": "f35f5dd8-5b95-4f52-bbe7-1c62909a8d08"
+          },
+          {
+            "code": "DMC",
+            "name": "Dominaria United Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-09-09",
+            "sourceId": "78076b27-f888-4723-b27c-44074accd261"
+          },
+          {
+            "code": "DMU",
+            "name": "Dominaria United",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-09-09",
+            "sourceId": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3"
+          },
+          {
+            "code": "2X2",
+            "name": "Double Masters 2022",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-07-08",
+            "sourceId": "5a645837-b050-449f-ac90-1e7ccbf45031"
+          },
+          {
+            "code": "CLB",
+            "name": "Commander Legends: Battle for Baldur's Gate",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-06-10",
+            "sourceId": "5e4c3fe8-fd57-4b20-ad56-c03790a16cea"
+          },
+          {
+            "code": "SNC",
+            "name": "Streets of New Capenna",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-04-29",
+            "sourceId": "df837242-8c15-42e4-b049-c933a02dc501"
+          },
+          {
+            "code": "NCC",
+            "name": "New Capenna Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-04-29",
+            "sourceId": "c51de34b-d4d6-4179-a432-573744ded119"
+          },
+          {
+            "code": "SLX",
+            "name": "Universes Within",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-03-03",
+            "sourceId": "3c318e12-9152-4300-a096-4f58a6438897"
+          },
+          {
+            "code": "NEO",
+            "name": "Kamigawa: Neon Dynasty",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-02-18",
+            "sourceId": "59a2059f-5482-433f-8761-eb2e17859b71"
+          },
+          {
+            "code": "NEC",
+            "name": "Neon Dynasty Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-02-18",
+            "sourceId": "5b4d929d-bdf9-4bbf-858e-e248f53325ad"
+          },
+          {
+            "code": "DBL",
+            "name": "Innistrad: Double Feature",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-01-28",
+            "sourceId": "5c1638d2-bce9-463e-b0ec-469336cb1bd2"
+          }
+        ]
+      },
+      {
+        "label": "2021",
+        "sets": [
+          {
+            "code": "VOW",
+            "name": "Innistrad: Crimson Vow",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-11-19",
+            "sourceId": "8144b676-569f-4716-8005-bc8f0778f3fa"
+          },
+          {
+            "code": "VOC",
+            "name": "Crimson Vow Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-11-19",
+            "sourceId": "b2e444f7-41e6-4172-ba01-47d91d5e7bbc"
+          },
+          {
+            "code": "MIC",
+            "name": "Midnight Hunt Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-09-24",
+            "sourceId": "7f9a4deb-715e-47d2-afac-3843ef92f39b"
+          },
+          {
+            "code": "MID",
+            "name": "Innistrad: Midnight Hunt",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-09-24",
+            "sourceId": "44b8eb8f-fa23-401a-98b5-1fbb9871128e"
+          },
+          {
+            "code": "AFC",
+            "name": "Forgotten Realms Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-07-23",
+            "sourceId": "db1b46f9-893c-4623-9465-985ff6e4472c"
+          },
+          {
+            "code": "AFR",
+            "name": "Adventures in the Forgotten Realms",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-07-23",
+            "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
+          },
+          {
+            "code": "MH2",
+            "name": "Modern Horizons 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
+          },
+          {
+            "code": "H1R",
+            "name": "Modern Horizons 1 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
+          },
+          {
+            "code": "C21",
+            "name": "Commander 2021",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-04-23",
+            "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
+          },
+          {
+            "code": "STX",
+            "name": "Strixhaven: School of Mages",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-04-23",
+            "sourceId": "541c3c28-8747-40e5-a231-8e8f33234859"
+          },
+          {
+            "code": "TSR",
+            "name": "Time Spiral Remastered",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-03-19",
+            "sourceId": "11e90d1b-0502-43e6-b056-e24836523c13"
+          },
+          {
+            "code": "KHM",
+            "name": "Kaldheim",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
+          },
+          {
+            "code": "KHC",
+            "name": "Kaldheim Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
+          }
+        ]
+      },
+      {
+        "label": "2020",
+        "sets": [
+          {
+            "code": "CMR",
+            "name": "Commander Legends",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-11-20",
+            "sourceId": "39de6fbf-1f11-48d0-8f04-f0407f6a0732"
+          },
+          {
+            "code": "PLST",
+            "name": "The List",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-26",
+            "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
+          },
+          {
+            "code": "ZNC",
+            "name": "Zendikar Rising Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
+          },
+          {
+            "code": "ZNR",
+            "name": "Zendikar Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
+          },
+          {
+            "code": "2XM",
+            "name": "Double Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-08-07",
+            "sourceId": "372dafe8-b5d1-4b81-998f-3ae96b59498a"
+          },
+          {
+            "code": "JMP",
+            "name": "Jumpstart",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-07-17",
+            "sourceId": "0f6ccf25-a627-4263-86df-5757137f1696"
+          },
+          {
+            "code": "M21",
+            "name": "Core Set 2021",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-07-03",
+            "sourceId": "bc94aba1-7376-4e02-a12d-3a2efb66ab0f"
+          },
+          {
+            "code": "IKO",
+            "name": "Ikoria: Lair of Behemoths",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-04-24",
+            "sourceId": "19feda43-15ab-427e-a0e4-148a4bf2b03a"
+          },
+          {
+            "code": "C20",
+            "name": "Commander 2020",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-04-17",
+            "sourceId": "f60ec786-1f8d-42f7-9abc-0d880fe243f6"
+          },
+          {
+            "code": "THB",
+            "name": "Theros Beyond Death",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-01-24",
+            "sourceId": "5f23a78d-cda1-462a-8be3-a62b40c34913"
+          }
+        ]
+      },
+      {
+        "label": "2019",
+        "sets": [
+          {
+            "code": "ELD",
+            "name": "Throne of Eldraine",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-10-04",
+            "sourceId": "a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782"
+          },
+          {
+            "code": "C19",
+            "name": "Commander 2019",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-08-23",
+            "sourceId": "0fa3ccbb-d86d-4a2e-a55e-c4979c4feeb2"
+          },
+          {
+            "code": "M20",
+            "name": "Core Set 2020",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-07-12",
+            "sourceId": "4a787360-9767-4f44-80b1-2405dc5e39c7"
+          },
+          {
+            "code": "MH1",
+            "name": "Modern Horizons",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-06-14",
+            "sourceId": "d7efccd6-55bc-4fb8-9138-e72577510a99"
+          },
+          {
+            "code": "WAR",
+            "name": "War of the Spark",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-05-03",
+            "sourceId": "ee044f0b-e101-4ead-8d0e-aa510aad4277"
+          },
+          {
+            "code": "RNA",
+            "name": "Ravnica Allegiance",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019-01-25",
+            "sourceId": "97a7fd84-8d89-45a3-b48b-c951f6a3f9f1"
+          }
+        ]
+      },
+      {
+        "label": "2018",
+        "sets": [
+          {
+            "code": "UMA",
+            "name": "Ultimate Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-12-07",
+            "sourceId": "2ec77b94-6d47-4891-a480-5d0b4e5c9372"
+          },
+          {
+            "code": "GRN",
+            "name": "Guilds of Ravnica",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-10-05",
+            "sourceId": "597c6d4a-8212-4903-a6af-12c4ae9e13f0"
+          },
+          {
+            "code": "C18",
+            "name": "Commander 2018",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-08-10",
+            "sourceId": "06ce6bc2-85cd-4cca-85b1-8c620d3e0902"
+          },
+          {
+            "code": "M19",
+            "name": "Core Set 2019",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-07-13",
+            "sourceId": "2f5f2509-56db-414d-9a7e-6e312ec3760c"
+          },
+          {
+            "code": "CM2",
+            "name": "Commander Anthology Volume II",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
+          },
+          {
+            "code": "BBD",
+            "name": "Battlebond",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
+          },
+          {
+            "code": "DOM",
+            "name": "Dominaria",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-04-27",
+            "sourceId": "be1daba3-51c9-4e7e-9212-36e68addc26c"
+          },
+          {
+            "code": "A25",
+            "name": "Masters 25",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-03-16",
+            "sourceId": "41ee6e2f-69b3-4c53-8a8e-960f5e974cfc"
+          },
+          {
+            "code": "RIX",
+            "name": "Rivals of Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-01-19",
+            "sourceId": "2f7e40fc-772d-4a85-bfdd-01653c41d0fa"
+          }
+        ]
+      },
+      {
+        "label": "2017",
+        "sets": [
+          {
+            "code": "IMA",
+            "name": "Iconic Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-11-17",
+            "sourceId": "741bcd30-7709-4133-8919-f4b46483bed7"
+          },
+          {
+            "code": "XLN",
+            "name": "Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-09-29",
+            "sourceId": "fe0dad85-54bc-4151-9200-d68da84dd0f2"
+          },
+          {
+            "code": "C17",
+            "name": "Commander 2017",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-08-25",
+            "sourceId": "5caec427-0c78-4c37-b4ec-30f7e0ba9abf"
+          },
+          {
+            "code": "HOU",
+            "name": "Hour of Devastation",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-07-14",
+            "sourceId": "65ff168b-bb94-47a5-a8f9-4ec6c213e768"
+          },
+          {
+            "code": "CMA",
+            "name": "Commander Anthology",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-06-09",
+            "sourceId": "fd4d8463-0156-4c60-a40e-778762bb90e4"
+          },
+          {
+            "code": "AKH",
+            "name": "Amonkhet",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-04-28",
+            "sourceId": "02d1c536-68bc-4208-9b65-7741ef1f9da8"
+          },
+          {
+            "code": "MM3",
+            "name": "Modern Masters 2017",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-03-17",
+            "sourceId": "02624962-f727-4c31-bbf2-a94fa6c5b653"
+          },
+          {
+            "code": "AER",
+            "name": "Aether Revolt",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017-01-20",
+            "sourceId": "a4a0db50-8826-4e73-833c-3fd934375f96"
+          }
+        ]
+      },
+      {
+        "label": "2016",
+        "sets": [
+          {
+            "code": "C16",
+            "name": "Commander 2016",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-11-11",
+            "sourceId": "3e0d713a-b5cb-4287-81b9-a57d4dcaf415"
+          },
+          {
+            "code": "KLD",
+            "name": "Kaladesh",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-09-30",
+            "sourceId": "d667e468-be8f-411f-a030-473d148deb74"
+          },
+          {
+            "code": "CN2",
+            "name": "Conspiracy: Take the Crown",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-08-26",
+            "sourceId": "ad1b8847-1905-4080-9e26-80691ea7c1ef"
+          },
+          {
+            "code": "EMN",
+            "name": "Eldritch Moon",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-07-22",
+            "sourceId": "5f0e4093-334f-4439-bbb5-a0affafd0ffc"
+          },
+          {
+            "code": "EMA",
+            "name": "Eternal Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-06-10",
+            "sourceId": "1f29f022-3ace-4c96-85e8-1f7b63aadf7e"
+          },
+          {
+            "code": "SOI",
+            "name": "Shadows over Innistrad",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-04-08",
+            "sourceId": "5e914d7e-c1e9-446c-a33d-d093c02b2743"
+          },
+          {
+            "code": "OGW",
+            "name": "Oath of the Gatewatch",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016-01-22",
+            "sourceId": "cd51d245-8f95-45b0-ab5f-e2b3a3eb5dfe"
+          }
+        ]
+      },
+      {
+        "label": "2015",
+        "sets": [
+          {
+            "code": "C15",
+            "name": "Commander 2015",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-11-13",
+            "sourceId": "ea6c99f9-5489-4504-b30c-c819fa3b1fd3"
+          },
+          {
+            "code": "BFZ",
+            "name": "Battle for Zendikar",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-10-02",
+            "sourceId": "91719374-7ac5-4afa-ada8-5da964dcf1d4"
+          },
+          {
+            "code": "ORI",
+            "name": "Magic Origins",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-07-17",
+            "sourceId": "0eeb9a9a-20ac-404d-b55f-aeb7a43a7f62"
+          },
+          {
+            "code": "MM2",
+            "name": "Modern Masters 2015",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-05-22",
+            "sourceId": "28cac015-43df-4e88-90d0-95dcdd894834"
+          },
+          {
+            "code": "DTK",
+            "name": "Dragons of Tarkir",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-03-27",
+            "sourceId": "7e72625f-f320-4552-a719-d11e2f1853bd"
+          },
+          {
+            "code": "FRF",
+            "name": "Fate Reforged",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015-01-23",
+            "sourceId": "7bb5cb2b-081a-4c8c-b7e1-494046e6baa1"
+          }
+        ]
+      },
+      {
+        "label": "2014",
+        "sets": [
+          {
+            "code": "C14",
+            "name": "Commander 2014",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-11-07",
+            "sourceId": "0980a6e2-eb78-4ad2-8396-cef08fce365e"
+          },
+          {
+            "code": "KTK",
+            "name": "Khans of Tarkir",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-09-26",
+            "sourceId": "6c7a715c-ded9-449e-89b0-c665773e9c3c"
+          },
+          {
+            "code": "M15",
+            "name": "Magic 2015",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-07-18",
+            "sourceId": "6ce49890-3b37-42a5-8932-dbeef1d7b62c"
+          },
+          {
+            "code": "CNS",
+            "name": "Conspiracy",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-06-06",
+            "sourceId": "7d4ebb59-a50b-45b8-8fff-ab70767819a5"
+          },
+          {
+            "code": "JOU",
+            "name": "Journey into Nyx",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-05-02",
+            "sourceId": "204d2dca-1887-4721-9558-164aa7bbeb4f"
+          },
+          {
+            "code": "BNG",
+            "name": "Born of the Gods",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014-02-07",
+            "sourceId": "50a80fe4-a757-408f-ad23-52c5cc5f45cc"
+          }
+        ]
+      },
+      {
+        "label": "2013",
+        "sets": [
+          {
+            "code": "C13",
+            "name": "Commander 2013",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-11-01",
+            "sourceId": "c62e6d4f-af8c-4f27-9bc8-361291890146"
+          },
+          {
+            "code": "THS",
+            "name": "Theros",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-09-27",
+            "sourceId": "69093d6f-e25a-41a4-8cf5-688d7f11c0fb"
+          },
+          {
+            "code": "M14",
+            "name": "Magic 2014",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-07-19",
+            "sourceId": "e03ee1c0-ecd2-4fcc-ac3c-e8fdb103a847"
+          },
+          {
+            "code": "MMA",
+            "name": "Modern Masters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-06-07",
+            "sourceId": "0b7020f2-336d-4706-9ce6-f6710b9ebd5c"
+          },
+          {
+            "code": "DGM",
+            "name": "Dragon's Maze",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-05-03",
+            "sourceId": "c8bd8520-cd98-45cd-b533-8d40c2087426"
+          },
+          {
+            "code": "GTC",
+            "name": "Gatecrash",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013-02-01",
+            "sourceId": "035a05f7-e020-4f50-a141-ed16ba704bd2"
+          }
+        ]
+      },
+      {
+        "label": "2012",
+        "sets": [
+          {
+            "code": "RTR",
+            "name": "Return to Ravnica",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012-10-05",
+            "sourceId": "80b2374d-c5f1-403e-9772-f6c806fd275e"
+          },
+          {
+            "code": "M13",
+            "name": "Magic 2013",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012-07-13",
+            "sourceId": "f9b0c6f4-8a4f-4f36-ad3c-e1e16fb8535d"
+          },
+          {
+            "code": "AVR",
+            "name": "Avacyn Restored",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012-05-04",
+            "sourceId": "039810a9-92d7-4f2d-b2d0-ca661ac586c0"
+          },
+          {
+            "code": "DKA",
+            "name": "Dark Ascension",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012-02-03",
+            "sourceId": "8052750a-aaf2-46fc-b46d-633f14124017"
+          }
+        ]
+      },
+      {
+        "label": "2011",
+        "sets": [
+          {
+            "code": "ISD",
+            "name": "Innistrad",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011-09-30",
+            "sourceId": "d1026945-2969-42b9-be53-f941405a58cb"
+          },
+          {
+            "code": "M12",
+            "name": "Magic 2012",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011-07-15",
+            "sourceId": "5cdd2643-229c-4441-a62a-c34e4b531e1c"
+          },
+          {
+            "code": "CMD",
+            "name": "Commander 2011",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011-06-17",
+            "sourceId": "84ff1a64-4e69-4ed2-8c08-26206e3b97a0"
+          },
+          {
+            "code": "NPH",
+            "name": "New Phyrexia",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011-05-13",
+            "sourceId": "e8e356d8-6d01-4dab-aa07-d0999dc9359f"
+          },
+          {
+            "code": "MBS",
+            "name": "Mirrodin Besieged",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011-02-04",
+            "sourceId": "f46c57e3-9301-4006-a6ca-06f3f65961fb"
+          }
+        ]
+      },
+      {
+        "label": "2010",
+        "sets": [
+          {
+            "code": "SOM",
+            "name": "Scars of Mirrodin",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010-10-01",
+            "sourceId": "8f403072-9b22-4e69-8d59-22dc4c97fd8d"
+          },
+          {
+            "code": "M11",
+            "name": "Magic 2011",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010-07-16",
+            "sourceId": "485d2468-18c8-42a4-9482-ca1c51e0470e"
+          },
+          {
+            "code": "ROE",
+            "name": "Rise of the Eldrazi",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010-04-23",
+            "sourceId": "eadb8a82-ec56-4623-b50e-42e7e60cb535"
+          },
+          {
+            "code": "WWK",
+            "name": "Worldwake",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010-02-05",
+            "sourceId": "2f248ce6-c2a5-4c6f-a2be-0c593fbe173c"
+          }
+        ]
+      },
+      {
+        "label": "2009",
+        "sets": [
+          {
+            "code": "ZEN",
+            "name": "Zendikar",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009-10-02",
+            "sourceId": "eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2"
+          },
+          {
+            "code": "M10",
+            "name": "Magic 2010",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009-07-17",
+            "sourceId": "0dba38a9-6b9d-4768-9831-4e03e8970a0b"
+          },
+          {
+            "code": "ARB",
+            "name": "Alara Reborn",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009-04-30",
+            "sourceId": "db486ec5-141d-4781-9ee5-5456926934c1"
+          },
+          {
+            "code": "CON",
+            "name": "Conflux",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009-02-06",
+            "sourceId": "76b2db58-904c-4e49-8580-9f62f7b3cca4"
+          }
+        ]
+      },
+      {
+        "label": "2008",
+        "sets": [
+          {
+            "code": "ALA",
+            "name": "Shards of Alara",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008-10-03",
+            "sourceId": "d667aaec-09b7-4406-b6fa-60795132dc11"
+          },
+          {
+            "code": "EVE",
+            "name": "Eventide",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008-07-25",
+            "sourceId": "86b4dfef-f2d1-49d6-825d-7df6bda44357"
+          },
+          {
+            "code": "SHM",
+            "name": "Shadowmoor",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008-05-02",
+            "sourceId": "c18c0ba1-2081-4808-9b2e-549bc3a666f3"
+          },
+          {
+            "code": "MOR",
+            "name": "Morningtide",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008-02-01",
+            "sourceId": "c41550df-7b41-41a3-85ab-8612eb2f168f"
+          }
+        ]
+      },
+      {
+        "label": "2007",
+        "sets": [
+          {
+            "code": "LRW",
+            "name": "Lorwyn",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007-10-12",
+            "sourceId": "30ec97cb-dca9-4bf4-a98b-310f9d8ceaff"
+          },
+          {
+            "code": "10E",
+            "name": "Tenth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007-07-13",
+            "sourceId": "a66a6124-0d81-488d-b080-91f5ba7fbad0"
+          },
+          {
+            "code": "FUT",
+            "name": "Future Sight",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007-05-04",
+            "sourceId": "bf951ddb-4445-4923-87cb-3fe4ac3c6b9a"
+          },
+          {
+            "code": "PLC",
+            "name": "Planar Chaos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007-02-02",
+            "sourceId": "5a1b571c-73e9-4c14-b9d4-a62507d85789"
+          }
+        ]
+      },
+      {
+        "label": "2006",
+        "sets": [
+          {
+            "code": "TSP",
+            "name": "Time Spiral",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-10-06",
+            "sourceId": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046"
+          },
+          {
+            "code": "TSB",
+            "name": "Time Spiral Timeshifted",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-10-06",
+            "sourceId": "6519be58-b8cb-4cd7-9f5b-4db23364715b"
+          },
+          {
+            "code": "CSP",
+            "name": "Coldsnap",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-07-21",
+            "sourceId": "1f4f105f-73e4-4f03-849e-82a204807847"
+          },
+          {
+            "code": "DIS",
+            "name": "Dissension",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-05-05",
+            "sourceId": "fdebeda1-b95f-4343-8a94-d125821e6b5c"
+          },
+          {
+            "code": "GPT",
+            "name": "Guildpact",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-02-03",
+            "sourceId": "594b4d09-8ce1-494d-bdb2-842c124bd087"
+          }
+        ]
+      },
+      {
+        "label": "2005",
+        "sets": [
+          {
+            "code": "RAV",
+            "name": "Ravnica: City of Guilds",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005-10-07",
+            "sourceId": "15fccbe8-2825-41ca-9d0a-67aebdf91c4a"
+          },
+          {
+            "code": "9ED",
+            "name": "Ninth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005-07-29",
+            "sourceId": "e70c8572-4732-4e92-a140-b4e3c1c84c93"
+          },
+          {
+            "code": "SOK",
+            "name": "Saviors of Kamigawa",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005-06-03",
+            "sourceId": "4db16ad3-2b95-442f-bb6b-e9aa7fe7f769"
+          },
+          {
+            "code": "BOK",
+            "name": "Betrayers of Kamigawa",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005-02-04",
+            "sourceId": "d4b88587-a1f5-4b47-9e24-78ec9e57bd0e"
+          }
+        ]
+      },
+      {
+        "label": "2004",
+        "sets": [
+          {
+            "code": "CHK",
+            "name": "Champions of Kamigawa",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004-10-01",
+            "sourceId": "6183d21f-a0af-4118-ba58-aca1d8719c01"
+          },
+          {
+            "code": "5DN",
+            "name": "Fifth Dawn",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004-06-04",
+            "sourceId": "e4bc1b87-5476-463c-8640-4c414ecf1763"
+          },
+          {
+            "code": "DST",
+            "name": "Darksteel",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004-02-06",
+            "sourceId": "e29cb2dd-1345-4032-abfe-e52e8c8ce074"
+          }
+        ]
+      },
+      {
+        "label": "2003",
+        "sets": [
+          {
+            "code": "MRD",
+            "name": "Mirrodin",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003-10-02",
+            "sourceId": "1d4f90ba-8d4a-4ee5-bc2f-e2d6bffe4955"
+          },
+          {
+            "code": "8ED",
+            "name": "Eighth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003-07-28",
+            "sourceId": "cae8d29d-5979-4d8f-884d-7f3183bcc886"
+          },
+          {
+            "code": "SCG",
+            "name": "Scourge",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003-05-26",
+            "sourceId": "5133c3a1-1412-4ce6-a1f0-73b695966ded"
+          },
+          {
+            "code": "LGN",
+            "name": "Legions",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003-02-03",
+            "sourceId": "c2d60a18-1a81-4784-8e0c-e1de2f43c5cf"
+          }
+        ]
+      },
+      {
+        "label": "2002",
+        "sets": [
+          {
+            "code": "ONS",
+            "name": "Onslaught",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002-10-07",
+            "sourceId": "914a6c6d-cb3b-45e8-a2db-9978a2339faf"
+          },
+          {
+            "code": "JUD",
+            "name": "Judgment",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002-05-27",
+            "sourceId": "cd82de1a-36fd-4618-bfe8-b45532a582d9"
+          },
+          {
+            "code": "TOR",
+            "name": "Torment",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002-02-04",
+            "sourceId": "e0b3fda1-a6ca-4996-849b-08b463d39484"
+          }
+        ]
+      },
+      {
+        "label": "2001",
+        "sets": [
+          {
+            "code": "ODY",
+            "name": "Odyssey",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001-10-01",
+            "sourceId": "b0d90d2d-494a-4224-bfa0-36ce5ee281b1"
+          },
+          {
+            "code": "APC",
+            "name": "Apocalypse",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001-06-04",
+            "sourceId": "e4e00913-d08d-4899-86ea-5cf631e09ce0"
+          },
+          {
+            "code": "7ED",
+            "name": "Seventh Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001-04-11",
+            "sourceId": "230f38aa-9511-4db8-a3aa-aeddbc3f7bb9"
+          },
+          {
+            "code": "PLS",
+            "name": "Planeshift",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001-02-05",
+            "sourceId": "82dc193b-bd5f-4883-a93f-a4155b467ee0"
+          }
+        ]
+      },
+      {
+        "label": "2000",
+        "sets": [
+          {
+            "code": "INV",
+            "name": "Invasion",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000-10-02",
+            "sourceId": "b9ae5e02-7726-47ca-b5e4-5ec402b41cd1"
+          },
+          {
+            "code": "PCY",
+            "name": "Prophecy",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000-06-05",
+            "sourceId": "c233bd36-57c0-4aa2-ae6c-7aeabfb4e3ce"
+          },
+          {
+            "code": "NEM",
+            "name": "Nemesis",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000-02-14",
+            "sourceId": "fa5d1fdb-f781-473d-b14d-50396d40d43f"
+          }
+        ]
+      },
+      {
+        "label": "1999",
+        "sets": [
+          {
+            "code": "MMQ",
+            "name": "Mercadian Masques",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999-10-04",
+            "sourceId": "385e11a4-492b-4d07-b4a6-a1409ef829b8"
+          },
+          {
+            "code": "UDS",
+            "name": "Urza's Destiny",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999-06-07",
+            "sourceId": "44f17b37-dcf8-4239-baab-1efc00cd3480"
+          },
+          {
+            "code": "6ED",
+            "name": "Classic Sixth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999-04-21",
+            "sourceId": "78ee1957-d5d4-4551-acae-b1b418e8a50b"
+          },
+          {
+            "code": "ULG",
+            "name": "Urza's Legacy",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999-02-15",
+            "sourceId": "78ced61b-4b8a-4b33-b6b2-f5bd66f1a75a"
+          }
+        ]
+      },
+      {
+        "label": "1998",
+        "sets": [
+          {
+            "code": "USG",
+            "name": "Urza's Saga",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1998-10-12",
+            "sourceId": "c330df40-51db-4caf-bde6-48df6c181001"
+          },
+          {
+            "code": "EXO",
+            "name": "Exodus",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1998-06-15",
+            "sourceId": "1401f7af-2e71-476d-9813-991084ed0bb9"
+          },
+          {
+            "code": "STH",
+            "name": "Stronghold",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1998-03-02",
+            "sourceId": "5c83396a-d386-4367-926b-571a75b086a3"
+          }
+        ]
+      },
+      {
+        "label": "1997",
+        "sets": [
+          {
+            "code": "TMP",
+            "name": "Tempest",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1997-10-14",
+            "sourceId": "10df3a67-178e-4363-8668-34f0e6edf2a7"
+          },
+          {
+            "code": "WTH",
+            "name": "Weatherlight",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1997-06-09",
+            "sourceId": "700997ac-add2-4ce2-992e-5efa0fdfc0e9"
+          },
+          {
+            "code": "5ED",
+            "name": "Fifth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1997-03-24",
+            "sourceId": "5afd2f4b-8309-4f45-a2b2-3785018474cb"
+          },
+          {
+            "code": "VIS",
+            "name": "Visions",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1997-02-03",
+            "sourceId": "2c32f1a9-7921-4826-bea0-80bbac70532c"
+          }
+        ]
+      },
+      {
+        "label": "1996",
+        "sets": [
+          {
+            "code": "MIR",
+            "name": "Mirage",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1996-10-08",
+            "sourceId": "5f06acf3-8123-4a78-b2e7-089b0b775a4a"
+          },
+          {
+            "code": "ALL",
+            "name": "Alliances",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1996-06-10",
+            "sourceId": "64987b06-4a5c-443d-b560-ff5691744582"
+          }
+        ]
+      },
+      {
+        "label": "1995",
+        "sets": [
+          {
+            "code": "HML",
+            "name": "Homelands",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-10-01",
+            "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
+          },
+          {
+            "code": "RIN",
+            "name": "Rinascimento",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-08-01",
+            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
+          },
+          {
+            "code": "REN",
+            "name": "Renaissance",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-08-01",
+            "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
+          },
+          {
+            "code": "BCHR",
+            "name": "Chronicles Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
+          },
+          {
+            "code": "CHR",
+            "name": "Chronicles",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+          },
+          {
+            "code": "ICE",
+            "name": "Ice Age",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-06-03",
+            "sourceId": "b0e08eea-5c01-4406-a6e2-dcd09c5e5b67"
+          },
+          {
+            "code": "4BB",
+            "name": "Fourth Edition Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-04-01",
+            "sourceId": "daa633b3-2bdb-48a2-a40e-3de16b6e41a5"
+          },
+          {
+            "code": "4ED",
+            "name": "Fourth Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-04-01",
+            "sourceId": "2dd259d4-dc13-4956-a2dc-3e1d70b4a743"
+          }
+        ]
+      },
+      {
+        "label": "1994",
+        "sets": [
+          {
+            "code": "FEM",
+            "name": "Fallen Empires",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-11-01",
+            "sourceId": "cf7390b1-341a-4ae8-a325-da0f5f322f13"
+          },
+          {
+            "code": "DRK",
+            "name": "The Dark",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-08-01",
+            "sourceId": "a21c6836-c435-459a-81e3-22d2da174549"
+          },
+          {
+            "code": "SUM",
+            "name": "Summer Magic / Edgar",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-06-21",
+            "sourceId": "7993c591-1361-4dcb-b2af-ac94dd8e86e8"
+          },
+          {
+            "code": "LEG",
+            "name": "Legends",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-06-01",
+            "sourceId": "78c50b4b-b220-455b-a2d5-cee458fa56f3"
+          },
+          {
+            "code": "3ED",
+            "name": "Revised Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-04-11",
+            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
+          },
+          {
+            "code": "FBB",
+            "name": "Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-04-11",
+            "sourceId": "60648044-9f6a-4961-81af-47a0a94dfac9"
+          },
+          {
+            "code": "ATQ",
+            "name": "Antiquities",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-03-04",
+            "sourceId": "819f9678-87dd-4aba-a47b-2d553bfea21f"
+          }
+        ]
+      },
+      {
+        "label": "1993",
+        "sets": [
+          {
+            "code": "ARN",
+            "name": "Arabian Nights",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1993-12-17",
+            "sourceId": "856f63eb-e056-43e5-8a56-7a58e1608940"
+          },
+          {
+            "code": "2ED",
+            "name": "Unlimited Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1993-12-01",
+            "sourceId": "cd7694b9-339c-405d-a991-14413d4f6d5c"
+          },
+          {
+            "code": "LEB",
+            "name": "Limited Edition Beta",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1993-10-04",
+            "sourceId": "5307bd88-637c-4a5c-9801-a0d887715302"
+          },
+          {
+            "code": "LEA",
+            "name": "Limited Edition Alpha",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1993-08-05",
+            "sourceId": "288bd996-960e-448b-a187-9504c1930c2c"
+          }
+        ]
+      }
+    ],
+    "pokemon": [
+      {
+        "label": "Mega Evolution",
+        "sets": [
+          {
+            "code": "30C",
+            "name": "30th Celebration",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/09/16",
+            "sourceId": "me55"
+          },
+          {
+            "code": "30C",
+            "name": "30th Celebration: Classic Collection",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/09/16",
+            "sourceId": "me55c"
+          },
+          {
+            "code": "PBL",
+            "name": "Pitch Black",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/07/17",
+            "sourceId": "me5"
+          },
+          {
+            "code": "CRI",
+            "name": "Chaos Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/05/22",
+            "sourceId": "me4"
+          },
+          {
+            "code": "POR",
+            "name": "Perfect Order",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/03/27",
+            "sourceId": "me3"
+          },
+          {
+            "code": "ASC",
+            "name": "Ascended Heroes",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026/01/30",
+            "sourceId": "me2pt5"
+          },
+          {
+            "code": "PFL",
+            "name": "Phantasmal Flames",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/11/14",
+            "sourceId": "me2"
+          },
+          {
+            "code": "MEG",
+            "name": "Mega Evolution",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/09/26",
+            "sourceId": "me1"
+          }
+        ]
+      },
+      {
+        "label": "Scarlet & Violet",
+        "sets": [
+          {
+            "code": "BLK",
+            "name": "Black Bolt",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/07/18",
+            "sourceId": "zsv10pt5"
+          },
+          {
+            "code": "WHT",
+            "name": "White Flare",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/07/18",
+            "sourceId": "rsv10pt5"
+          },
+          {
+            "code": "DRI",
+            "name": "Destined Rivals",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/05/30",
+            "sourceId": "sv10"
+          },
+          {
+            "code": "JTG",
+            "name": "Journey Together",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/03/28",
+            "sourceId": "sv9"
+          },
+          {
+            "code": "PRE",
+            "name": "Prismatic Evolutions",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025/01/17",
+            "sourceId": "sv8pt5"
+          },
+          {
+            "code": "SSP",
+            "name": "Surging Sparks",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/11/08",
+            "sourceId": "sv8"
+          },
+          {
+            "code": "SCR",
+            "name": "Stellar Crown",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/09/13",
+            "sourceId": "sv7"
+          },
+          {
+            "code": "SFA",
+            "name": "Shrouded Fable",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/08/02",
+            "sourceId": "sv6pt5"
+          },
+          {
+            "code": "TWM",
+            "name": "Twilight Masquerade",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/05/24",
+            "sourceId": "sv6"
+          },
+          {
+            "code": "TEF",
+            "name": "Temporal Forces",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/03/22",
+            "sourceId": "sv5"
+          },
+          {
+            "code": "PAF",
+            "name": "Paldean Fates",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024/01/26",
+            "sourceId": "sv4pt5"
+          },
+          {
+            "code": "PAR",
+            "name": "Paradox Rift",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/11/03",
+            "sourceId": "sv4"
+          },
+          {
+            "code": "MEW",
+            "name": "151",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/09/22",
+            "sourceId": "sv3pt5"
+          },
+          {
+            "code": "OBF",
+            "name": "Obsidian Flames",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/08/11",
+            "sourceId": "sv3"
+          },
+          {
+            "code": "PAL",
+            "name": "Paldea Evolved",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/06/09",
+            "sourceId": "sv2"
+          },
+          {
+            "code": "SVI",
+            "name": "Scarlet & Violet",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/03/31",
+            "sourceId": "sv1"
+          },
+          {
+            "code": "SVE",
+            "name": "Scarlet & Violet Energies",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/03/31",
+            "sourceId": "sve"
+          },
+          {
+            "code": "PR-SV",
+            "name": "Scarlet & Violet Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/01/01",
+            "sourceId": "svp"
+          }
+        ]
+      },
+      {
+        "label": "Sword & Shield",
+        "sets": [
+          {
+            "code": "CRZ",
+            "name": "Crown Zenith",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/01/20",
+            "sourceId": "swsh12pt5"
+          },
+          {
+            "code": "CRZ",
+            "name": "Crown Zenith Galarian Gallery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023/01/20",
+            "sourceId": "swsh12pt5gg"
+          },
+          {
+            "code": "SIT",
+            "name": "Silver Tempest",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/11/11",
+            "sourceId": "swsh12"
+          },
+          {
+            "code": "SIT",
+            "name": "Silver Tempest Trainer Gallery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/11/11",
+            "sourceId": "swsh12tg"
+          },
+          {
+            "code": "LOR",
+            "name": "Lost Origin",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/09/09",
+            "sourceId": "swsh11"
+          },
+          {
+            "code": "LOR",
+            "name": "Lost Origin Trainer Gallery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/09/09",
+            "sourceId": "swsh11tg"
+          },
+          {
+            "code": "PGO",
+            "name": "Pokémon GO",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/07/01",
+            "sourceId": "pgo"
+          },
+          {
+            "code": "ASR",
+            "name": "Astral Radiance",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/05/27",
+            "sourceId": "swsh10"
+          },
+          {
+            "code": "ASR",
+            "name": "Astral Radiance Trainer Gallery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/05/27",
+            "sourceId": "swsh10tg"
+          },
+          {
+            "code": "BRS",
+            "name": "Brilliant Stars",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/02/25",
+            "sourceId": "swsh9"
+          },
+          {
+            "code": "BRS",
+            "name": "Brilliant Stars Trainer Gallery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/02/25",
+            "sourceId": "swsh9tg"
+          },
+          {
+            "code": "FST",
+            "name": "Fusion Strike",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/11/12",
+            "sourceId": "swsh8"
+          },
+          {
+            "code": "CEL",
+            "name": "Celebrations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/10/08",
+            "sourceId": "cel25"
+          },
+          {
+            "code": "CEL",
+            "name": "Celebrations: Classic Collection",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/10/08",
+            "sourceId": "cel25c"
+          },
+          {
+            "code": "EVS",
+            "name": "Evolving Skies",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/08/27",
+            "sourceId": "swsh7"
+          },
+          {
+            "code": "CRE",
+            "name": "Chilling Reign",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/06/18",
+            "sourceId": "swsh6"
+          },
+          {
+            "code": "BST",
+            "name": "Battle Styles",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/03/19",
+            "sourceId": "swsh5"
+          },
+          {
+            "code": "SHF",
+            "name": "Shining Fates",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/02/19",
+            "sourceId": "swsh45"
+          },
+          {
+            "code": "SHF",
+            "name": "Shining Fates Shiny Vault",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/02/19",
+            "sourceId": "swsh45sv"
+          },
+          {
+            "code": "VIV",
+            "name": "Vivid Voltage",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/11/13",
+            "sourceId": "swsh4"
+          },
+          {
+            "code": "CPA",
+            "name": "Champion's Path",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/09/25",
+            "sourceId": "swsh35"
+          },
+          {
+            "code": "DAA",
+            "name": "Darkness Ablaze",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/08/14",
+            "sourceId": "swsh3"
+          },
+          {
+            "code": "RCL",
+            "name": "Rebel Clash",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/05/01",
+            "sourceId": "swsh2"
+          },
+          {
+            "code": "SSH",
+            "name": "Sword & Shield",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/02/07",
+            "sourceId": "swsh1"
+          },
+          {
+            "code": "PR-SW",
+            "name": "SWSH Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/11/15",
+            "sourceId": "swshp"
+          }
+        ]
+      },
+      {
+        "label": "Other",
+        "sets": [
+          {
+            "code": "MCD22",
+            "name": "McDonald's Collection 2022",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022/08/03",
+            "sourceId": "mcd22"
+          },
+          {
+            "code": "MCD21",
+            "name": "McDonald's Collection 2021",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021/02/09",
+            "sourceId": "mcd21"
+          },
+          {
+            "code": "FUT20",
+            "name": "Pokémon Futsal Collection",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020/09/11",
+            "sourceId": "fut20"
+          },
+          {
+            "code": "MCD19",
+            "name": "McDonald's Collection 2019",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/10/15",
+            "sourceId": "mcd19"
+          },
+          {
+            "code": "MCD18",
+            "name": "McDonald's Collection 2018",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/10/16",
+            "sourceId": "mcd18"
+          },
+          {
+            "code": "MCD17",
+            "name": "McDonald's Collection 2017",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/11/07",
+            "sourceId": "mcd17"
+          },
+          {
+            "code": "MCD16",
+            "name": "McDonald's Collection 2016",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/08/19",
+            "sourceId": "mcd16"
+          },
+          {
+            "code": "MCD15",
+            "name": "McDonald's Collection 2015",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/11/27",
+            "sourceId": "mcd15"
+          },
+          {
+            "code": "MCD14",
+            "name": "McDonald's Collection 2014",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014/05/23",
+            "sourceId": "mcd14"
+          },
+          {
+            "code": "MCD12",
+            "name": "McDonald's Collection 2012",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/06/15",
+            "sourceId": "mcd12"
+          },
+          {
+            "code": "MCD11",
+            "name": "McDonald's Collection 2011",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/06/17",
+            "sourceId": "mcd11"
+          },
+          {
+            "code": "RU1",
+            "name": "Pokémon Rumble",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/12/02",
+            "sourceId": "ru1"
+          },
+          {
+            "code": "BP",
+            "name": "Best of Game",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002/12/01",
+            "sourceId": "bp"
+          },
+          {
+            "code": "LC",
+            "name": "Legendary Collection",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002/05/24",
+            "sourceId": "base6"
+          },
+          {
+            "code": "SI1",
+            "name": "Southern Islands",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001/07/31",
+            "sourceId": "si1"
+          }
+        ]
+      },
+      {
+        "label": "Sun & Moon",
+        "sets": [
+          {
+            "code": "CEC",
+            "name": "Cosmic Eclipse",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/11/01",
+            "sourceId": "sm12"
+          },
+          {
+            "code": "HIF",
+            "name": "Hidden Fates",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/08/23",
+            "sourceId": "sm115"
+          },
+          {
+            "code": "HIF",
+            "name": "Hidden Fates Shiny Vault",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/08/23",
+            "sourceId": "sma"
+          },
+          {
+            "code": "UNM",
+            "name": "Unified Minds",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/08/02",
+            "sourceId": "sm11"
+          },
+          {
+            "code": "UNB",
+            "name": "Unbroken Bonds",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/05/03",
+            "sourceId": "sm10"
+          },
+          {
+            "code": "DET",
+            "name": "Detective Pikachu",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/04/05",
+            "sourceId": "det1"
+          },
+          {
+            "code": "TEU",
+            "name": "Team Up",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2019/02/01",
+            "sourceId": "sm9"
+          },
+          {
+            "code": "LOT",
+            "name": "Lost Thunder",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/11/02",
+            "sourceId": "sm8"
+          },
+          {
+            "code": "DRM",
+            "name": "Dragon Majesty",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/09/07",
+            "sourceId": "sm75"
+          },
+          {
+            "code": "CES",
+            "name": "Celestial Storm",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/08/03",
+            "sourceId": "sm7"
+          },
+          {
+            "code": "FLI",
+            "name": "Forbidden Light",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/05/04",
+            "sourceId": "sm6"
+          },
+          {
+            "code": "UPR",
+            "name": "Ultra Prism",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018/02/02",
+            "sourceId": "sm5"
+          },
+          {
+            "code": "CIN",
+            "name": "Crimson Invasion",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/11/03",
+            "sourceId": "sm4"
+          },
+          {
+            "code": "SLG",
+            "name": "Shining Legends",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/10/06",
+            "sourceId": "sm35"
+          },
+          {
+            "code": "BUS",
+            "name": "Burning Shadows",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/08/05",
+            "sourceId": "sm3"
+          },
+          {
+            "code": "GRI",
+            "name": "Guardians Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/05/05",
+            "sourceId": "sm2"
+          },
+          {
+            "code": "SUM",
+            "name": "Sun & Moon",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/02/03",
+            "sourceId": "sm1"
+          },
+          {
+            "code": "PR-SM",
+            "name": "SM Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2017/02/03",
+            "sourceId": "smp"
+          }
+        ]
+      },
+      {
+        "label": "XY",
+        "sets": [
+          {
+            "code": "EVO",
+            "name": "Evolutions",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/11/02",
+            "sourceId": "xy12"
+          },
+          {
+            "code": "STS",
+            "name": "Steam Siege",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/08/03",
+            "sourceId": "xy11"
+          },
+          {
+            "code": "FCO",
+            "name": "Fates Collide",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/05/02",
+            "sourceId": "xy10"
+          },
+          {
+            "code": "GEN",
+            "name": "Generations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/02/22",
+            "sourceId": "g1"
+          },
+          {
+            "code": "BKP",
+            "name": "BREAKpoint",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2016/02/03",
+            "sourceId": "xy9"
+          },
+          {
+            "code": "BKT",
+            "name": "BREAKthrough",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/11/04",
+            "sourceId": "xy8"
+          },
+          {
+            "code": "AOR",
+            "name": "Ancient Origins",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/08/12",
+            "sourceId": "xy7"
+          },
+          {
+            "code": "ROS",
+            "name": "Roaring Skies",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/05/06",
+            "sourceId": "xy6"
+          },
+          {
+            "code": "DCR",
+            "name": "Double Crisis",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/03/25",
+            "sourceId": "dc1"
+          },
+          {
+            "code": "PRC",
+            "name": "Primal Clash",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2015/02/04",
+            "sourceId": "xy5"
+          },
+          {
+            "code": "PHF",
+            "name": "Phantom Forces",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014/11/05",
+            "sourceId": "xy4"
+          },
+          {
+            "code": "FFI",
+            "name": "Furious Fists",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014/08/13",
+            "sourceId": "xy3"
+          },
+          {
+            "code": "FLF",
+            "name": "Flashfire",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014/05/07",
+            "sourceId": "xy2"
+          },
+          {
+            "code": "XY",
+            "name": "XY",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2014/02/05",
+            "sourceId": "xy1"
+          },
+          {
+            "code": "KSS",
+            "name": "Kalos Starter Set",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/11/08",
+            "sourceId": "xy0"
+          },
+          {
+            "code": "PR-XY",
+            "name": "XY Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/10/12",
+            "sourceId": "xyp"
+          }
+        ]
+      },
+      {
+        "label": "Black & White",
+        "sets": [
+          {
+            "code": "LTR",
+            "name": "Legendary Treasures",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/11/06",
+            "sourceId": "bw11"
+          },
+          {
+            "code": "PLB",
+            "name": "Plasma Blast",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/08/14",
+            "sourceId": "bw10"
+          },
+          {
+            "code": "PLF",
+            "name": "Plasma Freeze",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/05/08",
+            "sourceId": "bw9"
+          },
+          {
+            "code": "PLS",
+            "name": "Plasma Storm",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2013/02/06",
+            "sourceId": "bw8"
+          },
+          {
+            "code": "BCR",
+            "name": "Boundaries Crossed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/11/07",
+            "sourceId": "bw7"
+          },
+          {
+            "code": "DRV",
+            "name": "Dragon Vault",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/10/05",
+            "sourceId": "dv1"
+          },
+          {
+            "code": "DRX",
+            "name": "Dragons Exalted",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/08/15",
+            "sourceId": "bw6"
+          },
+          {
+            "code": "DEX",
+            "name": "Dark Explorers",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/05/09",
+            "sourceId": "bw5"
+          },
+          {
+            "code": "NXD",
+            "name": "Next Destinies",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2012/02/08",
+            "sourceId": "bw4"
+          },
+          {
+            "code": "NVI",
+            "name": "Noble Victories",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/11/16",
+            "sourceId": "bw3"
+          },
+          {
+            "code": "EPO",
+            "name": "Emerging Powers",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/08/31",
+            "sourceId": "bw2"
+          },
+          {
+            "code": "BLW",
+            "name": "Black & White",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/04/25",
+            "sourceId": "bw1"
+          },
+          {
+            "code": "PR-BLW",
+            "name": "BW Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/03/01",
+            "sourceId": "bwp"
+          }
+        ]
+      },
+      {
+        "label": "HeartGold & SoulSilver",
+        "sets": [
+          {
+            "code": "CL",
+            "name": "Call of Legends",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2011/02/09",
+            "sourceId": "col1"
+          },
+          {
+            "code": "TM",
+            "name": "HS—Triumphant",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010/11/03",
+            "sourceId": "hgss4"
+          },
+          {
+            "code": "UD",
+            "name": "HS—Undaunted",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010/08/18",
+            "sourceId": "hgss3"
+          },
+          {
+            "code": "UL",
+            "name": "HS—Unleashed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010/05/12",
+            "sourceId": "hgss2"
+          },
+          {
+            "code": "HS",
+            "name": "HeartGold & SoulSilver",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010/02/10",
+            "sourceId": "hgss1"
+          },
+          {
+            "code": "PR-HS",
+            "name": "HGSS Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2010/02/10",
+            "sourceId": "hsp"
+          }
+        ]
+      },
+      {
+        "label": "Platinum",
+        "sets": [
+          {
+            "code": "AR",
+            "name": "Arceus",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/11/04",
+            "sourceId": "pl4"
+          },
+          {
+            "code": "SV",
+            "name": "Supreme Victors",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/08/19",
+            "sourceId": "pl3"
+          },
+          {
+            "code": "RR",
+            "name": "Rising Rivals",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/05/16",
+            "sourceId": "pl2"
+          },
+          {
+            "code": "PL",
+            "name": "Platinum",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/02/11",
+            "sourceId": "pl1"
+          }
+        ]
+      },
+      {
+        "label": "POP",
+        "sets": [
+          {
+            "code": "POP9",
+            "name": "POP Series 9",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2009/03/01",
+            "sourceId": "pop9"
+          },
+          {
+            "code": "POP8",
+            "name": "POP Series 8",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/09/01",
+            "sourceId": "pop8"
+          },
+          {
+            "code": "POP7",
+            "name": "POP Series 7",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/03/01",
+            "sourceId": "pop7"
+          },
+          {
+            "code": "POP6",
+            "name": "POP Series 6",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/09/01",
+            "sourceId": "pop6"
+          },
+          {
+            "code": "POP5",
+            "name": "POP Series 5",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/03/01",
+            "sourceId": "pop5"
+          },
+          {
+            "code": "POP4",
+            "name": "POP Series 4",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/08/01",
+            "sourceId": "pop4"
+          },
+          {
+            "code": "POP3",
+            "name": "POP Series 3",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/04/01",
+            "sourceId": "pop3"
+          },
+          {
+            "code": "POP2",
+            "name": "POP Series 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005/08/01",
+            "sourceId": "pop2"
+          },
+          {
+            "code": "POP1",
+            "name": "POP Series 1",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/09/01",
+            "sourceId": "pop1"
+          }
+        ]
+      },
+      {
+        "label": "Diamond & Pearl",
+        "sets": [
+          {
+            "code": "SF",
+            "name": "Stormfront",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/11/01",
+            "sourceId": "dp7"
+          },
+          {
+            "code": "LA",
+            "name": "Legends Awakened",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/08/01",
+            "sourceId": "dp6"
+          },
+          {
+            "code": "MD",
+            "name": "Majestic Dawn",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/05/01",
+            "sourceId": "dp5"
+          },
+          {
+            "code": "GE",
+            "name": "Great Encounters",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2008/02/01",
+            "sourceId": "dp4"
+          },
+          {
+            "code": "SW",
+            "name": "Secret Wonders",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/11/01",
+            "sourceId": "dp3"
+          },
+          {
+            "code": "MT",
+            "name": "Mysterious Treasures",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/08/01",
+            "sourceId": "dp2"
+          },
+          {
+            "code": "DP",
+            "name": "Diamond & Pearl",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/05/01",
+            "sourceId": "dp1"
+          },
+          {
+            "code": "PR-DPP",
+            "name": "DP Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/05/01",
+            "sourceId": "dpp"
+          }
+        ]
+      },
+      {
+        "label": "EX",
+        "sets": [
+          {
+            "code": "PK",
+            "name": "Power Keepers",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2007/02/02",
+            "sourceId": "ex16"
+          },
+          {
+            "code": "DF",
+            "name": "Dragon Frontiers",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/11/01",
+            "sourceId": "ex15"
+          },
+          {
+            "code": "CG",
+            "name": "Crystal Guardians",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/08/01",
+            "sourceId": "ex14"
+          },
+          {
+            "code": "HP",
+            "name": "Holon Phantoms",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/05/01",
+            "sourceId": "ex13"
+          },
+          {
+            "code": "TK2A",
+            "name": "EX Trainer Kit 2 Plusle",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/03/01",
+            "sourceId": "tk2a"
+          },
+          {
+            "code": "TK2B",
+            "name": "EX Trainer Kit 2 Minun",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/03/01",
+            "sourceId": "tk2b"
+          },
+          {
+            "code": "LM",
+            "name": "Legend Maker",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006/02/01",
+            "sourceId": "ex12"
+          },
+          {
+            "code": "DS",
+            "name": "Delta Species",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005/10/31",
+            "sourceId": "ex11"
+          },
+          {
+            "code": "UF",
+            "name": "Unseen Forces",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005/08/01",
+            "sourceId": "ex10"
+          },
+          {
+            "code": "EM",
+            "name": "Emerald",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005/05/01",
+            "sourceId": "ex9"
+          },
+          {
+            "code": "DX",
+            "name": "Deoxys",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2005/02/01",
+            "sourceId": "ex8"
+          },
+          {
+            "code": "TRR",
+            "name": "Team Rocket Returns",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/11/01",
+            "sourceId": "ex7"
+          },
+          {
+            "code": "RG",
+            "name": "FireRed & LeafGreen",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/09/01",
+            "sourceId": "ex6"
+          },
+          {
+            "code": "HL",
+            "name": "Hidden Legends",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/06/01",
+            "sourceId": "ex5"
+          },
+          {
+            "code": "TK1A",
+            "name": "EX Trainer Kit Latias",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/06/01",
+            "sourceId": "tk1a"
+          },
+          {
+            "code": "TK1B",
+            "name": "EX Trainer Kit Latios",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/06/01",
+            "sourceId": "tk1b"
+          },
+          {
+            "code": "MA",
+            "name": "Team Magma vs Team Aqua",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2004/03/01",
+            "sourceId": "ex4"
+          },
+          {
+            "code": "DR",
+            "name": "Dragon",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/11/24",
+            "sourceId": "ex3"
+          },
+          {
+            "code": "SS",
+            "name": "Sandstorm",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/09/18",
+            "sourceId": "ex2"
+          },
+          {
+            "code": "RS",
+            "name": "Ruby & Sapphire",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/07/01",
+            "sourceId": "ex1"
+          }
+        ]
+      },
+      {
+        "label": "NP",
+        "sets": [
+          {
+            "code": "PR-NP",
+            "name": "Nintendo Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/10/01",
+            "sourceId": "np"
+          }
+        ]
+      },
+      {
+        "label": "E-Card",
+        "sets": [
+          {
+            "code": "SK",
+            "name": "Skyridge",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/05/12",
+            "sourceId": "ecard3"
+          },
+          {
+            "code": "AQ",
+            "name": "Aquapolis",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2003/01/15",
+            "sourceId": "ecard2"
+          },
+          {
+            "code": "EX",
+            "name": "Expedition Base Set",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002/09/15",
+            "sourceId": "ecard1"
+          }
+        ]
+      },
+      {
+        "label": "Neo",
+        "sets": [
+          {
+            "code": "N4",
+            "name": "Neo Destiny",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2002/02/28",
+            "sourceId": "neo4"
+          },
+          {
+            "code": "N3",
+            "name": "Neo Revelation",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001/09/21",
+            "sourceId": "neo3"
+          },
+          {
+            "code": "N2",
+            "name": "Neo Discovery",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2001/06/01",
+            "sourceId": "neo2"
+          },
+          {
+            "code": "N1",
+            "name": "Neo Genesis",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000/12/16",
+            "sourceId": "neo1"
+          }
+        ]
+      },
+      {
+        "label": "Gym",
+        "sets": [
+          {
+            "code": "G2",
+            "name": "Gym Challenge",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000/10/16",
+            "sourceId": "gym2"
+          },
+          {
+            "code": "G1",
+            "name": "Gym Heroes",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000/08/14",
+            "sourceId": "gym1"
+          }
+        ]
+      },
+      {
+        "label": "Base",
+        "sets": [
+          {
+            "code": "TR",
+            "name": "Team Rocket",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000/04/24",
+            "sourceId": "base5"
+          },
+          {
+            "code": "B2",
+            "name": "Base Set 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2000/02/24",
+            "sourceId": "base4"
+          },
+          {
+            "code": "FO",
+            "name": "Fossil",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999/10/10",
+            "sourceId": "base3"
+          },
+          {
+            "code": "PR",
+            "name": "Wizards Black Star Promos",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999/07/01",
+            "sourceId": "basep"
+          },
+          {
+            "code": "JU",
+            "name": "Jungle",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999/06/16",
+            "sourceId": "base2"
+          },
+          {
+            "code": "BS",
+            "name": "Base",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1999/01/09",
+            "sourceId": "base1"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -169,7 +169,7 @@ export default function Inventory() {
         <h2 style={{ marginTop: 0 }}>Next steps (when you’re ready)</h2>
         <ul className="list">
           <li>Upload your real inventory (CSV) and we’ll generate catalog + set tabs automatically.</li>
-          <li>Enable checkout with Stripe/PayPal and configure shipping rules ($5 singles/$15 sealed, free $100+).</li>
+          <li>Enable checkout with Stripe/PayPal using the configured economy-letter, tracked, and $75+ free-shipping rules.</li>
           <li>Add bot protection + purchase limits (sealed only) at account + email + address level.</li>
         </ul>
       </section>

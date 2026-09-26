@@ -5,6 +5,11 @@ import Contact from "./pages/Contact.jsx";
 import Affiliates from "./pages/Affiliates.jsx";
 import Shop from "./pages/Shop.jsx";
 import Live from "./pages/Live.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import Policies from "./pages/Policies.jsx";
+import AdminInventory from "./pages/AdminInventory.jsx";
+import AdminOrders from "./pages/AdminOrders.jsx";
+import { Privacy, Terms } from "./pages/Legal.jsx";
 
 export default function App() {
   const navigate = useNavigate();
@@ -165,6 +170,7 @@ export default function App() {
             <footer className="footer">
               <div className="wrap foot">
                 <small>© {new Date().getFullYear()} The Crystal Card Keep</small>
+                <small className="footerLegal"><Link to="/policies">Policies</Link> • <Link to="/privacy">Privacy</Link> • <Link to="/terms">Terms</Link></small>
                 <small>Rolla / Saint James, MO • Live auctions • Singles • Sealed</small>
               </div>
             </footer>
@@ -306,6 +312,21 @@ export default function App() {
           </div>
         }
       />
+      {[["fusion-world", "fusionworld"], ["masters", "masters"], ["gundam", "gundam"]].map(([path, game]) => (
+        <Route key={path} path={`/shop/${path}`} element={
+          <div className="appRoot">
+            <div className="gridOverlay" aria-hidden="true" />
+            <SiteHeader />
+            <main className="main"><div className="wrap"><Shop game={game} /></div></main>
+          </div>
+        } />
+      ))}
+      <Route path="/checkout" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><Checkout /></div></main></div>} />
+      <Route path="/policies" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><Policies /></div></main></div>} />
+      <Route path="/privacy" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><Privacy /></div></main></div>} />
+      <Route path="/terms" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><Terms /></div></main></div>} />
+      <Route path="/admin/inventory/import" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><AdminInventory /></div></main></div>} />
+      <Route path="/admin/orders" element={<div className="appRoot"><div className="gridOverlay" aria-hidden="true" /><SiteHeader /><main className="main"><div className="wrap"><AdminOrders /></div></main></div>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

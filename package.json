@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "verify:catalog": "node scripts/verify-catalog.mjs"
+    "verify:catalog": "node scripts/verify-shop-groups.mjs",
+    "sync:catalog": "node scripts/sync-public-catalog.mjs",
+    "sync:media": "node scripts/sync-product-media.mjs",
+    "sync:media:gundam": "node scripts/sync-product-media.mjs --game=gundam",
+    "verify:media": "node scripts/verify-product-media.mjs",
+    "verify:shipping": "node scripts/verify-shipping-policy.mjs"
   },
   "dependencies": {
     "react": "^18.2.0",

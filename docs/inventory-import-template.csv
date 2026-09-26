@@ -1,0 +1,3 @@
+game,item_type,set_code,set_name,product_name,collector_number,variant,condition,language,quantity,price,sku,notes,image_url
+pokemon,SINGLE,MEG,Mega Evolution,Example Card,001,Normal,Near Mint,English,1,4.99,EXAMPLE-SINGLE-001,Replace this sample row,
+pokemon,SEALED,MEG,Mega Evolution,Example Booster Box,,,Factory Sealed,English,1,119.99,EXAMPLE-SEALED-001,Replace this sample row,

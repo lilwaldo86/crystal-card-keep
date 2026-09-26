@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export default function Contact() {
   // Keep the same watermark/blur vibe as the home hero
@@ -8,18 +8,32 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
   const [sending, setSending] = useState(false);
+  const turnstileContainer = useRef(null);
+  const turnstileWidget = useRef(null);
 
   useEffect(() => {
-    // Load Turnstile script once (SPA-safe)
     const id = "cf-turnstile-script";
-    if (document.getElementById(id)) return;
-
-    const s = document.createElement("script");
-    s.id = id;
-    s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-    s.async = true;
-    s.defer = true;
-    document.body.appendChild(s);
+    let active = true;
+    const render = () => {
+      if (!active || !turnstileContainer.current || !window.turnstile || turnstileWidget.current !== null) return;
+      turnstileWidget.current = window.turnstile.render(turnstileContainer.current, { sitekey: "0x4AAAAAACkf8vOsYYjXuW7-", theme: "dark" });
+    };
+    let script = document.getElementById(id);
+    if (!script) {
+      script = document.createElement("script");
+      script.id = id;
+      script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+      script.async = true;
+      script.defer = true;
+      script.addEventListener("load", render, { once: true });
+      document.body.appendChild(script);
+    } else if (window.turnstile) render();
+    else script.addEventListener("load", render, { once: true });
+    return () => {
+      active = false;
+      if (turnstileWidget.current !== null && window.turnstile) window.turnstile.remove(turnstileWidget.current);
+      turnstileWidget.current = null;
+    };
   }, []);
 
   const handleSubmit = async (e) => {
@@ -28,7 +42,7 @@ export default function Contact() {
     setSending(true);
 
     try {
-      const turnstileToken = window.turnstile?.getResponse();
+      const turnstileToken = turnstileWidget.current !== null ? window.turnstile?.getResponse(turnstileWidget.current) : "";
       if (!turnstileToken) {
         setStatus("Please complete the verification check.");
         setSending(false);
@@ -46,14 +60,14 @@ export default function Contact() {
       if (res.ok && data.success) {
         setStatus("Message sent successfully.");
         setForm({ name: "", email: "", message: "" });
-        try { window.turnstile?.reset(); } catch {}
+        try { window.turnstile?.reset(turnstileWidget.current); } catch {}
       } else {
         setStatus(data.error || "Error sending message.");
-        try { window.turnstile?.reset(); } catch {}
+        try { window.turnstile?.reset(turnstileWidget.current); } catch {}
       }
     } catch {
       setStatus("Error sending message.");
-      try { window.turnstile?.reset(); } catch {}
+      try { window.turnstile?.reset(turnstileWidget.current); } catch {}
     } finally {
       setSending(false);
     }
@@ -134,7 +148,7 @@ export default function Contact() {
                   required
                 />
 
-                <div className="cf-turnstile" data-sitekey="0x4AAAAAACkf8vOsYYjXuW7-"></div>
+                <div className="turnstileMount" ref={turnstileContainer} aria-label="Bot verification" />
 
                 <button type="submit" className="btn primary" style={{ width: "100%" }} disabled={sending}>
                   {sending ? "Sending..." : "Send message"}
