@@ -13,6 +13,12 @@ function tableRows(values) {
   return values.slice(1).filter((cells) => cells.some((cell) => String(cell ?? "").trim())).map((cells) => Object.fromEntries(headers.map((header, index) => [header, String(cells[index] ?? "").trim()])));
 }
 
+function workbookRows(result) {
+  if (!Array.isArray(result)) return [];
+  const worksheet = result.find((entry) => Array.isArray(entry?.data) && entry.data.length);
+  return worksheet ? worksheet.data : result;
+}
+
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -60,7 +66,10 @@ export default function AdminInventory() {
     if (extension === "pdf") { setRows([]); setMessage("PDF files require manual review and are not imported automatically yet."); return; }
     try {
       if (extension === "csv") { setSourceKind("CSV"); setRows(parseCsv(await file.text())); }
-      else if (extension === "xlsx" || extension === "xls") { setSourceKind(extension.toUpperCase()); setRows(tableRows(await readXlsxFile(file))); }
+      else if (extension === "xlsx" || extension === "xls") {
+        setSourceKind(extension.toUpperCase());
+        setRows(tableRows(workbookRows(await readXlsxFile(file))));
+      }
       else throw new Error("Choose a CSV, XLSX, or XLS inventory file.");
     }
     catch (error) { setRows([]); setMessage(error.message); }
