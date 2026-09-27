@@ -254,13 +254,14 @@ export async function handleStorefrontRequest(request: Request, env: StorefrontE
 
   if (url.pathname === "/api/admin/inventory/import" && request.method === "POST") {
     if (!authorizedAdmin(request, env)) return reply(env, { error: "Unauthorized." }, 401);
-    const body = await request.json() as { ownerId?: string; filename?: string; rows?: Array<Record<string, unknown>> };
+    const body = await request.json() as { ownerId?: string; filename?: string; sourceKind?: string; rows?: Array<Record<string, unknown>> };
     if (!body.ownerId || !Array.isArray(body.rows) || !body.rows.length || body.rows.length > 1000) return reply(env, { error: "Owner and 1-1000 inventory rows are required." }, 400);
     const owner = await env.DB.prepare("SELECT id,owner_type FROM inventory_owners WHERE id=? AND status='ACTIVE'").bind(body.ownerId).first<{ id: string; owner_type: string }>();
     if (!owner) return reply(env, { error: "Inventory owner was not found." }, 404);
     const batchId = crypto.randomUUID();
     const timestamp = new Date().toISOString();
-    const statements: D1PreparedStatement[] = [env.DB.prepare("INSERT INTO inventory_import_batches(id,owner_id,source_kind,original_filename,status,total_rows,accepted_rows,rejected_rows,created_at) VALUES(?,?,'CSV',?,'NEEDS_REVIEW',?,0,0,?)").bind(batchId, owner.id, body.filename ?? "inventory.csv", body.rows.length, timestamp)];
+    const sourceKind = ["CSV", "XLSX", "XLS"].includes(String(body.sourceKind ?? "").toUpperCase()) ? String(body.sourceKind).toUpperCase() : "CSV";
+    const statements: D1PreparedStatement[] = [env.DB.prepare("INSERT INTO inventory_import_batches(id,owner_id,source_kind,original_filename,status,total_rows,accepted_rows,rejected_rows,created_at) VALUES(?,?,?,?, 'NEEDS_REVIEW',?,0,0,?)").bind(batchId, owner.id, sourceKind, body.filename ?? "inventory.csv", body.rows.length, timestamp)];
     let accepted = 0;
     let rejected = 0;
     const errors: Array<{ row: number; error: string }> = [];
@@ -286,13 +287,25 @@ export async function handleStorefrontRequest(request: Request, env: StorefrontE
     return reply(env, { batchId, status: "NEEDS_REVIEW", totalRows: body.rows.length, acceptedRows: accepted, rejectedRows: rejected, errors });
   }
 
+  if (url.pathname === "/api/admin/inventory/listings" && request.method === "GET") {
+    if (!authorizedAdmin(request, env)) return reply(env, { error: "Unauthorized." }, 401);
+    const batchId = String(url.searchParams.get("batchId") ?? "").trim();
+    if (!batchId) return reply(env, { error: "Batch ID is required." }, 400);
+    const batch = await env.DB.prepare("SELECT b.id,b.owner_id,b.source_kind,b.original_filename,b.status,b.total_rows,b.accepted_rows,b.rejected_rows,b.created_at,o.display_name,o.owner_type FROM inventory_import_batches b JOIN inventory_owners o ON o.id=b.owner_id WHERE b.id=?").bind(batchId).first();
+    if (!batch) return reply(env, { error: "Inventory batch was not found." }, 404);
+    const listings = await env.DB.prepare("SELECT id,sku,game_key,item_type,product_name,set_code,set_name,collector_number,variant,card_condition,language,quantity,price_cents,status,ownership,notes,listing_image_url FROM inventory_listings WHERE import_batch_id=? ORDER BY game_key,set_name,product_name,sku").bind(batchId).all();
+    return reply(env, { batch, listings: listings.results });
+  }
+
   if (url.pathname === "/api/admin/inventory/publish" && request.method === "POST") {
     if (!authorizedAdmin(request, env)) return reply(env, { error: "Unauthorized." }, 401);
     const body = await request.json() as { listingIds?: string[] };
     if (!Array.isArray(body.listingIds) || !body.listingIds.length || body.listingIds.length > 500) return reply(env, { error: "Listing IDs are required." }, 400);
     const timestamp = new Date().toISOString();
     const results = await env.DB.batch(body.listingIds.map((id) => env.DB.prepare("UPDATE inventory_listings SET status=CASE WHEN quantity>0 AND price_cents IS NOT NULL THEN 'ACTIVE' ELSE 'DRAFT' END,updated_at=? WHERE id=?").bind(timestamp, id)));
-    return reply(env, { updated: results.reduce((sum, result) => sum + Number(result.meta.changes ?? 0), 0) });
+    const updated = results.reduce((sum, result) => sum + Number(result.meta.changes ?? 0), 0);
+    await env.DB.prepare("UPDATE inventory_import_batches SET status='IMPORTED',approved_at=COALESCE(approved_at,?),imported_at=? WHERE id IN (SELECT DISTINCT import_batch_id FROM inventory_listings WHERE id IN (" + body.listingIds.map(() => "?").join(",") + "))").bind(timestamp, timestamp, ...body.listingIds).run();
+    return reply(env, { updated });
   }
 
   if (url.pathname === "/api/admin/orders" && request.method === "GET") {
