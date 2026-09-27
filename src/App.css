@@ -2088,4 +2088,48 @@ body:has(.checkoutShell),
 /* /CKK_ADMIN_LEGAL_V1 */
 .checkoutTerms{font-size:.8rem;line-height:1.5;color:rgba(255,255,255,.62)}.checkoutTerms a{text-decoration:underline;text-underline-offset:3px;color:rgba(255,255,255,.86)}
 .adminInventoryScroller,.legalScroller{overflow-x:hidden!important;overflow-y:auto!important}
+/* CKK_ADMIN_MOBILE_OVERFLOW_V2 */
+.adminInventoryPanel{
+  box-sizing:border-box;
+  max-width:100%;
+  overflow:hidden;
+}
+.adminInventoryForm,
+.adminInventoryForm>label,
+.adminPreview{
+  min-width:0;
+  max-width:100%;
+}
+.adminInventoryForm input{
+  box-sizing:border-box;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+}
+.adminInventoryForm input[type="file"]{
+  overflow:hidden;
+}
+.adminPreviewTable{
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+}
+@media(max-width:760px){
+  .adminInventoryPanel{
+    width:calc(100% - 20px);
+    padding:18px 14px;
+  }
+  .adminActions{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+  }
+  .adminActions .btn{
+    box-sizing:border-box;
+    width:100%;
+  }
+}
+/* /CKK_ADMIN_MOBILE_OVERFLOW_V2 */
 .adminOrders{display:grid;gap:14px}.adminOrder{padding:16px;border:1px solid rgba(255,255,255,.13);border-radius:16px;background:rgba(15,16,24,.78)}.adminOrderHeading{display:flex;justify-content:space-between;gap:16px}.adminOrderHeading>div{display:grid;gap:4px}.adminOrderHeading small{font-family:monospace;color:rgba(255,255,255,.55);overflow-wrap:anywhere}.adminOrderHeading>span{height:max-content;padding:5px 8px;border-radius:999px;background:rgba(226,188,74,.15);font-size:.75rem}.adminOrderTotals{display:flex;flex-wrap:wrap;gap:8px 16px}.adminFulfill{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;margin-top:14px}.adminFulfill input{min-width:0;padding:10px;border:1px solid rgba(255,255,255,.16);border-radius:10px;background:#11131d;color:#fff}@media(max-width:760px){.adminFulfill{grid-template-columns:1fr}.adminOrderHeading{align-items:flex-start}}
