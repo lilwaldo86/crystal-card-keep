@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-09-26T18:12:06.041Z",
+  "generatedAt": "2026-09-28T16:49:15.206Z",
   "sources": {
     "pokemon": {
-      "status": "ok",
-      "syncedAt": "2026-09-26T18:12:06.041Z"
+      "status": "preserved_previous_snapshot",
+      "syncedAt": "2026-09-28T16:49:15.206Z",
+      "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-09-26T18:12:06.041Z"
+      "syncedAt": "2026-09-28T16:49:15.206Z"
     }
   },
   "games": {
@@ -171,16 +172,6 @@
             "sourceId": "a1c7b891-9e96-434c-9994-be58b62b27f1"
           },
           {
-            "code": "EOE",
-            "name": "Edge of Eternities",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-08-01",
-            "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
-          },
-          {
             "code": "EOC",
             "name": "Edge of Eternities Commander",
             "kinds": [
@@ -189,6 +180,16 @@
             ],
             "releaseDate": "2025-08-01",
             "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
+          },
+          {
+            "code": "EOE",
+            "name": "Edge of Eternities",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
           },
           {
             "code": "FIC",
@@ -231,16 +232,6 @@
             "sourceId": "1361ca81-1304-49a8-b2e6-e76a4aa4a8c3"
           },
           {
-            "code": "DFT",
-            "name": "Aetherdrift",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-02-14",
-            "sourceId": "23464cc2-a69c-427d-b8a7-08e5d80235d7"
-          },
-          {
             "code": "DRC",
             "name": "Aetherdrift Commander",
             "kinds": [
@@ -249,6 +240,16 @@
             ],
             "releaseDate": "2025-02-14",
             "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
+          },
+          {
+            "code": "DFT",
+            "name": "Aetherdrift",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-02-14",
+            "sourceId": "23464cc2-a69c-427d-b8a7-08e5d80235d7"
           },
           {
             "code": "INR",
@@ -265,6 +266,16 @@
       {
         "label": "2024",
         "sets": [
+          {
+            "code": "FDC",
+            "name": "Foundations Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
+          },
           {
             "code": "J25",
             "name": "Foundations Jumpstart",
@@ -286,14 +297,14 @@
             "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
-            "code": "FDC",
-            "name": "Foundations Commander",
+            "code": "DSC",
+            "name": "Duskmourn: House of Horror Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
+            "releaseDate": "2024-09-27",
+            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
             "code": "DSK",
@@ -306,14 +317,14 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "DSC",
-            "name": "Duskmourn: House of Horror Commander",
+            "code": "MB2",
+            "name": "Mystery Booster 2",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "BLC",
@@ -324,16 +335,6 @@
             ],
             "releaseDate": "2024-08-02",
             "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
-          },
-          {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "BLB",
@@ -366,16 +367,6 @@
             "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
           },
           {
-            "code": "M3C",
-            "name": "Modern Horizons 3 Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
-          },
-          {
             "code": "H2R",
             "name": "Modern Horizons 2 Timeshifts",
             "kinds": [
@@ -384,6 +375,16 @@
             ],
             "releaseDate": "2024-06-14",
             "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
+          },
+          {
+            "code": "M3C",
+            "name": "Modern Horizons 3 Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
           },
           {
             "code": "BIG",
@@ -471,16 +472,6 @@
         "label": "2023",
         "sets": [
           {
-            "code": "LCC",
-            "name": "The Lost Caverns of Ixalan Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-11-17",
-            "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
-          },
-          {
             "code": "LCI",
             "name": "The Lost Caverns of Ixalan",
             "kinds": [
@@ -489,6 +480,16 @@
             ],
             "releaseDate": "2023-11-17",
             "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
+          },
+          {
+            "code": "LCC",
+            "name": "The Lost Caverns of Ixalan Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
           },
           {
             "code": "WHO",
@@ -561,16 +562,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOC",
-            "name": "March of the Machine Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
-          },
-          {
             "code": "MOM",
             "name": "March of the Machine",
             "kinds": [
@@ -579,6 +570,16 @@
             ],
             "releaseDate": "2023-04-21",
             "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
+          },
+          {
+            "code": "MOC",
+            "name": "March of the Machine Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-04-21",
+            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
           },
           {
             "code": "ONE",
@@ -831,16 +832,6 @@
             "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
           },
           {
-            "code": "MH2",
-            "name": "Modern Horizons 2",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-06-18",
-            "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
-          },
-          {
             "code": "H1R",
             "name": "Modern Horizons 1 Timeshifts",
             "kinds": [
@@ -851,14 +842,14 @@
             "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
-            "code": "C21",
-            "name": "Commander 2021",
+            "code": "MH2",
+            "name": "Modern Horizons 2",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2021-04-23",
-            "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
+            "releaseDate": "2021-06-18",
+            "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
           },
           {
             "code": "STX",
@@ -869,6 +860,16 @@
             ],
             "releaseDate": "2021-04-23",
             "sourceId": "541c3c28-8747-40e5-a231-8e8f33234859"
+          },
+          {
+            "code": "C21",
+            "name": "Commander 2021",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-04-23",
+            "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
           },
           {
             "code": "TSR",
@@ -926,16 +927,6 @@
             "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
           },
           {
-            "code": "ZNC",
-            "name": "Zendikar Rising Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2020-09-25",
-            "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
-          },
-          {
             "code": "ZNR",
             "name": "Zendikar Rising",
             "kinds": [
@@ -944,6 +935,16 @@
             ],
             "releaseDate": "2020-09-25",
             "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
+          },
+          {
+            "code": "ZNC",
+            "name": "Zendikar Rising Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
           },
           {
             "code": "2XM",
@@ -2261,16 +2262,6 @@
             "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
           },
           {
-            "code": "RIN",
-            "name": "Rinascimento",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-08-01",
-            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
-          },
-          {
             "code": "REN",
             "name": "Renaissance",
             "kinds": [
@@ -2281,14 +2272,14 @@
             "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
           },
           {
-            "code": "BCHR",
-            "name": "Chronicles Foreign Black Border",
+            "code": "RIN",
+            "name": "Rinascimento",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
+            "releaseDate": "1995-08-01",
+            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
             "code": "CHR",
@@ -2299,6 +2290,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+          },
+          {
+            "code": "BCHR",
+            "name": "Chronicles Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
           },
           {
             "code": "ICE",
@@ -2376,16 +2377,6 @@
             "sourceId": "78c50b4b-b220-455b-a2d5-cee458fa56f3"
           },
           {
-            "code": "3ED",
-            "name": "Revised Edition",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1994-04-11",
-            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
-          },
-          {
             "code": "FBB",
             "name": "Foreign Black Border",
             "kinds": [
@@ -2394,6 +2385,16 @@
             ],
             "releaseDate": "1994-04-11",
             "sourceId": "60648044-9f6a-4961-81af-47a0a94dfac9"
+          },
+          {
+            "code": "3ED",
+            "name": "Revised Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-04-11",
+            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
           },
           {
             "code": "ATQ",
