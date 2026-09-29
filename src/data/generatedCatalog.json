@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-09-28T16:49:15.206Z",
+  "generatedAt": "2026-09-29T14:53:34.565Z",
   "sources": {
     "pokemon": {
       "status": "preserved_previous_snapshot",
-      "syncedAt": "2026-09-28T16:49:15.206Z",
+      "syncedAt": "2026-09-29T14:53:34.565Z",
       "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-09-28T16:49:15.206Z"
+      "syncedAt": "2026-09-29T14:53:34.565Z"
     }
   },
   "games": {
@@ -16,16 +16,6 @@
       {
         "label": "2026",
         "sets": [
-          {
-            "code": "TRK",
-            "name": "Star Trek",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-11-13",
-            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
-          },
           {
             "code": "TRC",
             "name": "Star Trek Commander",
@@ -35,6 +25,16 @@
             ],
             "releaseDate": "2026-11-13",
             "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
+          },
+          {
+            "code": "TRK",
+            "name": "Star Trek",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
           },
           {
             "code": "MBC",
@@ -172,16 +172,6 @@
             "sourceId": "a1c7b891-9e96-434c-9994-be58b62b27f1"
           },
           {
-            "code": "EOC",
-            "name": "Edge of Eternities Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-08-01",
-            "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
-          },
-          {
             "code": "EOE",
             "name": "Edge of Eternities",
             "kinds": [
@@ -190,6 +180,16 @@
             ],
             "releaseDate": "2025-08-01",
             "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
+          },
+          {
+            "code": "EOC",
+            "name": "Edge of Eternities Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
           },
           {
             "code": "FIC",
@@ -297,16 +297,6 @@
             "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
-            "code": "DSC",
-            "name": "Duskmourn: House of Horror Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
-          },
-          {
             "code": "DSK",
             "name": "Duskmourn: House of Horror",
             "kinds": [
@@ -317,24 +307,14 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
+            "code": "DSC",
+            "name": "Duskmourn: House of Horror Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
-          },
-          {
-            "code": "BLC",
-            "name": "Bloomburrow Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
+            "releaseDate": "2024-09-27",
+            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
             "code": "BLB",
@@ -347,6 +327,26 @@
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
           },
           {
+            "code": "BLC",
+            "name": "Bloomburrow Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
+          },
+          {
+            "code": "MB2",
+            "name": "Mystery Booster 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+          },
+          {
             "code": "ACR",
             "name": "Assassin's Creed",
             "kinds": [
@@ -357,16 +357,6 @@
             "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
           },
           {
-            "code": "MH3",
-            "name": "Modern Horizons 3",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
-          },
-          {
             "code": "H2R",
             "name": "Modern Horizons 2 Timeshifts",
             "kinds": [
@@ -375,6 +365,16 @@
             ],
             "releaseDate": "2024-06-14",
             "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
+          },
+          {
+            "code": "MH3",
+            "name": "Modern Horizons 3",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
           },
           {
             "code": "M3C",
@@ -397,16 +397,6 @@
             "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
-            "code": "OTC",
-            "name": "Outlaws of Thunder Junction Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-04-19",
-            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
-          },
-          {
             "code": "OTJ",
             "name": "Outlaws of Thunder Junction",
             "kinds": [
@@ -415,6 +405,16 @@
             ],
             "releaseDate": "2024-04-19",
             "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
+          },
+          {
+            "code": "OTC",
+            "name": "Outlaws of Thunder Junction Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
           },
           {
             "code": "PIP",
@@ -472,16 +472,6 @@
         "label": "2023",
         "sets": [
           {
-            "code": "LCI",
-            "name": "The Lost Caverns of Ixalan",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-11-17",
-            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
-          },
-          {
             "code": "LCC",
             "name": "The Lost Caverns of Ixalan Commander",
             "kinds": [
@@ -490,6 +480,16 @@
             ],
             "releaseDate": "2023-11-17",
             "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
+          },
+          {
+            "code": "LCI",
+            "name": "The Lost Caverns of Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
           },
           {
             "code": "WHO",
@@ -562,16 +562,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOM",
-            "name": "March of the Machine",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
-          },
-          {
             "code": "MOC",
             "name": "March of the Machine Commander",
             "kinds": [
@@ -580,6 +570,16 @@
             ],
             "releaseDate": "2023-04-21",
             "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
+          },
+          {
+            "code": "MOM",
+            "name": "March of the Machine",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-04-21",
+            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
           },
           {
             "code": "ONE",
@@ -927,16 +927,6 @@
             "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
           },
           {
-            "code": "ZNR",
-            "name": "Zendikar Rising",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2020-09-25",
-            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
-          },
-          {
             "code": "ZNC",
             "name": "Zendikar Rising Commander",
             "kinds": [
@@ -945,6 +935,16 @@
             ],
             "releaseDate": "2020-09-25",
             "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
+          },
+          {
+            "code": "ZNR",
+            "name": "Zendikar Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
           },
           {
             "code": "2XM",
@@ -1117,16 +1117,6 @@
             "sourceId": "2f5f2509-56db-414d-9a7e-6e312ec3760c"
           },
           {
-            "code": "CM2",
-            "name": "Commander Anthology Volume II",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2018-06-08",
-            "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
-          },
-          {
             "code": "BBD",
             "name": "Battlebond",
             "kinds": [
@@ -1135,6 +1125,16 @@
             ],
             "releaseDate": "2018-06-08",
             "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
+          },
+          {
+            "code": "CM2",
+            "name": "Commander Anthology Volume II",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
           },
           {
             "code": "DOM",
@@ -2262,16 +2262,6 @@
             "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
           },
           {
-            "code": "REN",
-            "name": "Renaissance",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-08-01",
-            "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
-          },
-          {
             "code": "RIN",
             "name": "Rinascimento",
             "kinds": [
@@ -2280,6 +2270,16 @@
             ],
             "releaseDate": "1995-08-01",
             "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
+          },
+          {
+            "code": "REN",
+            "name": "Renaissance",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-08-01",
+            "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
           },
           {
             "code": "CHR",
