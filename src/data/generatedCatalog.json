@@ -1,14 +1,13 @@
 {
-  "generatedAt": "2026-09-30T14:59:25.090Z",
+  "generatedAt": "2026-10-01T15:31:08.087Z",
   "sources": {
     "pokemon": {
-      "status": "preserved_previous_snapshot",
-      "syncedAt": "2026-09-30T14:59:25.090Z",
-      "error": "Error: 502 https://api.pokemontcg.io/v2/sets?pageSize=250"
+      "status": "ok",
+      "syncedAt": "2026-10-01T15:31:08.087Z"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-09-30T14:59:25.090Z"
+      "syncedAt": "2026-10-01T15:31:08.087Z"
     }
   },
   "games": {
@@ -127,16 +126,6 @@
             "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
           },
           {
-            "code": "ECC",
-            "name": "Lorwyn Eclipsed Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-01-23",
-            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
-          },
-          {
             "code": "ECL",
             "name": "Lorwyn Eclipsed",
             "kinds": [
@@ -145,6 +134,16 @@
             ],
             "releaseDate": "2026-01-23",
             "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
+          },
+          {
+            "code": "ECC",
+            "name": "Lorwyn Eclipsed Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
           }
         ]
       },
@@ -232,16 +231,6 @@
             "sourceId": "1361ca81-1304-49a8-b2e6-e76a4aa4a8c3"
           },
           {
-            "code": "DRC",
-            "name": "Aetherdrift Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-02-14",
-            "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
-          },
-          {
             "code": "DFT",
             "name": "Aetherdrift",
             "kinds": [
@@ -250,6 +239,16 @@
             ],
             "releaseDate": "2025-02-14",
             "sourceId": "23464cc2-a69c-427d-b8a7-08e5d80235d7"
+          },
+          {
+            "code": "DRC",
+            "name": "Aetherdrift Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-02-14",
+            "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
           },
           {
             "code": "INR",
@@ -277,16 +276,6 @@
             "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
           },
           {
-            "code": "J25",
-            "name": "Foundations Jumpstart",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
-          },
-          {
             "code": "FDN",
             "name": "Foundations",
             "kinds": [
@@ -297,14 +286,14 @@
             "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
-            "code": "DSC",
-            "name": "Duskmourn: House of Horror Commander",
+            "code": "J25",
+            "name": "Foundations Jumpstart",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
+            "releaseDate": "2024-11-15",
+            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
           },
           {
             "code": "DSK",
@@ -317,14 +306,14 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
+            "code": "DSC",
+            "name": "Duskmourn: House of Horror Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+            "releaseDate": "2024-09-27",
+            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
             "code": "BLC",
@@ -345,6 +334,16 @@
             ],
             "releaseDate": "2024-08-02",
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
+          },
+          {
+            "code": "MB2",
+            "name": "Mystery Booster 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "ACR",
@@ -387,14 +386,14 @@
             "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
           },
           {
-            "code": "BIG",
-            "name": "The Big Score",
+            "code": "OTJ",
+            "name": "Outlaws of Thunder Junction",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-04-19",
-            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
+            "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
           },
           {
             "code": "OTC",
@@ -407,14 +406,14 @@
             "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
           },
           {
-            "code": "OTJ",
-            "name": "Outlaws of Thunder Junction",
+            "code": "BIG",
+            "name": "The Big Score",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-04-19",
-            "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
+            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
             "code": "PIP",
@@ -562,16 +561,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOC",
-            "name": "March of the Machine Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
-          },
-          {
             "code": "MOM",
             "name": "March of the Machine",
             "kinds": [
@@ -582,14 +571,14 @@
             "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
           },
           {
-            "code": "ONC",
-            "name": "Phyrexia: All Will Be One Commander",
+            "code": "MOC",
+            "name": "March of the Machine Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2023-02-10",
-            "sourceId": "8c5e86d4-ae2d-42f7-a0e5-0e4141eb953d"
+            "releaseDate": "2023-04-21",
+            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
           },
           {
             "code": "ONE",
@@ -600,6 +589,16 @@
             ],
             "releaseDate": "2023-02-10",
             "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
+          },
+          {
+            "code": "ONC",
+            "name": "Phyrexia: All Will Be One Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-02-10",
+            "sourceId": "8c5e86d4-ae2d-42f7-a0e5-0e4141eb953d"
           },
           {
             "code": "DMR",
@@ -772,16 +771,6 @@
         "label": "2021",
         "sets": [
           {
-            "code": "VOW",
-            "name": "Innistrad: Crimson Vow",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-11-19",
-            "sourceId": "8144b676-569f-4716-8005-bc8f0778f3fa"
-          },
-          {
             "code": "VOC",
             "name": "Crimson Vow Commander",
             "kinds": [
@@ -790,6 +779,16 @@
             ],
             "releaseDate": "2021-11-19",
             "sourceId": "b2e444f7-41e6-4172-ba01-47d91d5e7bbc"
+          },
+          {
+            "code": "VOW",
+            "name": "Innistrad: Crimson Vow",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-11-19",
+            "sourceId": "8144b676-569f-4716-8005-bc8f0778f3fa"
           },
           {
             "code": "MIC",
@@ -852,16 +851,6 @@
             "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
-            "code": "C21",
-            "name": "Commander 2021",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-04-23",
-            "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
-          },
-          {
             "code": "STX",
             "name": "Strixhaven: School of Mages",
             "kinds": [
@@ -870,6 +859,16 @@
             ],
             "releaseDate": "2021-04-23",
             "sourceId": "541c3c28-8747-40e5-a231-8e8f33234859"
+          },
+          {
+            "code": "C21",
+            "name": "Commander 2021",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-04-23",
+            "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
           },
           {
             "code": "TSR",
@@ -1117,16 +1116,6 @@
             "sourceId": "2f5f2509-56db-414d-9a7e-6e312ec3760c"
           },
           {
-            "code": "BBD",
-            "name": "Battlebond",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2018-06-08",
-            "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
-          },
-          {
             "code": "CM2",
             "name": "Commander Anthology Volume II",
             "kinds": [
@@ -1135,6 +1124,16 @@
             ],
             "releaseDate": "2018-06-08",
             "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
+          },
+          {
+            "code": "BBD",
+            "name": "Battlebond",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
           },
           {
             "code": "DOM",
@@ -2282,16 +2281,6 @@
             "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
-            "code": "BCHR",
-            "name": "Chronicles Foreign Black Border",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
-          },
-          {
             "code": "CHR",
             "name": "Chronicles",
             "kinds": [
@@ -2300,6 +2289,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+          },
+          {
+            "code": "BCHR",
+            "name": "Chronicles Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
           },
           {
             "code": "ICE",
