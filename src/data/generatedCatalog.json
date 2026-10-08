@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-07T15:37:28.925Z",
+  "generatedAt": "2026-10-08T15:42:46.606Z",
   "sources": {
     "pokemon": {
       "status": "ok",
-      "syncedAt": "2026-10-07T15:37:28.925Z"
+      "syncedAt": "2026-10-08T15:42:46.606Z"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-10-07T15:37:28.925Z"
+      "syncedAt": "2026-10-08T15:42:46.606Z"
     }
   },
   "games": {
@@ -111,16 +111,6 @@
             "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
           },
           {
-            "code": "SOC",
-            "name": "Secrets of Strixhaven Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-04-24",
-            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
-          },
-          {
             "code": "SOS",
             "name": "Secrets of Strixhaven",
             "kinds": [
@@ -129,6 +119,16 @@
             ],
             "releaseDate": "2026-04-24",
             "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
+          },
+          {
+            "code": "SOC",
+            "name": "Secrets of Strixhaven Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
           },
           {
             "code": "TMT",
@@ -141,16 +141,6 @@
             "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
           },
           {
-            "code": "ECL",
-            "name": "Lorwyn Eclipsed",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-01-23",
-            "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
-          },
-          {
             "code": "ECC",
             "name": "Lorwyn Eclipsed Commander",
             "kinds": [
@@ -159,6 +149,16 @@
             ],
             "releaseDate": "2026-01-23",
             "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
+          },
+          {
+            "code": "ECL",
+            "name": "Lorwyn Eclipsed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
           }
         ]
       },
@@ -186,16 +186,6 @@
             "sourceId": "a1c7b891-9e96-434c-9994-be58b62b27f1"
           },
           {
-            "code": "EOE",
-            "name": "Edge of Eternities",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-08-01",
-            "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
-          },
-          {
             "code": "EOC",
             "name": "Edge of Eternities Commander",
             "kinds": [
@@ -204,6 +194,16 @@
             ],
             "releaseDate": "2025-08-01",
             "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
+          },
+          {
+            "code": "EOE",
+            "name": "Edge of Eternities",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
           },
           {
             "code": "FIC",
@@ -291,16 +291,6 @@
             "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
           },
           {
-            "code": "FDN",
-            "name": "Foundations",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
-          },
-          {
             "code": "J25",
             "name": "Foundations Jumpstart",
             "kinds": [
@@ -309,6 +299,16 @@
             ],
             "releaseDate": "2024-11-15",
             "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+          },
+          {
+            "code": "FDN",
+            "name": "Foundations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
             "code": "DSK",
@@ -331,16 +331,6 @@
             "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
-            "code": "BLB",
-            "name": "Bloomburrow",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
-          },
-          {
             "code": "MB2",
             "name": "Mystery Booster 2",
             "kinds": [
@@ -361,6 +351,16 @@
             "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
           },
           {
+            "code": "BLB",
+            "name": "Bloomburrow",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
+          },
+          {
             "code": "ACR",
             "name": "Assassin's Creed",
             "kinds": [
@@ -369,16 +369,6 @@
             ],
             "releaseDate": "2024-07-05",
             "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
-          },
-          {
-            "code": "H2R",
-            "name": "Modern Horizons 2 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
             "code": "M3C",
@@ -399,6 +389,16 @@
             ],
             "releaseDate": "2024-06-14",
             "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
+          },
+          {
+            "code": "H2R",
+            "name": "Modern Horizons 2 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
             "code": "BIG",
@@ -681,16 +681,6 @@
             "sourceId": "f35f5dd8-5b95-4f52-bbe7-1c62909a8d08"
           },
           {
-            "code": "DMC",
-            "name": "Dominaria United Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2022-09-09",
-            "sourceId": "78076b27-f888-4723-b27c-44074accd261"
-          },
-          {
             "code": "DMU",
             "name": "Dominaria United",
             "kinds": [
@@ -699,6 +689,16 @@
             ],
             "releaseDate": "2022-09-09",
             "sourceId": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3"
+          },
+          {
+            "code": "DMC",
+            "name": "Dominaria United Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2022-09-09",
+            "sourceId": "78076b27-f888-4723-b27c-44074accd261"
           },
           {
             "code": "2X2",
@@ -866,16 +866,6 @@
             "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
-            "code": "STX",
-            "name": "Strixhaven: School of Mages",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-04-23",
-            "sourceId": "541c3c28-8747-40e5-a231-8e8f33234859"
-          },
-          {
             "code": "C21",
             "name": "Commander 2021",
             "kinds": [
@@ -884,6 +874,16 @@
             ],
             "releaseDate": "2021-04-23",
             "sourceId": "27bf6dbd-a9e1-4904-afa7-d28fc7745c4f"
+          },
+          {
+            "code": "STX",
+            "name": "Strixhaven: School of Mages",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-04-23",
+            "sourceId": "541c3c28-8747-40e5-a231-8e8f33234859"
           },
           {
             "code": "TSR",
@@ -1131,16 +1131,6 @@
             "sourceId": "2f5f2509-56db-414d-9a7e-6e312ec3760c"
           },
           {
-            "code": "BBD",
-            "name": "Battlebond",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2018-06-08",
-            "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
-          },
-          {
             "code": "CM2",
             "name": "Commander Anthology Volume II",
             "kinds": [
@@ -1149,6 +1139,16 @@
             ],
             "releaseDate": "2018-06-08",
             "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
+          },
+          {
+            "code": "BBD",
+            "name": "Battlebond",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
           },
           {
             "code": "DOM",
@@ -1821,16 +1821,6 @@
         "label": "2006",
         "sets": [
           {
-            "code": "TSB",
-            "name": "Time Spiral Timeshifted",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2006-10-06",
-            "sourceId": "6519be58-b8cb-4cd7-9f5b-4db23364715b"
-          },
-          {
             "code": "TSP",
             "name": "Time Spiral",
             "kinds": [
@@ -1839,6 +1829,16 @@
             ],
             "releaseDate": "2006-10-06",
             "sourceId": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046"
+          },
+          {
+            "code": "TSB",
+            "name": "Time Spiral Timeshifted",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-10-06",
+            "sourceId": "6519be58-b8cb-4cd7-9f5b-4db23364715b"
           },
           {
             "code": "CSP",
@@ -2276,16 +2276,6 @@
             "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
           },
           {
-            "code": "RIN",
-            "name": "Rinascimento",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-08-01",
-            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
-          },
-          {
             "code": "REN",
             "name": "Renaissance",
             "kinds": [
@@ -2296,14 +2286,14 @@
             "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
           },
           {
-            "code": "CHR",
-            "name": "Chronicles",
+            "code": "RIN",
+            "name": "Rinascimento",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+            "releaseDate": "1995-08-01",
+            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
             "code": "BCHR",
@@ -2314,6 +2304,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
+          },
+          {
+            "code": "CHR",
+            "name": "Chronicles",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
           },
           {
             "code": "ICE",
