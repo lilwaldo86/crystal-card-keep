@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-12T18:01:50.914Z",
+  "generatedAt": "2026-10-13T16:06:53.264Z",
   "sources": {
     "pokemon": {
       "status": "preserved_previous_snapshot",
-      "syncedAt": "2026-10-12T18:01:50.914Z",
+      "syncedAt": "2026-10-13T16:06:53.264Z",
       "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-10-12T18:01:50.914Z"
+      "syncedAt": "2026-10-13T16:06:53.264Z"
     }
   },
   "games": {
@@ -78,18 +78,8 @@
               "sealed",
               "singles"
             ],
-            "releaseDate": "2026-11-09",
+            "releaseDate": "2026-10-19",
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
-          },
-          {
-            "code": "FRA",
-            "name": "Reality Fracture",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
           },
           {
             "code": "FRC",
@@ -100,6 +90,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
+          },
+          {
+            "code": "FRA",
+            "name": "Reality Fracture",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
           },
           {
             "code": "HOB",
@@ -162,16 +162,6 @@
             "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
           },
           {
-            "code": "ECC",
-            "name": "Lorwyn Eclipsed Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-01-23",
-            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
-          },
-          {
             "code": "ECL",
             "name": "Lorwyn Eclipsed",
             "kinds": [
@@ -180,6 +170,16 @@
             ],
             "releaseDate": "2026-01-23",
             "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
+          },
+          {
+            "code": "ECC",
+            "name": "Lorwyn Eclipsed Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
           }
         ]
       },
@@ -302,16 +302,6 @@
         "label": "2024",
         "sets": [
           {
-            "code": "FDN",
-            "name": "Foundations",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
-          },
-          {
             "code": "J25",
             "name": "Foundations Jumpstart",
             "kinds": [
@@ -320,6 +310,16 @@
             ],
             "releaseDate": "2024-11-15",
             "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+          },
+          {
+            "code": "FDN",
+            "name": "Foundations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
             "code": "FDC",
@@ -352,16 +352,6 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "BLB",
-            "name": "Bloomburrow",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
-          },
-          {
             "code": "BLC",
             "name": "Bloomburrow Commander",
             "kinds": [
@@ -380,6 +370,16 @@
             ],
             "releaseDate": "2024-08-02",
             "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+          },
+          {
+            "code": "BLB",
+            "name": "Bloomburrow",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
           },
           {
             "code": "ACR",
@@ -432,16 +432,6 @@
             "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
           },
           {
-            "code": "BIG",
-            "name": "The Big Score",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-04-19",
-            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
-          },
-          {
             "code": "OTJ",
             "name": "Outlaws of Thunder Junction",
             "kinds": [
@@ -450,6 +440,16 @@
             ],
             "releaseDate": "2024-04-19",
             "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
+          },
+          {
+            "code": "BIG",
+            "name": "The Big Score",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
             "code": "PIP",
@@ -507,16 +507,6 @@
         "label": "2023",
         "sets": [
           {
-            "code": "LCI",
-            "name": "The Lost Caverns of Ixalan",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-11-17",
-            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
-          },
-          {
             "code": "LCC",
             "name": "The Lost Caverns of Ixalan Commander",
             "kinds": [
@@ -525,6 +515,16 @@
             ],
             "releaseDate": "2023-11-17",
             "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
+          },
+          {
+            "code": "LCI",
+            "name": "The Lost Caverns of Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
           },
           {
             "code": "WHO",
@@ -597,16 +597,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOC",
-            "name": "March of the Machine Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
-          },
-          {
             "code": "MOM",
             "name": "March of the Machine",
             "kinds": [
@@ -615,6 +605,16 @@
             ],
             "releaseDate": "2023-04-21",
             "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
+          },
+          {
+            "code": "MOC",
+            "name": "March of the Machine Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-04-21",
+            "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
           },
           {
             "code": "ONC",
@@ -867,16 +867,6 @@
             "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
           },
           {
-            "code": "H1R",
-            "name": "Modern Horizons 1 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-06-18",
-            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
-          },
-          {
             "code": "MH2",
             "name": "Modern Horizons 2",
             "kinds": [
@@ -885,6 +875,16 @@
             ],
             "releaseDate": "2021-06-18",
             "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
+          },
+          {
+            "code": "H1R",
+            "name": "Modern Horizons 1 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
             "code": "C21",
