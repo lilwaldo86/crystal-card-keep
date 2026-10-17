@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-16T13:20:19.933Z",
+  "generatedAt": "2026-10-17T12:15:44.525Z",
   "sources": {
     "pokemon": {
       "status": "preserved_previous_snapshot",
-      "syncedAt": "2026-10-16T13:20:19.933Z",
+      "syncedAt": "2026-10-17T12:15:44.525Z",
       "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-10-16T13:20:19.933Z"
+      "syncedAt": "2026-10-17T12:15:44.525Z"
     }
   },
   "games": {
@@ -52,16 +52,6 @@
         "label": "2026",
         "sets": [
           {
-            "code": "TRK",
-            "name": "Star Trek",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-11-13",
-            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
-          },
-          {
             "code": "TRC",
             "name": "Star Trek Commander",
             "kinds": [
@@ -70,6 +60,16 @@
             ],
             "releaseDate": "2026-11-13",
             "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
+          },
+          {
+            "code": "TRK",
+            "name": "Star Trek",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
           },
           {
             "code": "MBC",
@@ -82,16 +82,6 @@
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
           },
           {
-            "code": "FRC",
-            "name": "Reality Fracture Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
-          },
-          {
             "code": "FRA",
             "name": "Reality Fracture",
             "kinds": [
@@ -100,6 +90,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
+          },
+          {
+            "code": "FRC",
+            "name": "Reality Fracture Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
           },
           {
             "code": "HOB",
@@ -302,6 +302,16 @@
         "label": "2024",
         "sets": [
           {
+            "code": "FDN",
+            "name": "Foundations",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
+          },
+          {
             "code": "J25",
             "name": "Foundations Jumpstart",
             "kinds": [
@@ -320,16 +330,6 @@
             ],
             "releaseDate": "2024-11-15",
             "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
-          },
-          {
-            "code": "FDN",
-            "name": "Foundations",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
             "code": "DSC",
@@ -352,14 +352,14 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "BLC",
-            "name": "Bloomburrow Commander",
+            "code": "MB2",
+            "name": "Mystery Booster 2",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-08-02",
-            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "BLB",
@@ -372,14 +372,14 @@
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
+            "code": "BLC",
+            "name": "Bloomburrow Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
           },
           {
             "code": "ACR",
@@ -392,14 +392,14 @@
             "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
           },
           {
-            "code": "MH3",
-            "name": "Modern Horizons 3",
+            "code": "H2R",
+            "name": "Modern Horizons 2 Timeshifts",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-06-14",
-            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
+            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
             "code": "M3C",
@@ -412,24 +412,14 @@
             "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
           },
           {
-            "code": "H2R",
-            "name": "Modern Horizons 2 Timeshifts",
+            "code": "MH3",
+            "name": "Modern Horizons 3",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-06-14",
-            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
-          },
-          {
-            "code": "BIG",
-            "name": "The Big Score",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-04-19",
-            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
+            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
           },
           {
             "code": "OTC",
@@ -440,6 +430,16 @@
             ],
             "releaseDate": "2024-04-19",
             "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
+          },
+          {
+            "code": "BIG",
+            "name": "The Big Score",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
             "code": "OTJ",
@@ -472,16 +472,6 @@
             "sourceId": "d4bfabcf-a859-43a4-9d8a-665533c8b174"
           },
           {
-            "code": "MKC",
-            "name": "Murders at Karlov Manor Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-02-09",
-            "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
-          },
-          {
             "code": "MKM",
             "name": "Murders at Karlov Manor",
             "kinds": [
@@ -490,6 +480,16 @@
             ],
             "releaseDate": "2024-02-09",
             "sourceId": "2b17794b-15c3-4796-ad6f-0887a0eceeca"
+          },
+          {
+            "code": "MKC",
+            "name": "Murders at Karlov Manor Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-09",
+            "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
           },
           {
             "code": "RVR",
@@ -597,16 +597,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOM",
-            "name": "March of the Machine",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
-          },
-          {
             "code": "MOC",
             "name": "March of the Machine Commander",
             "kinds": [
@@ -617,14 +607,14 @@
             "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
           },
           {
-            "code": "ONE",
-            "name": "Phyrexia: All Will Be One",
+            "code": "MOM",
+            "name": "March of the Machine",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2023-02-10",
-            "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
+            "releaseDate": "2023-04-21",
+            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
           },
           {
             "code": "ONC",
@@ -635,6 +625,16 @@
             ],
             "releaseDate": "2023-02-10",
             "sourceId": "8c5e86d4-ae2d-42f7-a0e5-0e4141eb953d"
+          },
+          {
+            "code": "ONE",
+            "name": "Phyrexia: All Will Be One",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-02-10",
+            "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
           },
           {
             "code": "DMR",
@@ -917,16 +917,6 @@
             "sourceId": "11e90d1b-0502-43e6-b056-e24836523c13"
           },
           {
-            "code": "KHC",
-            "name": "Kaldheim Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-02-05",
-            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
-          },
-          {
             "code": "KHM",
             "name": "Kaldheim",
             "kinds": [
@@ -935,6 +925,16 @@
             ],
             "releaseDate": "2021-02-05",
             "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
+          },
+          {
+            "code": "KHC",
+            "name": "Kaldheim Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
           }
         ]
       },
@@ -962,16 +962,6 @@
             "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
           },
           {
-            "code": "ZNR",
-            "name": "Zendikar Rising",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2020-09-25",
-            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
-          },
-          {
             "code": "ZNC",
             "name": "Zendikar Rising Commander",
             "kinds": [
@@ -980,6 +970,16 @@
             ],
             "releaseDate": "2020-09-25",
             "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
+          },
+          {
+            "code": "ZNR",
+            "name": "Zendikar Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
           },
           {
             "code": "2XM",
@@ -2317,16 +2317,6 @@
             "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
-            "code": "CHR",
-            "name": "Chronicles",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
-          },
-          {
             "code": "BCHR",
             "name": "Chronicles Foreign Black Border",
             "kinds": [
@@ -2335,6 +2325,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
+          },
+          {
+            "code": "CHR",
+            "name": "Chronicles",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
           },
           {
             "code": "ICE",
@@ -2412,16 +2412,6 @@
             "sourceId": "78c50b4b-b220-455b-a2d5-cee458fa56f3"
           },
           {
-            "code": "3ED",
-            "name": "Revised Edition",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1994-04-11",
-            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
-          },
-          {
             "code": "FBB",
             "name": "Foreign Black Border",
             "kinds": [
@@ -2430,6 +2420,16 @@
             ],
             "releaseDate": "1994-04-11",
             "sourceId": "60648044-9f6a-4961-81af-47a0a94dfac9"
+          },
+          {
+            "code": "3ED",
+            "name": "Revised Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-04-11",
+            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
           },
           {
             "code": "ATQ",
