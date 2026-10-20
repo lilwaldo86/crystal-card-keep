@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-10-19T15:43:29.644Z",
+  "generatedAt": "2026-10-20T13:39:32.848Z",
   "sources": {
     "pokemon": {
-      "status": "ok",
-      "syncedAt": "2026-10-19T15:43:29.644Z"
+      "status": "preserved_previous_snapshot",
+      "syncedAt": "2026-10-20T13:39:32.848Z",
+      "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-10-19T15:43:29.644Z"
+      "syncedAt": "2026-10-20T13:39:32.848Z"
     }
   },
   "games": {
@@ -51,16 +52,6 @@
         "label": "2026",
         "sets": [
           {
-            "code": "TRK",
-            "name": "Star Trek",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-11-13",
-            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
-          },
-          {
             "code": "TRC",
             "name": "Star Trek Commander",
             "kinds": [
@@ -69,6 +60,16 @@
             ],
             "releaseDate": "2026-11-13",
             "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
+          },
+          {
+            "code": "TRK",
+            "name": "Star Trek",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
           },
           {
             "code": "MBC",
@@ -81,16 +82,6 @@
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
           },
           {
-            "code": "FRA",
-            "name": "Reality Fracture",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
-          },
-          {
             "code": "FRC",
             "name": "Reality Fracture Commander",
             "kinds": [
@@ -99,6 +90,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
+          },
+          {
+            "code": "FRA",
+            "name": "Reality Fracture",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
           },
           {
             "code": "HOB",
@@ -111,16 +112,6 @@
             "sourceId": "59218c23-cb7a-4fde-9cff-3f2f71af1308"
           },
           {
-            "code": "MSC",
-            "name": "Marvel Super Heroes Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-06-26",
-            "sourceId": "9d739461-c5ac-43a1-af41-3d5a585b5c8d"
-          },
-          {
             "code": "MSH",
             "name": "Marvel Super Heroes",
             "kinds": [
@@ -131,14 +122,14 @@
             "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
           },
           {
-            "code": "SOC",
-            "name": "Secrets of Strixhaven Commander",
+            "code": "MSC",
+            "name": "Marvel Super Heroes Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2026-04-24",
-            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
+            "releaseDate": "2026-06-26",
+            "sourceId": "9d739461-c5ac-43a1-af41-3d5a585b5c8d"
           },
           {
             "code": "SOS",
@@ -151,6 +142,16 @@
             "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
           },
           {
+            "code": "SOC",
+            "name": "Secrets of Strixhaven Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
+          },
+          {
             "code": "TMT",
             "name": "Teenage Mutant Ninja Turtles",
             "kinds": [
@@ -161,16 +162,6 @@
             "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
           },
           {
-            "code": "ECC",
-            "name": "Lorwyn Eclipsed Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-01-23",
-            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
-          },
-          {
             "code": "ECL",
             "name": "Lorwyn Eclipsed",
             "kinds": [
@@ -179,6 +170,16 @@
             ],
             "releaseDate": "2026-01-23",
             "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
+          },
+          {
+            "code": "ECC",
+            "name": "Lorwyn Eclipsed Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
           }
         ]
       },
@@ -311,16 +312,6 @@
             "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
-            "code": "J25",
-            "name": "Foundations Jumpstart",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
-          },
-          {
             "code": "FDC",
             "name": "Foundations Commander",
             "kinds": [
@@ -329,6 +320,16 @@
             ],
             "releaseDate": "2024-11-15",
             "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
+          },
+          {
+            "code": "J25",
+            "name": "Foundations Jumpstart",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
           },
           {
             "code": "DSC",
@@ -351,16 +352,6 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
-          },
-          {
             "code": "BLC",
             "name": "Bloomburrow Commander",
             "kinds": [
@@ -379,6 +370,16 @@
             ],
             "releaseDate": "2024-08-02",
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
+          },
+          {
+            "code": "MB2",
+            "name": "Mystery Booster 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "ACR",
@@ -471,16 +472,6 @@
             "sourceId": "d4bfabcf-a859-43a4-9d8a-665533c8b174"
           },
           {
-            "code": "MKM",
-            "name": "Murders at Karlov Manor",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-02-09",
-            "sourceId": "2b17794b-15c3-4796-ad6f-0887a0eceeca"
-          },
-          {
             "code": "MKC",
             "name": "Murders at Karlov Manor Commander",
             "kinds": [
@@ -489,6 +480,16 @@
             ],
             "releaseDate": "2024-02-09",
             "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
+          },
+          {
+            "code": "MKM",
+            "name": "Murders at Karlov Manor",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-09",
+            "sourceId": "2b17794b-15c3-4796-ad6f-0887a0eceeca"
           },
           {
             "code": "RVR",
@@ -506,16 +507,6 @@
         "label": "2023",
         "sets": [
           {
-            "code": "LCC",
-            "name": "The Lost Caverns of Ixalan Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-11-17",
-            "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
-          },
-          {
             "code": "LCI",
             "name": "The Lost Caverns of Ixalan",
             "kinds": [
@@ -524,6 +515,16 @@
             ],
             "releaseDate": "2023-11-17",
             "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
+          },
+          {
+            "code": "LCC",
+            "name": "The Lost Caverns of Ixalan Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
           },
           {
             "code": "WHO",
@@ -916,16 +917,6 @@
             "sourceId": "11e90d1b-0502-43e6-b056-e24836523c13"
           },
           {
-            "code": "KHC",
-            "name": "Kaldheim Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-02-05",
-            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
-          },
-          {
             "code": "KHM",
             "name": "Kaldheim",
             "kinds": [
@@ -934,6 +925,16 @@
             ],
             "releaseDate": "2021-02-05",
             "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
+          },
+          {
+            "code": "KHC",
+            "name": "Kaldheim Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
           }
         ]
       },
@@ -961,16 +962,6 @@
             "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
           },
           {
-            "code": "ZNC",
-            "name": "Zendikar Rising Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2020-09-25",
-            "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
-          },
-          {
             "code": "ZNR",
             "name": "Zendikar Rising",
             "kinds": [
@@ -979,6 +970,16 @@
             ],
             "releaseDate": "2020-09-25",
             "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
+          },
+          {
+            "code": "ZNC",
+            "name": "Zendikar Rising Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
           },
           {
             "code": "2XM",
@@ -1151,16 +1152,6 @@
             "sourceId": "2f5f2509-56db-414d-9a7e-6e312ec3760c"
           },
           {
-            "code": "CM2",
-            "name": "Commander Anthology Volume II",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2018-06-08",
-            "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
-          },
-          {
             "code": "BBD",
             "name": "Battlebond",
             "kinds": [
@@ -1169,6 +1160,16 @@
             ],
             "releaseDate": "2018-06-08",
             "sourceId": "95f97fbc-58ef-4645-982e-43e2db6f1124"
+          },
+          {
+            "code": "CM2",
+            "name": "Commander Anthology Volume II",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2018-06-08",
+            "sourceId": "2ba5b1a3-40ed-422e-981d-56753004dfc6"
           },
           {
             "code": "DOM",
@@ -1841,16 +1842,6 @@
         "label": "2006",
         "sets": [
           {
-            "code": "TSB",
-            "name": "Time Spiral Timeshifted",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2006-10-06",
-            "sourceId": "6519be58-b8cb-4cd7-9f5b-4db23364715b"
-          },
-          {
             "code": "TSP",
             "name": "Time Spiral",
             "kinds": [
@@ -1859,6 +1850,16 @@
             ],
             "releaseDate": "2006-10-06",
             "sourceId": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046"
+          },
+          {
+            "code": "TSB",
+            "name": "Time Spiral Timeshifted",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2006-10-06",
+            "sourceId": "6519be58-b8cb-4cd7-9f5b-4db23364715b"
           },
           {
             "code": "CSP",
@@ -2296,16 +2297,6 @@
             "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
           },
           {
-            "code": "RIN",
-            "name": "Rinascimento",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-08-01",
-            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
-          },
-          {
             "code": "REN",
             "name": "Renaissance",
             "kinds": [
@@ -2316,14 +2307,14 @@
             "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
           },
           {
-            "code": "BCHR",
-            "name": "Chronicles Foreign Black Border",
+            "code": "RIN",
+            "name": "Rinascimento",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
+            "releaseDate": "1995-08-01",
+            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
             "code": "CHR",
@@ -2334,6 +2325,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+          },
+          {
+            "code": "BCHR",
+            "name": "Chronicles Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
           },
           {
             "code": "ICE",
