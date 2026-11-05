@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-11-04T16:25:32.587Z",
+  "generatedAt": "2026-11-05T16:33:17.393Z",
   "sources": {
     "pokemon": {
-      "status": "ok",
-      "syncedAt": "2026-11-04T16:25:32.587Z"
+      "status": "preserved_previous_snapshot",
+      "syncedAt": "2026-11-05T16:33:17.393Z",
+      "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-11-04T16:25:32.587Z"
+      "syncedAt": "2026-11-05T16:33:17.393Z"
     }
   },
   "games": {
@@ -15,16 +16,6 @@
       {
         "label": "2027",
         "sets": [
-          {
-            "code": "MDD",
-            "name": "Marvel: Darkhold Destiny",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2027-04-09",
-            "sourceId": "1c75c20b-221e-47c5-83be-f3be4c15087d"
-          },
           {
             "code": "MDC",
             "name": "Darkhold Destiny Commander",
@@ -34,6 +25,16 @@
             ],
             "releaseDate": "2027-04-09",
             "sourceId": "4e7f31db-cf1b-4719-9ff9-2b9a3b3957f4"
+          },
+          {
+            "code": "MDD",
+            "name": "Marvel: Darkhold Destiny",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2027-04-09",
+            "sourceId": "1c75c20b-221e-47c5-83be-f3be4c15087d"
           },
           {
             "code": "NAU",
@@ -81,16 +82,6 @@
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
           },
           {
-            "code": "FRC",
-            "name": "Reality Fracture Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
-          },
-          {
             "code": "FRA",
             "name": "Reality Fracture",
             "kinds": [
@@ -99,6 +90,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
+          },
+          {
+            "code": "FRC",
+            "name": "Reality Fracture Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
           },
           {
             "code": "HOB",
@@ -111,16 +112,6 @@
             "sourceId": "59218c23-cb7a-4fde-9cff-3f2f71af1308"
           },
           {
-            "code": "MSH",
-            "name": "Marvel Super Heroes",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-06-26",
-            "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
-          },
-          {
             "code": "MSC",
             "name": "Marvel Super Heroes Commander",
             "kinds": [
@@ -131,14 +122,14 @@
             "sourceId": "9d739461-c5ac-43a1-af41-3d5a585b5c8d"
           },
           {
-            "code": "SOS",
-            "name": "Secrets of Strixhaven",
+            "code": "MSH",
+            "name": "Marvel Super Heroes",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2026-04-24",
-            "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
+            "releaseDate": "2026-06-26",
+            "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
           },
           {
             "code": "SOC",
@@ -149,6 +140,16 @@
             ],
             "releaseDate": "2026-04-24",
             "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
+          },
+          {
+            "code": "SOS",
+            "name": "Secrets of Strixhaven",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
           },
           {
             "code": "TMT",
@@ -301,6 +302,16 @@
         "label": "2024",
         "sets": [
           {
+            "code": "J25",
+            "name": "Foundations Jumpstart",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+          },
+          {
             "code": "FDC",
             "name": "Foundations Commander",
             "kinds": [
@@ -321,14 +332,14 @@
             "sourceId": "a7ecb771-d1b6-4dec-8cf5-8d45179f21e0"
           },
           {
-            "code": "J25",
-            "name": "Foundations Jumpstart",
+            "code": "DSK",
+            "name": "Duskmourn: House of Horror",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+            "releaseDate": "2024-09-27",
+            "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
             "code": "DSC",
@@ -341,24 +352,14 @@
             "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
-            "code": "DSK",
-            "name": "Duskmourn: House of Horror",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
-          },
-          {
-            "code": "BLC",
-            "name": "Bloomburrow Commander",
+            "code": "MB2",
+            "name": "Mystery Booster 2",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-08-02",
-            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
           },
           {
             "code": "BLB",
@@ -371,14 +372,14 @@
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
+            "code": "BLC",
+            "name": "Bloomburrow Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+            "sourceId": "c0f860b9-a2d0-4fd7-bfac-a49ac60c84f1"
           },
           {
             "code": "ACR",
@@ -401,16 +402,6 @@
             "sourceId": "f5e00721-cf99-43ba-bf16-b22d56d12c73"
           },
           {
-            "code": "MH3",
-            "name": "Modern Horizons 3",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
-          },
-          {
             "code": "H2R",
             "name": "Modern Horizons 2 Timeshifts",
             "kinds": [
@@ -421,14 +412,14 @@
             "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
-            "code": "OTC",
-            "name": "Outlaws of Thunder Junction Commander",
+            "code": "MH3",
+            "name": "Modern Horizons 3",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-04-19",
-            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
+            "releaseDate": "2024-06-14",
+            "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
           },
           {
             "code": "OTJ",
@@ -451,6 +442,16 @@
             "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
+            "code": "OTC",
+            "name": "Outlaws of Thunder Junction Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-04-19",
+            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
+          },
+          {
             "code": "PIP",
             "name": "Fallout",
             "kinds": [
@@ -471,16 +472,6 @@
             "sourceId": "d4bfabcf-a859-43a4-9d8a-665533c8b174"
           },
           {
-            "code": "MKC",
-            "name": "Murders at Karlov Manor Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-02-09",
-            "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
-          },
-          {
             "code": "MKM",
             "name": "Murders at Karlov Manor",
             "kinds": [
@@ -489,6 +480,16 @@
             ],
             "releaseDate": "2024-02-09",
             "sourceId": "2b17794b-15c3-4796-ad6f-0887a0eceeca"
+          },
+          {
+            "code": "MKC",
+            "name": "Murders at Karlov Manor Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-02-09",
+            "sourceId": "286c37ca-ba65-4d3e-8c5d-d1878d88fd95"
           },
           {
             "code": "RVR",
@@ -506,16 +507,6 @@
         "label": "2023",
         "sets": [
           {
-            "code": "LCI",
-            "name": "The Lost Caverns of Ixalan",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-11-17",
-            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
-          },
-          {
             "code": "LCC",
             "name": "The Lost Caverns of Ixalan Commander",
             "kinds": [
@@ -524,6 +515,16 @@
             ],
             "releaseDate": "2023-11-17",
             "sourceId": "d253edc3-5bc7-4cf1-9446-a8540dedffa5"
+          },
+          {
+            "code": "LCI",
+            "name": "The Lost Caverns of Ixalan",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-11-17",
+            "sourceId": "70169a6e-89d1-4a3a-aef7-3152958d55ac"
           },
           {
             "code": "WHO",
@@ -866,16 +867,6 @@
             "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
           },
           {
-            "code": "H1R",
-            "name": "Modern Horizons 1 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-06-18",
-            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
-          },
-          {
             "code": "MH2",
             "name": "Modern Horizons 2",
             "kinds": [
@@ -884,6 +875,16 @@
             ],
             "releaseDate": "2021-06-18",
             "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
+          },
+          {
+            "code": "H1R",
+            "name": "Modern Horizons 1 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
             "code": "C21",
@@ -961,16 +962,6 @@
             "sourceId": "67e47ba2-b019-4181-9005-fe9fc021de44"
           },
           {
-            "code": "ZNR",
-            "name": "Zendikar Rising",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2020-09-25",
-            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
-          },
-          {
             "code": "ZNC",
             "name": "Zendikar Rising Commander",
             "kinds": [
@@ -979,6 +970,16 @@
             ],
             "releaseDate": "2020-09-25",
             "sourceId": "25c6bd9b-4e10-40a4-b9b5-0f4d9b5852a1"
+          },
+          {
+            "code": "ZNR",
+            "name": "Zendikar Rising",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2020-09-25",
+            "sourceId": "f4e01fa7-b254-42dd-849f-69b58027a8c4"
           },
           {
             "code": "2XM",
