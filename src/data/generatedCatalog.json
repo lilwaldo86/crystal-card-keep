@@ -1,14 +1,13 @@
 {
-  "generatedAt": "2026-11-07T14:56:56.932Z",
+  "generatedAt": "2026-11-08T15:22:40.036Z",
   "sources": {
     "pokemon": {
-      "status": "preserved_previous_snapshot",
-      "syncedAt": "2026-11-07T14:56:56.932Z",
-      "error": "Error: 500 https://api.pokemontcg.io/v2/sets?pageSize=250"
+      "status": "ok",
+      "syncedAt": "2026-11-08T15:22:40.036Z"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-11-07T14:56:56.932Z"
+      "syncedAt": "2026-11-08T15:22:40.036Z"
     }
   },
   "games": {
@@ -16,16 +15,6 @@
       {
         "label": "2027",
         "sets": [
-          {
-            "code": "MDC",
-            "name": "Darkhold Destiny Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2027-04-09",
-            "sourceId": "4e7f31db-cf1b-4719-9ff9-2b9a3b3957f4"
-          },
           {
             "code": "MDD",
             "name": "Marvel: Darkhold Destiny",
@@ -35,6 +24,16 @@
             ],
             "releaseDate": "2027-04-09",
             "sourceId": "1c75c20b-221e-47c5-83be-f3be4c15087d"
+          },
+          {
+            "code": "MDC",
+            "name": "Darkhold Destiny Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2027-04-09",
+            "sourceId": "4e7f31db-cf1b-4719-9ff9-2b9a3b3957f4"
           },
           {
             "code": "NAU",
@@ -52,16 +51,6 @@
         "label": "2026",
         "sets": [
           {
-            "code": "TRC",
-            "name": "Star Trek Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-11-13",
-            "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
-          },
-          {
             "code": "TRK",
             "name": "Star Trek",
             "kinds": [
@@ -70,6 +59,16 @@
             ],
             "releaseDate": "2026-11-13",
             "sourceId": "b47039dc-da5a-448c-8feb-e77d458108a6"
+          },
+          {
+            "code": "TRC",
+            "name": "Star Trek Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-11-13",
+            "sourceId": "a38c10be-90b1-4bb9-bd74-46784a751ac3"
           },
           {
             "code": "MBC",
@@ -82,16 +81,6 @@
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
           },
           {
-            "code": "FRC",
-            "name": "Reality Fracture Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
-          },
-          {
             "code": "FRA",
             "name": "Reality Fracture",
             "kinds": [
@@ -100,6 +89,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
+          },
+          {
+            "code": "FRC",
+            "name": "Reality Fracture Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
           },
           {
             "code": "HOB",
@@ -267,16 +266,6 @@
             "sourceId": "1361ca81-1304-49a8-b2e6-e76a4aa4a8c3"
           },
           {
-            "code": "DRC",
-            "name": "Aetherdrift Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-02-14",
-            "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
-          },
-          {
             "code": "DFT",
             "name": "Aetherdrift",
             "kinds": [
@@ -285,6 +274,16 @@
             ],
             "releaseDate": "2025-02-14",
             "sourceId": "23464cc2-a69c-427d-b8a7-08e5d80235d7"
+          },
+          {
+            "code": "DRC",
+            "name": "Aetherdrift Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-02-14",
+            "sourceId": "d33ef7a4-41bb-4f16-bad3-b3ee13c257e6"
           },
           {
             "code": "INR",
@@ -332,16 +331,6 @@
             "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
           },
           {
-            "code": "DSK",
-            "name": "Duskmourn: House of Horror",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
-          },
-          {
             "code": "DSC",
             "name": "Duskmourn: House of Horror Commander",
             "kinds": [
@@ -350,6 +339,16 @@
             ],
             "releaseDate": "2024-09-27",
             "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
+          },
+          {
+            "code": "DSK",
+            "name": "Duskmourn: House of Horror",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-09-27",
+            "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
             "code": "MB2",
@@ -392,16 +391,6 @@
             "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
           },
           {
-            "code": "H2R",
-            "name": "Modern Horizons 2 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
-          },
-          {
             "code": "M3C",
             "name": "Modern Horizons 3 Commander",
             "kinds": [
@@ -422,14 +411,24 @@
             "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
           },
           {
-            "code": "OTC",
-            "name": "Outlaws of Thunder Junction Commander",
+            "code": "H2R",
+            "name": "Modern Horizons 2 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
+          },
+          {
+            "code": "OTJ",
+            "name": "Outlaws of Thunder Junction",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-04-19",
-            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
+            "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
           },
           {
             "code": "BIG",
@@ -442,14 +441,14 @@
             "sourceId": "14332d2c-ba93-4498-bf3f-9d601f88f783"
           },
           {
-            "code": "OTJ",
-            "name": "Outlaws of Thunder Junction",
+            "code": "OTC",
+            "name": "Outlaws of Thunder Junction Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
             "releaseDate": "2024-04-19",
-            "sourceId": "55a85ebe-644e-4bef-8be8-5290408be3d1"
+            "sourceId": "d6548798-0c10-4509-b71a-2d8b1d14665a"
           },
           {
             "code": "PIP",
@@ -867,16 +866,6 @@
             "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
           },
           {
-            "code": "H1R",
-            "name": "Modern Horizons 1 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-06-18",
-            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
-          },
-          {
             "code": "MH2",
             "name": "Modern Horizons 2",
             "kinds": [
@@ -885,6 +874,16 @@
             ],
             "releaseDate": "2021-06-18",
             "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
+          },
+          {
+            "code": "H1R",
+            "name": "Modern Horizons 1 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
           },
           {
             "code": "C21",
@@ -917,16 +916,6 @@
             "sourceId": "11e90d1b-0502-43e6-b056-e24836523c13"
           },
           {
-            "code": "KHC",
-            "name": "Kaldheim Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-02-05",
-            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
-          },
-          {
             "code": "KHM",
             "name": "Kaldheim",
             "kinds": [
@@ -935,6 +924,16 @@
             ],
             "releaseDate": "2021-02-05",
             "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
+          },
+          {
+            "code": "KHC",
+            "name": "Kaldheim Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
           }
         ]
       },
@@ -2317,16 +2316,6 @@
             "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
           },
           {
-            "code": "BCHR",
-            "name": "Chronicles Foreign Black Border",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-07-01",
-            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
-          },
-          {
             "code": "CHR",
             "name": "Chronicles",
             "kinds": [
@@ -2335,6 +2324,16 @@
             ],
             "releaseDate": "1995-07-01",
             "sourceId": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4"
+          },
+          {
+            "code": "BCHR",
+            "name": "Chronicles Foreign Black Border",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-07-01",
+            "sourceId": "d672ed60-4161-4b21-874a-584b13b2fc35"
           },
           {
             "code": "ICE",
