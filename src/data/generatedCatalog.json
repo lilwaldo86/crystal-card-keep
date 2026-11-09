@@ -1,13 +1,14 @@
 {
-  "generatedAt": "2026-11-08T15:22:40.036Z",
+  "generatedAt": "2026-11-09T18:55:27.070Z",
   "sources": {
     "pokemon": {
-      "status": "ok",
-      "syncedAt": "2026-11-08T15:22:40.036Z"
+      "status": "preserved_previous_snapshot",
+      "syncedAt": "2026-11-09T18:55:27.070Z",
+      "error": "Error: 502 https://api.pokemontcg.io/v2/sets?pageSize=250"
     },
     "mtg": {
       "status": "ok",
-      "syncedAt": "2026-11-08T15:22:40.036Z"
+      "syncedAt": "2026-11-09T18:55:27.070Z"
     }
   },
   "games": {
@@ -15,16 +16,6 @@
       {
         "label": "2027",
         "sets": [
-          {
-            "code": "MDD",
-            "name": "Marvel: Darkhold Destiny",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2027-04-09",
-            "sourceId": "1c75c20b-221e-47c5-83be-f3be4c15087d"
-          },
           {
             "code": "MDC",
             "name": "Darkhold Destiny Commander",
@@ -34,6 +25,16 @@
             ],
             "releaseDate": "2027-04-09",
             "sourceId": "4e7f31db-cf1b-4719-9ff9-2b9a3b3957f4"
+          },
+          {
+            "code": "MDD",
+            "name": "Marvel: Darkhold Destiny",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2027-04-09",
+            "sourceId": "1c75c20b-221e-47c5-83be-f3be4c15087d"
           },
           {
             "code": "NAU",
@@ -81,16 +82,6 @@
             "sourceId": "a4135564-9f37-4aaf-963a-90666f843e0d"
           },
           {
-            "code": "FRA",
-            "name": "Reality Fracture",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-10-02",
-            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
-          },
-          {
             "code": "FRC",
             "name": "Reality Fracture Commander",
             "kinds": [
@@ -99,6 +90,16 @@
             ],
             "releaseDate": "2026-10-02",
             "sourceId": "cfd10490-7397-4143-bda7-d388b877636f"
+          },
+          {
+            "code": "FRA",
+            "name": "Reality Fracture",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-10-02",
+            "sourceId": "6595985e-39cf-4ca3-b43d-dd3e64749fdc"
           },
           {
             "code": "HOB",
@@ -131,16 +132,6 @@
             "sourceId": "ba9bf625-681c-4a4e-ab48-399b2fecac6b"
           },
           {
-            "code": "SOC",
-            "name": "Secrets of Strixhaven Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-04-24",
-            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
-          },
-          {
             "code": "SOS",
             "name": "Secrets of Strixhaven",
             "kinds": [
@@ -149,6 +140,16 @@
             ],
             "releaseDate": "2026-04-24",
             "sourceId": "e487c9ce-5e76-4756-bcd0-e4b7db5c38a3"
+          },
+          {
+            "code": "SOC",
+            "name": "Secrets of Strixhaven Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-04-24",
+            "sourceId": "97fab8d1-480a-419d-ab14-663968e29b9c"
           },
           {
             "code": "TMT",
@@ -161,16 +162,6 @@
             "sourceId": "03990f52-1d8a-4ce8-828a-c9bf633f0de6"
           },
           {
-            "code": "ECL",
-            "name": "Lorwyn Eclipsed",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2026-01-23",
-            "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
-          },
-          {
             "code": "ECC",
             "name": "Lorwyn Eclipsed Commander",
             "kinds": [
@@ -179,6 +170,16 @@
             ],
             "releaseDate": "2026-01-23",
             "sourceId": "805b5a0c-f8bb-4555-86ea-eb9ec36a011a"
+          },
+          {
+            "code": "ECL",
+            "name": "Lorwyn Eclipsed",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2026-01-23",
+            "sourceId": "5d293ad8-a749-4725-bd5c-c4e1db828bd0"
           }
         ]
       },
@@ -206,16 +207,6 @@
             "sourceId": "a1c7b891-9e96-434c-9994-be58b62b27f1"
           },
           {
-            "code": "EOC",
-            "name": "Edge of Eternities Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2025-08-01",
-            "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
-          },
-          {
             "code": "EOE",
             "name": "Edge of Eternities",
             "kinds": [
@@ -224,6 +215,16 @@
             ],
             "releaseDate": "2025-08-01",
             "sourceId": "452951cf-378b-4472-b7fe-572fe2af2ac0"
+          },
+          {
+            "code": "EOC",
+            "name": "Edge of Eternities Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2025-08-01",
+            "sourceId": "b6ec8c6b-b4e6-4cb4-84d6-06234ace3b44"
           },
           {
             "code": "FIC",
@@ -301,6 +302,16 @@
         "label": "2024",
         "sets": [
           {
+            "code": "J25",
+            "name": "Foundations Jumpstart",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-11-15",
+            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
+          },
+          {
             "code": "FDN",
             "name": "Foundations",
             "kinds": [
@@ -321,26 +332,6 @@
             "sourceId": "2a0b24ac-7614-4a08-b58a-b64f7c173361"
           },
           {
-            "code": "J25",
-            "name": "Foundations Jumpstart",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-11-15",
-            "sourceId": "9201567c-bab5-4720-aac9-260e6741f115"
-          },
-          {
-            "code": "DSC",
-            "name": "Duskmourn: House of Horror Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-09-27",
-            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
-          },
-          {
             "code": "DSK",
             "name": "Duskmourn: House of Horror",
             "kinds": [
@@ -351,14 +342,14 @@
             "sourceId": "a111d8a9-b647-48ec-afab-2b78f92173f5"
           },
           {
-            "code": "MB2",
-            "name": "Mystery Booster 2",
+            "code": "DSC",
+            "name": "Duskmourn: House of Horror Commander",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2024-08-02",
-            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+            "releaseDate": "2024-09-27",
+            "sourceId": "4c822528-83c3-42c7-8708-dd1d37166819"
           },
           {
             "code": "BLC",
@@ -381,6 +372,16 @@
             "sourceId": "a2f58272-bba6-439d-871e-7a46686ac018"
           },
           {
+            "code": "MB2",
+            "name": "Mystery Booster 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-08-02",
+            "sourceId": "1e6879fe-2f29-4ad7-8d42-7f5bfb469f4a"
+          },
+          {
             "code": "ACR",
             "name": "Assassin's Creed",
             "kinds": [
@@ -389,6 +390,16 @@
             ],
             "releaseDate": "2024-07-05",
             "sourceId": "54b67b0b-cd3f-4e0d-ac25-fef5d966409b"
+          },
+          {
+            "code": "H2R",
+            "name": "Modern Horizons 2 Timeshifts",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2024-06-14",
+            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
             "code": "M3C",
@@ -409,16 +420,6 @@
             ],
             "releaseDate": "2024-06-14",
             "sourceId": "3ed80bb6-77e8-4aa7-8262-95377a38aba1"
-          },
-          {
-            "code": "H2R",
-            "name": "Modern Horizons 2 Timeshifts",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2024-06-14",
-            "sourceId": "20e53d4f-2ce8-4d82-9c7c-e6378a0134ad"
           },
           {
             "code": "OTJ",
@@ -596,16 +597,6 @@
             "sourceId": "6727e43d-31b6-45b0-ae05-7a811ba72f70"
           },
           {
-            "code": "MOM",
-            "name": "March of the Machine",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2023-04-21",
-            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
-          },
-          {
             "code": "MOC",
             "name": "March of the Machine Commander",
             "kinds": [
@@ -616,14 +607,14 @@
             "sourceId": "6bba5de9-5afb-42af-a7eb-24ac854bf671"
           },
           {
-            "code": "ONE",
-            "name": "Phyrexia: All Will Be One",
+            "code": "MOM",
+            "name": "March of the Machine",
             "kinds": [
               "sealed",
               "singles"
             ],
-            "releaseDate": "2023-02-10",
-            "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
+            "releaseDate": "2023-04-21",
+            "sourceId": "392f7315-dc53-40a3-a2cc-5482dbd498b3"
           },
           {
             "code": "ONC",
@@ -634,6 +625,16 @@
             ],
             "releaseDate": "2023-02-10",
             "sourceId": "8c5e86d4-ae2d-42f7-a0e5-0e4141eb953d"
+          },
+          {
+            "code": "ONE",
+            "name": "Phyrexia: All Will Be One",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2023-02-10",
+            "sourceId": "04bef644-343f-4230-95ee-255f29aa67a2"
           },
           {
             "code": "DMR",
@@ -806,16 +807,6 @@
         "label": "2021",
         "sets": [
           {
-            "code": "VOC",
-            "name": "Crimson Vow Commander",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-11-19",
-            "sourceId": "b2e444f7-41e6-4172-ba01-47d91d5e7bbc"
-          },
-          {
             "code": "VOW",
             "name": "Innistrad: Crimson Vow",
             "kinds": [
@@ -824,6 +815,16 @@
             ],
             "releaseDate": "2021-11-19",
             "sourceId": "8144b676-569f-4716-8005-bc8f0778f3fa"
+          },
+          {
+            "code": "VOC",
+            "name": "Crimson Vow Commander",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-11-19",
+            "sourceId": "b2e444f7-41e6-4172-ba01-47d91d5e7bbc"
           },
           {
             "code": "MIC",
@@ -866,16 +867,6 @@
             "sourceId": "e1ef87ba-ba92-4573-817f-543b996d2851"
           },
           {
-            "code": "MH2",
-            "name": "Modern Horizons 2",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-06-18",
-            "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
-          },
-          {
             "code": "H1R",
             "name": "Modern Horizons 1 Timeshifts",
             "kinds": [
@@ -884,6 +875,16 @@
             ],
             "releaseDate": "2021-06-18",
             "sourceId": "7b3294cf-104e-43fb-8170-add3e78faca7"
+          },
+          {
+            "code": "MH2",
+            "name": "Modern Horizons 2",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-06-18",
+            "sourceId": "c1c7eb8c-f205-40ab-a609-767cb296544e"
           },
           {
             "code": "C21",
@@ -916,16 +917,6 @@
             "sourceId": "11e90d1b-0502-43e6-b056-e24836523c13"
           },
           {
-            "code": "KHM",
-            "name": "Kaldheim",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "2021-02-05",
-            "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
-          },
-          {
             "code": "KHC",
             "name": "Kaldheim Commander",
             "kinds": [
@@ -934,6 +925,16 @@
             ],
             "releaseDate": "2021-02-05",
             "sourceId": "d532ef25-e52b-4276-941a-3a1c095544b0"
+          },
+          {
+            "code": "KHM",
+            "name": "Kaldheim",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "2021-02-05",
+            "sourceId": "43057fad-b1c1-437f-bc48-0045bce6d8c9"
           }
         ]
       },
@@ -2296,16 +2297,6 @@
             "sourceId": "5ac1f606-e682-46e9-ad0f-122a3783581b"
           },
           {
-            "code": "RIN",
-            "name": "Rinascimento",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1995-08-01",
-            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
-          },
-          {
             "code": "REN",
             "name": "Renaissance",
             "kinds": [
@@ -2314,6 +2305,16 @@
             ],
             "releaseDate": "1995-08-01",
             "sourceId": "bec33d25-cf6f-460f-918d-29b3009686bb"
+          },
+          {
+            "code": "RIN",
+            "name": "Rinascimento",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1995-08-01",
+            "sourceId": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8"
           },
           {
             "code": "CHR",
@@ -2411,16 +2412,6 @@
             "sourceId": "78c50b4b-b220-455b-a2d5-cee458fa56f3"
           },
           {
-            "code": "3ED",
-            "name": "Revised Edition",
-            "kinds": [
-              "sealed",
-              "singles"
-            ],
-            "releaseDate": "1994-04-11",
-            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
-          },
-          {
             "code": "FBB",
             "name": "Foreign Black Border",
             "kinds": [
@@ -2429,6 +2420,16 @@
             ],
             "releaseDate": "1994-04-11",
             "sourceId": "60648044-9f6a-4961-81af-47a0a94dfac9"
+          },
+          {
+            "code": "3ED",
+            "name": "Revised Edition",
+            "kinds": [
+              "sealed",
+              "singles"
+            ],
+            "releaseDate": "1994-04-11",
+            "sourceId": "45a69797-8adf-468e-a4e1-ba81fd9d66ac"
           },
           {
             "code": "ATQ",
